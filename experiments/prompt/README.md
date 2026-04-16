@@ -13,7 +13,7 @@ All variants achieve 100% adjacent accuracy (within 1 stage of ground truth).
 |---------|-------|----------------|--------------|-----------------|----------|
 | **hybrid** | **83.2%** | 59% | 70% | 95% | Stage-adaptive prompt switching |
 | scientific | 82.6% | 55% | 76% | 92% | Eggshell fill fraction + body segment counting |
-| duration_aware | 81.3% | 65% | 77% | 87% | Duration-aware prior + confidence-gated transitions |
+| duration_aware | 81.3% | 65% | 77% | 87% | Duration-aware temporal prior |
 | temporal | 81.0% | 63% | 58% | 95% | Soft temporal anchoring, "prefer earlier stage" |
 | unified | 78.8% | 53% | 67% | 90% | Merged temporal + scientific (single prompt) |
 | ensemble | 79.8% | 57% | 59% | 94% | 3x majority vote with temperature=0.3 |

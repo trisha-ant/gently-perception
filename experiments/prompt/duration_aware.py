@@ -1,20 +1,10 @@
 """
 Duration-aware adaptive perception.
 
-Three mechanisms layered on the hybrid base:
-
-1. DURATION-AWARE TEMPORAL PRIOR: Adjust anchoring strength based on
-   how long the model has been in the current stage vs typical durations.
-   Early in stage → very strong anchoring. Past typical duration → gentle nudge.
-
-2. CONFIDENCE-GATED TRANSITIONS: Post-hoc gate that blocks low-confidence
-   stage advances when early in a stage. Prevents boundary oscillation.
-
-3. CONSECUTIVE ADVANCE TRACKING: If the model repeatedly wants to advance
-   (N consecutive suppressed transitions), lower the gate threshold to
-   allow genuine transitions through.
-
-Expected improvement: +8-12pp over hybrid by reducing boundary errors.
+Layered on the hybrid base: adjust temporal-anchoring strength in the
+prompt based on how long the model has been in the current stage vs
+typical durations. Early in stage → very strong anchoring. Past typical
+duration → gentle nudge toward the next stage.
 """
 
 from gently_perception.api import (
@@ -40,32 +30,19 @@ TYPICAL_DURATIONS = {
     "hatched": (50, 100),
 }
 
-# Confidence thresholds for stage advances
-ADVANCE_CONFIDENCE = {
-    ("1.5fold", "2fold"): 0.65,
-    ("2fold", "pretzel"): 0.65,
-}
-DEFAULT_ADVANCE_CONFIDENCE = 0.55
-
-# How many consecutive suppressed advances before lowering threshold
-CONSECUTIVE_ADVANCE_BEFORE_ALLOW = 3
-
 # Module-level state (reset per embryo)
 _current_stage: str | None = None
 _stage_entry_tp: int | None = None
 _prev_timepoint: int | None = None
-_consecutive_advance_count: int = 0
 _is_first_evaluated_tp: bool = True
 
 
 def _reset_state():
     """Reset state for a new embryo."""
-    global _current_stage, _stage_entry_tp, _prev_timepoint
-    global _consecutive_advance_count, _is_first_evaluated_tp
+    global _current_stage, _stage_entry_tp, _prev_timepoint, _is_first_evaluated_tp
     _current_stage = None
     _stage_entry_tp = None
     _prev_timepoint = None
-    _consecutive_advance_count = 0
     _is_first_evaluated_tp = True
 
 
@@ -106,73 +83,13 @@ def _get_duration_context(stage: str, duration: int) -> str:
     return ""
 
 
-def _confidence_gate(
-    model_output: PerceptionOutput,
-    expected_stage: str,
-    duration_in_stage: int,
-) -> PerceptionOutput:
-    """Gate stage advances based on confidence and duration."""
-    global _consecutive_advance_count
-
-    predicted = model_output.stage
-    if predicted == expected_stage or expected_stage not in STAGES:
-        # No advance — reset counter
-        _consecutive_advance_count = 0
-        return model_output
-
-    expected_idx = STAGES.index(expected_stage)
-    predicted_idx = STAGES.index(predicted) if predicted in STAGES else -1
-
-    # Only gate forward advances (not backward corrections)
-    if predicted_idx <= expected_idx:
-        _consecutive_advance_count = 0
-        return model_output
-
-    # This is a forward advance — check if we should allow it
-    threshold_key = (expected_stage, predicted)
-    threshold = ADVANCE_CONFIDENCE.get(threshold_key, DEFAULT_ADVANCE_CONFIDENCE)
-
-    # Lower threshold after consecutive suppressed advances
-    if _consecutive_advance_count >= CONSECUTIVE_ADVANCE_BEFORE_ALLOW + 2:
-        # After 5 consecutive, allow anything
-        _consecutive_advance_count = 0
-        return model_output
-    elif _consecutive_advance_count >= CONSECUTIVE_ADVANCE_BEFORE_ALLOW:
-        # After 3 consecutive, lower threshold significantly
-        threshold = 0.45
-
-    # Check duration — if past typical max, always allow
-    if expected_stage in TYPICAL_DURATIONS:
-        _, max_dur = TYPICAL_DURATIONS[expected_stage]
-        if duration_in_stage > max_dur:
-            _consecutive_advance_count = 0
-            return model_output
-
-    # Apply the gate
-    if model_output.confidence < threshold:
-        _consecutive_advance_count += 1
-        return PerceptionOutput(
-            stage=expected_stage,
-            confidence=model_output.confidence,
-            reasoning=(
-                f"Gate: model predicted {predicted} (conf={model_output.confidence:.2f}) "
-                f"but gated to {expected_stage} (threshold={threshold:.2f}, "
-                f"duration={duration_in_stage}, consecutive={_consecutive_advance_count}). "
-                f"{model_output.reasoning}"
-            ),
-        )
-    else:
-        _consecutive_advance_count = 0
-        return model_output
-
-
 async def perceive_duration_aware(
     image_b64: str,
     references: dict[str, list[str]],
     history: list[dict],
     timepoint: int,
 ) -> PerceptionOutput:
-    """Duration-aware classification with confidence-gated transitions."""
+    """Duration-aware classification."""
     global _current_stage, _stage_entry_tp, _prev_timepoint, _is_first_evaluated_tp
 
     # Detect new embryo (timepoint reset)
@@ -250,10 +167,7 @@ async def perceive_duration_aware(
         })
 
     raw = await call_claude(system=system_prompt, content=content)
-    model_output = response_to_output(raw)
-
-    # Apply confidence gate
-    result = _confidence_gate(model_output, last_stage, duration_in_stage)
+    result = response_to_output(raw)
 
     # Update state
     _prev_timepoint = timepoint

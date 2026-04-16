@@ -97,10 +97,8 @@ async def perceive_changegate(
         _prev_timepoint = None
 
     last_stage = "early"
-    last_conf = 0.5
     if history:
         last_stage = history[-1].get("stage", "early")
-        last_conf = history[-1].get("confidence", 0.5)
 
     # If we have a previous image, check if morphology changed
     if _prev_image is not None:
@@ -112,7 +110,6 @@ async def perceive_changegate(
             _prev_timepoint = timepoint
             return PerceptionOutput(
                 stage=last_stage,
-                confidence=last_conf,
                 reasoning=f"No significant morphological change from T{_prev_timepoint}; maintaining {last_stage}",
             )
 

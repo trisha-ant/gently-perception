@@ -37,7 +37,7 @@ receives temporal context (what stages were observed at recent timepoints).
 ## The Metric
 
 **Primary**: Exact accuracy (predicted stage == ground truth stage)
-**Secondary**: Adjacent accuracy (within 1 stage), confidence calibration (ECE)
+**Secondary**: Adjacent accuracy (within 1 stage)
 
 Use `--quick` for fast iteration (~120 predictions, ~2 min per variant).
 Use full runs for final evaluation (~769 predictions).
@@ -50,7 +50,7 @@ Every perception function must have this exact signature:
 async def perceive_xxx(
     image_b64: str,              # Base64 JPEG of three-view projection
     references: dict[str, list[str]],  # stage -> [base64 reference images]
-    history: list[dict],         # previous timepoints: [{timepoint, stage, confidence}]
+    history: list[dict],         # previous timepoints: [{timepoint, stage}]
     timepoint: int,              # current timepoint number
 ) -> PerceptionOutput:           # from perception._base
 ```

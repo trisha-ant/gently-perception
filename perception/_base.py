@@ -31,7 +31,6 @@ class PerceptionOutput:
     """Standard output from any perception function."""
 
     stage: str  # "early", "bean", "comma", etc.
-    confidence: float  # 0.0-1.0
     reasoning: str  # Free-text explanation
 
     # Metadata for analysis
@@ -206,13 +205,12 @@ def response_to_output(raw: str) -> PerceptionOutput:
     """
     Parse a raw VLM text response into a PerceptionOutput.
 
-    Falls back to stage="early", confidence=0.0 on parse failure.
+    Falls back to stage="early" on parse failure.
     """
     data = parse_stage_json(raw)
     if not data:
         return PerceptionOutput(
             stage="early",
-            confidence=0.0,
             reasoning="Parse error (no JSON found)",
             raw_response=raw,
         )
@@ -223,7 +221,6 @@ def response_to_output(raw: str) -> PerceptionOutput:
 
     return PerceptionOutput(
         stage=stage,
-        confidence=float(data.get("confidence", 0.5)),
         reasoning=data.get("reasoning", ""),
         raw_response=raw,
     )
@@ -284,7 +281,7 @@ def build_history_text(history: list[dict]) -> str:
     Parameters
     ----------
     history : list of dict
-        Each dict has keys: timepoint, stage, confidence
+        Each dict has keys: timepoint, stage
 
     Returns
     -------
@@ -297,7 +294,6 @@ def build_history_text(history: list[dict]) -> str:
     for obs in history[-3:]:
         tp = obs.get("timepoint", "?")
         stage = obs.get("stage", "?")
-        conf = obs.get("confidence", 0)
-        lines.append(f"- T{tp}: {stage} ({conf:.0%})")
+        lines.append(f"- T{tp}: {stage}")
 
     return "\n".join(lines)

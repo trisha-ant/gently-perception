@@ -26,7 +26,6 @@ Classify the current image. If the field of view is empty, return "no_object".
 Respond with JSON:
 {
   "stage": "early|bean|comma|1.5fold|2fold|pretzel|hatching|hatched|no_object",
-  "confidence": 0.0-1.0,
   "reasoning": "Brief explanation"
 }"""
 
