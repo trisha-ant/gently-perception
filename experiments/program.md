@@ -52,8 +52,12 @@ async def perceive_xxx(
     references: dict[str, list[str]],  # stage -> [base64 reference images]
     history: list[dict],         # previous timepoints: [{timepoint, stage}]
     timepoint: int,              # current timepoint number
+    midplane_b64: str | None = None,  # optional: single XY z-slice at z=Z//2
 ) -> PerceptionOutput:           # from perception._base
 ```
+
+`midplane_b64` is only passed if your function declares it (or `**kwargs`).
+The runner inspects the signature, so existing variants don't need to change.
 
 ## Available Utilities (from `perception._base`)
 
