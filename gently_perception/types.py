@@ -7,13 +7,12 @@ from dataclasses import dataclass
 class PerceptionOutput:
     """What every perceive function returns.
 
-    confidence is optional — the paper shows VLM self-reported confidence
-    is uncalibrated noise (0.867 correct vs 0.857 wrong). The harness
-    derives reliability from session history (stability, temporal analysis)
-    rather than this field. Experiments may still populate it for analysis.
+    The harness derives reliability from session history (stability,
+    temporal analysis) rather than VLM self-reported confidence — the
+    latter is uncalibrated noise (0.867 correct vs 0.857 wrong) and
+    has been removed.
     """
 
     stage: str
     reasoning: str
-    confidence: float = 0.0  # VLM self-report; unreliable — see paper
     raw_response: str = ""

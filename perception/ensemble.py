@@ -106,13 +106,10 @@ async def perceive_ensemble(
                 majority_stage = s
                 break
 
-    # Average confidence, combine reasoning
-    avg_conf = sum(o.confidence for o in outputs) / len(outputs)
-    votes = ", ".join(f"{o.stage}({o.confidence:.0%})" for o in outputs)
+    votes = ", ".join(o.stage for o in outputs)
 
     return PerceptionOutput(
         stage=majority_stage,
-        confidence=avg_conf,
         reasoning=f"Ensemble [{votes}] → {majority_stage}",
         phase_count=ENSEMBLE_SIZE,
     )

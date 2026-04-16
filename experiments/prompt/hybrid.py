@@ -62,7 +62,6 @@ bright mass that fills the eggshell is still pretzel even if it doesn't look \
 Respond with JSON:
 {
   "stage": "early|bean|comma|1.5fold|2fold|pretzel|hatching|hatched|no_object",
-  "confidence": 0.0-1.0,
   "reasoning": "Brief explanation of which reference images match best"
 }"""
 
@@ -123,7 +122,6 @@ interior is filled with bright signal?
 Respond with JSON:
 {
   "stage": "early|bean|comma|1.5fold|2fold|pretzel|hatching|hatched|no_object",
-  "confidence": 0.0-1.0,
   "reasoning": "Brief explanation"
 }"""
 

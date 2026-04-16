@@ -1,12 +1,12 @@
 """
 Perception Benchmark Metrics.
 
-Computes accuracy metrics, confusion matrices, and calibration statistics.
+Computes accuracy metrics and confusion matrices.
 """
 
 from collections import defaultdict
 from dataclasses import dataclass, field
-from typing import Any, Dict, List, Optional, Tuple, TYPE_CHECKING
+from typing import Any, Dict, List, Optional, TYPE_CHECKING
 
 if TYPE_CHECKING:
     from .runner import BenchmarkReport
@@ -30,15 +30,6 @@ class PerceptionMetrics:
 
     # Confusion matrix: confusion[gt_stage][pred_stage] = count
     confusion_matrix: Dict[str, Dict[str, int]] = field(default_factory=dict)
-
-    # Confidence calibration
-    mean_confidence: float = 0.0
-    confidence_when_correct: float = 0.0
-    confidence_when_wrong: float = 0.0
-    calibration_bins: List[Tuple[float, float, int]] = field(default_factory=list)
-    # (confidence_bin_center, accuracy_in_bin, count)
-
-    expected_calibration_error: float = 0.0  # ECE
 
     # Temporal metrics
     backward_transitions: int = 0  # Errors where stage went backward
@@ -66,11 +57,6 @@ class PerceptionMetrics:
             "stage_accuracy": self.stage_accuracy,
             "stage_counts": self.stage_counts,
             "confusion_matrix": self.confusion_matrix,
-            "mean_confidence": self.mean_confidence,
-            "confidence_when_correct": self.confidence_when_correct,
-            "confidence_when_wrong": self.confidence_when_wrong,
-            "calibration_bins": self.calibration_bins,
-            "expected_calibration_error": self.expected_calibration_error,
             "backward_transitions": self.backward_transitions,
             "stage_transition_delay": self.stage_transition_delay,
             "total_tool_calls": self.total_tool_calls,
@@ -137,40 +123,6 @@ def compute_metrics(report: "BenchmarkReport") -> PerceptionMetrics:
     metrics.confusion_matrix = {
         gt: dict(preds) for gt, preds in confusion.items()
     }
-
-    # Confidence statistics
-    confidences = [p.confidence for p in all_preds]
-    correct_confidences = [p.confidence for p in all_preds if p.is_correct]
-    wrong_confidences = [p.confidence for p in all_preds if not p.is_correct]
-
-    metrics.mean_confidence = sum(confidences) / len(confidences)
-    if correct_confidences:
-        metrics.confidence_when_correct = sum(correct_confidences) / len(correct_confidences)
-    if wrong_confidences:
-        metrics.confidence_when_wrong = sum(wrong_confidences) / len(wrong_confidences)
-
-    # Calibration bins (10 bins from 0 to 1)
-    num_bins = 10
-    for i in range(num_bins):
-        bin_low = i / num_bins
-        bin_high = (i + 1) / num_bins
-        bin_center = (bin_low + bin_high) / 2
-
-        bin_preds = [
-            p for p in all_preds
-            if bin_low <= p.confidence < bin_high
-        ]
-
-        if bin_preds:
-            bin_accuracy = sum(1 for p in bin_preds if p.is_correct) / len(bin_preds)
-            metrics.calibration_bins.append((bin_center, bin_accuracy, len(bin_preds)))
-
-    # Expected Calibration Error (ECE)
-    total_preds = len(all_preds)
-    ece = 0.0
-    for bin_center, bin_accuracy, bin_count in metrics.calibration_bins:
-        ece += (bin_count / total_preds) * abs(bin_accuracy - bin_center)
-    metrics.expected_calibration_error = ece
 
     # Backward transitions
     for embryo_result in report.embryo_results:
@@ -279,12 +231,6 @@ def format_metrics_summary(metrics: PerceptionMetrics) -> str:
             lines.append(f"  {stage:>10}: {acc:.1%} (n={count})")
 
     lines.extend([
-        "",
-        "CONFIDENCE CALIBRATION",
-        f"  Mean confidence:         {metrics.mean_confidence:.2f}",
-        f"  Confidence (correct):    {metrics.confidence_when_correct:.2f}",
-        f"  Confidence (wrong):      {metrics.confidence_when_wrong:.2f}",
-        f"  Expected Cal. Error:     {metrics.expected_calibration_error:.3f}",
         "",
         "TOOL USAGE",
         f"  Total tool calls:        {metrics.total_tool_calls}",

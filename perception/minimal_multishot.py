@@ -16,7 +16,7 @@ from ._base import (
 from .minimal import SYSTEM_PROMPT
 
 RECONSIDER_PROMPT = """\
-You classified this as {stage} with {confidence:.0%} confidence. \
+You classified this as {stage}. \
 Before I accept this, please carefully re-examine the image.
 
 Look specifically at:
@@ -60,9 +60,7 @@ async def perceive_minimal_multishot(
     initial = response_to_output(raw)
 
     # Turn 2: reconsideration in the same conversation context
-    followup = RECONSIDER_PROMPT.format(
-        stage=initial.stage, confidence=initial.confidence
-    )
+    followup = RECONSIDER_PROMPT.format(stage=initial.stage)
     messages = [
         {"role": "user", "content": content},
         {"role": "assistant", "content": [{"type": "text", "text": raw}]},

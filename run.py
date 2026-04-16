@@ -80,7 +80,6 @@ def make_prediction_dict(output, timepoint, ground_truth_stage) -> dict:
         "timepoint": timepoint,
         "predicted_stage": predicted,
         "ground_truth_stage": gt,
-        "confidence": output.confidence,
         "is_transitional": False,
         "transition_between": None,
         "reasoning": output.reasoning,
@@ -127,7 +126,6 @@ async def run_variant(variant_name, perceive_fn, testset, references, max_timepo
                 history.append({
                     "timepoint": tc.timepoint,
                     "stage": tc.ground_truth_stage or "early",
-                    "confidence": 1.0,
                 })
                 continue
 
@@ -141,7 +139,7 @@ async def run_variant(variant_name, perceive_fn, testset, references, max_timepo
             except Exception as e:
                 logger.error(f"[{variant_name}/{embryo_id}] T{tc.timepoint} error: {e}")
                 from perception._base import PerceptionOutput
-                output = PerceptionOutput(stage="early", confidence=0.0, reasoning=f"Error: {e}")
+                output = PerceptionOutput(stage="early", reasoning=f"Error: {e}")
 
             pred = make_prediction_dict(output, tc.timepoint, tc.ground_truth_stage)
             predictions.append(pred)
@@ -150,7 +148,6 @@ async def run_variant(variant_name, perceive_fn, testset, references, max_timepo
             history.append({
                 "timepoint": tc.timepoint,
                 "stage": output.stage,
-                "confidence": output.confidence,
             })
 
             status = "OK" if pred["is_correct"] else "WRONG"
@@ -176,7 +173,6 @@ async def run_variant(variant_name, perceive_fn, testset, references, max_timepo
     total = len(all_predictions) or 1
     exact = sum(1 for p in all_predictions if p["is_correct"]) / total
     adjacent = sum(1 for p in all_predictions if p["is_adjacent_correct"]) / total
-    mean_conf = sum(p["confidence"] for p in all_predictions) / total
 
     # Per-stage accuracy
     from collections import defaultdict
@@ -198,7 +194,6 @@ async def run_variant(variant_name, perceive_fn, testset, references, max_timepo
         "metrics": {
             "accuracy": exact,
             "adjacent_accuracy": adjacent,
-            "mean_confidence": mean_conf,
             "per_stage": {
                 stage: {
                     "accuracy": s["correct"] / s["total"] if s["total"] > 0 else 0,
@@ -290,15 +285,15 @@ def print_results(results: dict[str, dict]):
     print("=" * 70)
 
     # Overall table
-    header = f"{'Variant':<25} {'Exact':>8} {'Adjacent':>10} {'Conf':>8} {'N':>6}"
+    header = f"{'Variant':<25} {'Exact':>8} {'Adjacent':>10} {'N':>6}"
     print(header)
-    print("-" * 60)
+    print("-" * len(header))
 
     for name, report in sorted(results.items()):
         m = report["metrics"]
         print(
             f"{name:<25} {m['accuracy']:>7.1%} {m['adjacent_accuracy']:>9.1%} "
-            f"{m['mean_confidence']:>7.2f} {report['total_predictions']:>6}"
+            f"{report['total_predictions']:>6}"
         )
 
     # Per-stage breakdown

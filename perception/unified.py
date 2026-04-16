@@ -72,7 +72,6 @@ a confirmed later stage.
 Respond with JSON:
 {
   "stage": "early|bean|comma|1.5fold|2fold|pretzel|hatching|hatched|no_object",
-  "confidence": 0.0-1.0,
   "reasoning": "Brief explanation"
 }"""
 

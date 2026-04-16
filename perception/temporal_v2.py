@@ -62,7 +62,6 @@ emergence is visible.
 Respond with JSON:
 {
   "stage": "early|bean|comma|1.5fold|2fold|pretzel|hatching|hatched|no_object",
-  "confidence": 0.0-1.0,
   "reasoning": "Brief explanation"
 }"""
 
@@ -75,8 +74,7 @@ def _build_history_text(history: list[dict]) -> str:
     for obs in history[-3:]:
         tp = obs.get("timepoint", "?")
         stage = obs.get("stage", "?")
-        conf = obs.get("confidence", 0)
-        lines.append(f"- T{tp}: {stage} ({conf:.0%})")
+        lines.append(f"- T{tp}: {stage}")
     return "\n".join(lines)
 
 

@@ -71,7 +71,6 @@ Before classifying, analyze these features in order:
 Respond with JSON:
 {
   "stage": "early|bean|comma|1.5fold|2fold|pretzel|hatching|hatched|no_object",
-  "confidence": 0.0-1.0,
   "reasoning": "Describe what specific features you see and which transition criteria they match"
 }"""
 
