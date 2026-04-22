@@ -42,6 +42,7 @@ def get_functions() -> dict:
     from .changegate import perceive_changegate
     from .duration_aware import perceive_duration_aware
     from .zslice import perceive_zslice
+    from .zslice_asym import perceive_zslice_asym
 
     _FUNCTIONS = {
         "minimal": perceive_minimal,
@@ -60,5 +61,6 @@ def get_functions() -> dict:
         "changegate": perceive_changegate,
         "duration_aware": perceive_duration_aware,
         "zslice": perceive_zslice,
+        "zslice_asym": perceive_zslice_asym,
     }
     return _FUNCTIONS
