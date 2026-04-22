@@ -42,6 +42,7 @@ class TestCase:
     top_image_b64: Optional[str]  # TOP view only
     side_image_b64: Optional[str]  # SIDE view only
     midplane_b64: Optional[str]  # Single XY slice at z=Z//2 (no projection)
+    zslices_b64: Optional[list[str]]  # XY slices at _ZSLICE_FRACTIONS of Z
     volume: Optional[np.ndarray]
     ground_truth_stage: Optional[str]
 
@@ -255,6 +256,18 @@ def _create_slice_image(
     return base64.b64encode(buffer.getvalue()).decode("utf-8")
 
 
+_ZSLICE_FRACTIONS = (0.25, 0.40, 0.50, 0.60, 0.75)
+
+
+def _create_zslice_stack(volume: np.ndarray, max_dim: int = 800) -> list[str]:
+    """Render XY slices at fixed Z fractions as a list of base64 JPEGs."""
+    z_max = volume.shape[0]
+    return [
+        _create_slice_image(volume, z=int(round(f * (z_max - 1))), max_dim=max_dim)
+        for f in _ZSLICE_FRACTIONS
+    ]
+
+
 def _create_separate_view_images(volume: np.ndarray, max_dim: int = 1000) -> Tuple[str, str]:
     """Create separate TOP and SIDE view images from volume, return base64 tuple.
 
@@ -403,6 +416,7 @@ class OfflineTestset:
             image_b64 = _create_three_view_image(vol)
             top_b64, side_b64 = _create_separate_view_images(vol)
             midplane_b64 = _create_slice_image(vol)
+            zslices_b64 = _create_zslice_stack(vol)
             if volume is None:
                 del vol
 
@@ -416,6 +430,7 @@ class OfflineTestset:
                 top_image_b64=top_b64,
                 side_image_b64=side_b64,
                 midplane_b64=midplane_b64,
+                zslices_b64=zslices_b64,
                 volume=volume,
                 ground_truth_stage=gt_stage,
             )

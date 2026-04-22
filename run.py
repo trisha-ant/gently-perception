@@ -96,7 +96,7 @@ def make_prediction_dict(output, timepoint, ground_truth_stage) -> dict:
     }
 
 
-_OPTIONAL_PERCEIVE_KWARGS = ("midplane_b64",)
+_OPTIONAL_PERCEIVE_KWARGS = ("midplane_b64", "zslices_b64")
 
 
 def _accepted_optional_kwargs(perceive_fn) -> set[str]:
