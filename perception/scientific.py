@@ -58,13 +58,11 @@ a thin elongated worm shape OUTSIDE the eggshell boundary, or an empty shell.
 
 1. **Compare to references first**, then use the descriptions above.
 
-2. **Stages change slowly** — each lasts many timepoints (10-60+). Default \
-to the same stage as previous observation unless morphology clearly changed.
+2. **Stages change slowly** — each lasts many timepoints (10-60+), so \
+consecutive frames are usually the same stage. Use the previous observation \
+as context, but classify based on the morphology in THIS image.
 
-3. **When in doubt, choose the EARLIER stage.** The most common error is \
-classifying too advanced.
-
-4. **KEY DISCRIMINATOR: eggshell fill fraction.** How much of the eggshell \
+3. **KEY DISCRIMINATOR: eggshell fill fraction.** How much of the eggshell \
 interior is filled with bright signal?
    - Sparse (lots of dark space inside shell) → 1.5fold or earlier
    - Moderate (some dark space) → 2fold
@@ -91,16 +89,6 @@ async def perceive_scientific(
     history_text = build_history_text(history)
     if history_text:
         content.append({"type": "text", "text": history_text})
-        last_stage = history[-1].get("stage", "unknown") if history else "unknown"
-        content.append({
-            "type": "text",
-            "text": (
-                f"The most recent observation was '{last_stage}'. "
-                f"Remember: stages change slowly. The current stage is most likely "
-                f"'{last_stage}' unless you see a clear morphological change. "
-                f"When uncertain, prefer the earlier stage."
-            ),
-        })
 
     content.append(
         {

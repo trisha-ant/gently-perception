@@ -20,7 +20,7 @@ import anthropic
 logger = logging.getLogger(__name__)
 
 # Default model for single-call perception functions
-DEFAULT_MODEL = "claude-opus-4-6"
+DEFAULT_MODEL = "claude-opus-4-7"
 
 # Developmental stages in order (C. elegans)
 STAGES = ["early", "bean", "comma", "1.5fold", "2fold", "pretzel", "hatching", "hatched"]
@@ -85,7 +85,6 @@ async def call_claude(
         client.messages.create,
         model=model,
         max_tokens=max_tokens,
-        temperature=temperature,
         system=system_blocks,
         messages=[{"role": "user", "content": content}],
     )
@@ -134,7 +133,6 @@ async def call_claude_conversation(
         client.messages.create,
         model=model,
         max_tokens=max_tokens,
-        temperature=temperature,
         system=system_blocks,
         messages=messages,
     )
