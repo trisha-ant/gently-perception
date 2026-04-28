@@ -20,6 +20,7 @@ Usage:
 
 import argparse
 import asyncio
+import inspect
 import json
 import logging
 import sys
@@ -95,6 +96,17 @@ def make_prediction_dict(output, timepoint, ground_truth_stage) -> dict:
     }
 
 
+_OPTIONAL_PERCEIVE_KWARGS = ("midplane_b64", "zslices_b64")
+
+
+def _accepted_optional_kwargs(perceive_fn) -> set[str]:
+    """Subset of _OPTIONAL_PERCEIVE_KWARGS that perceive_fn's signature accepts."""
+    sig = inspect.signature(perceive_fn)
+    if any(p.kind is p.VAR_KEYWORD for p in sig.parameters.values()):
+        return set(_OPTIONAL_PERCEIVE_KWARGS)
+    return {k for k in _OPTIONAL_PERCEIVE_KWARGS if k in sig.parameters}
+
+
 async def run_variant(variant_name, perceive_fn, testset, references, max_timepoints,
                       target_stages=None):
     """Run a single variant. Returns accuracy and full report dict.
@@ -109,6 +121,7 @@ async def run_variant(variant_name, perceive_fn, testset, references, max_timepo
     started_at = datetime.now()
     all_predictions = []
     embryo_results = []
+    extra_kwargs = _accepted_optional_kwargs(perceive_fn)
 
     for embryo_id, tp_iter in testset.iter_all():
         logger.info(f"[{variant_name}] Starting {embryo_id}")
@@ -135,6 +148,7 @@ async def run_variant(variant_name, perceive_fn, testset, references, max_timepo
                     references=references,
                     history=history,
                     timepoint=tc.timepoint,
+                    **{k: getattr(tc, k) for k in extra_kwargs},
                 )
             except Exception as e:
                 logger.error(f"[{variant_name}/{embryo_id}] T{tc.timepoint} error: {e}")

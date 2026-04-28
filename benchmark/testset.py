@@ -41,6 +41,8 @@ class TestCase:
     image_b64: str  # Combined view (for backward compatibility)
     top_image_b64: Optional[str]  # TOP view only
     side_image_b64: Optional[str]  # SIDE view only
+    midplane_b64: Optional[str]  # Single XY slice at z=Z//2 (no projection)
+    zslices_b64: Optional[list[str]]  # XY slices at _ZSLICE_FRACTIONS of Z
     volume: Optional[np.ndarray]
     ground_truth_stage: Optional[str]
 
@@ -215,6 +217,57 @@ def _create_three_view_image(volume: np.ndarray, max_dim: int = 1500) -> str:
     return base64.b64encode(buffer.getvalue()).decode("utf-8")
 
 
+def _create_slice_image(
+    volume: np.ndarray, z: Optional[int] = None, max_dim: int = 800
+) -> str:
+    """Render a single XY z-slice as base64 JPEG.
+
+    Unlike the projection helpers, this preserves depth information at one
+    plane: overlapping body segments stay separated rather than fusing.
+    Uses the same crop as the three-view projection so framing matches.
+
+    Parameters
+    ----------
+    volume : np.ndarray
+        3D volume array (Z, Y, X)
+    z : int, optional
+        Slice index. Defaults to the midplane (Z // 2).
+    max_dim : int
+        Maximum output dimension in pixels.
+    """
+    _ensure_dependencies()
+
+    if z is None:
+        z = volume.shape[0] // 2
+    z = max(0, min(z, volume.shape[0] - 1))
+
+    bounds = _compute_crop_bounds(volume)
+    slice_img = volume[z, bounds[0]:bounds[1], bounds[2]:bounds[3]]
+    slice_norm = _normalize_image(slice_img)
+
+    pil_img = PIL_Image.fromarray(slice_norm)
+    if max(pil_img.size) > max_dim:
+        scale = max_dim / max(pil_img.size)
+        new_size = (int(pil_img.size[0] * scale), int(pil_img.size[1] * scale))
+        pil_img = pil_img.resize(new_size, PIL_Image.Resampling.LANCZOS)
+
+    buffer = io.BytesIO()
+    pil_img.save(buffer, format="JPEG", quality=90)
+    return base64.b64encode(buffer.getvalue()).decode("utf-8")
+
+
+_ZSLICE_FRACTIONS = (0.25, 0.40, 0.50, 0.60, 0.75)
+
+
+def _create_zslice_stack(volume: np.ndarray, max_dim: int = 800) -> list[str]:
+    """Render XY slices at fixed Z fractions as a list of base64 JPEGs."""
+    z_max = volume.shape[0]
+    return [
+        _create_slice_image(volume, z=int(round(f * (z_max - 1))), max_dim=max_dim)
+        for f in _ZSLICE_FRACTIONS
+    ]
+
+
 def _create_separate_view_images(volume: np.ndarray, max_dim: int = 1000) -> Tuple[str, str]:
     """Create separate TOP and SIDE view images from volume, return base64 tuple.
 
@@ -359,15 +412,13 @@ class OfflineTestset:
             volume = _load_volume(vol_path) if self.load_volumes else None
 
             # Create images
-            if volume is not None:
-                image_b64 = _create_three_view_image(volume)
-                top_b64, side_b64 = _create_separate_view_images(volume)
-            else:
-                # Load just for image if not loading full volumes
-                temp_vol = _load_volume(vol_path)
-                image_b64 = _create_three_view_image(temp_vol)
-                top_b64, side_b64 = _create_separate_view_images(temp_vol)
-                del temp_vol
+            vol = volume if volume is not None else _load_volume(vol_path)
+            image_b64 = _create_three_view_image(vol)
+            top_b64, side_b64 = _create_separate_view_images(vol)
+            midplane_b64 = _create_slice_image(vol)
+            zslices_b64 = _create_zslice_stack(vol)
+            if volume is None:
+                del vol
 
             # Get ground truth
             gt_stage = self.ground_truth.get_stage_at(embryo_id, timepoint)
@@ -378,6 +429,8 @@ class OfflineTestset:
                 image_b64=image_b64,
                 top_image_b64=top_b64,
                 side_image_b64=side_b64,
+                midplane_b64=midplane_b64,
+                zslices_b64=zslices_b64,
                 volume=volume,
                 ground_truth_stage=gt_stage,
             )
