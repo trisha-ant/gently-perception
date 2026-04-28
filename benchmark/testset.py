@@ -177,7 +177,7 @@ def _projection_three_view(
     return np.concatenate([top_row, h_sep, bottom_row], axis=0)
 
 
-def _create_three_view_image(volume: np.ndarray, max_dim: int = 2400) -> str:
+def _create_three_view_image(volume: np.ndarray, max_dim: int = 1500) -> str:
     """Create three-view orthogonal projection from volume, return base64.
 
     Uses the shared projection utility to generate:
