@@ -44,6 +44,8 @@ def get_functions() -> dict:
     from .zslice import perceive_zslice
     from .zslice_asym import perceive_zslice_asym
     from .zslice_multi import perceive_zslice_multi
+    from .fillpct import perceive_fillpct
+    from .pairwise import perceive_pairwise
 
     _FUNCTIONS = {
         "minimal": perceive_minimal,
@@ -64,5 +66,7 @@ def get_functions() -> dict:
         "zslice": perceive_zslice,
         "zslice_asym": perceive_zslice_asym,
         "zslice_multi": perceive_zslice_multi,
+        "fillpct": perceive_fillpct,
+        "pairwise": perceive_pairwise,
     }
     return _FUNCTIONS
