@@ -47,6 +47,7 @@ def get_functions() -> dict:
     from .fillpct import perceive_fillpct
     from .pairwise import perceive_pairwise
     from .hybrid_fillpct import perceive_hybrid_fillpct
+    from .multimeasure import perceive_multimeasure
 
     _FUNCTIONS = {
         "minimal": perceive_minimal,
@@ -70,5 +71,6 @@ def get_functions() -> dict:
         "fillpct": perceive_fillpct,
         "pairwise": perceive_pairwise,
         "hybrid_fillpct": perceive_hybrid_fillpct,
+        "multimeasure": perceive_multimeasure,
     }
     return _FUNCTIONS
