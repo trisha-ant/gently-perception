@@ -53,6 +53,8 @@ def get_functions() -> dict:
     from .mm_v3 import perceive_mm_v3
     from .vote3_mm import perceive_vote3_mm
     from .sepview_mm import perceive_sepview_mm
+    from .mm_v4 import perceive_mm_v4
+    from .vote3_mm_v4 import perceive_vote3_mm_v4
 
     _FUNCTIONS = {
         "minimal": perceive_minimal,
@@ -82,5 +84,7 @@ def get_functions() -> dict:
         "mm_v3": perceive_mm_v3,
         "vote3_mm": perceive_vote3_mm,
         "sepview_mm": perceive_sepview_mm,
+        "mm_v4": perceive_mm_v4,
+        "vote3_mm_v4": perceive_vote3_mm_v4,
     }
     return _FUNCTIONS
