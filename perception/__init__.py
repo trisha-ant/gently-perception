@@ -48,6 +48,11 @@ def get_functions() -> dict:
     from .pairwise import perceive_pairwise
     from .hybrid_fillpct import perceive_hybrid_fillpct
     from .multimeasure import perceive_multimeasure
+    from .nohist_mm import perceive_nohist_mm
+    from .mm_v2 import perceive_mm_v2
+    from .mm_v3 import perceive_mm_v3
+    from .vote3_mm import perceive_vote3_mm
+    from .sepview_mm import perceive_sepview_mm
 
     _FUNCTIONS = {
         "minimal": perceive_minimal,
@@ -72,5 +77,10 @@ def get_functions() -> dict:
         "pairwise": perceive_pairwise,
         "hybrid_fillpct": perceive_hybrid_fillpct,
         "multimeasure": perceive_multimeasure,
+        "nohist_mm": perceive_nohist_mm,
+        "mm_v2": perceive_mm_v2,
+        "mm_v3": perceive_mm_v3,
+        "vote3_mm": perceive_vote3_mm,
+        "sepview_mm": perceive_sepview_mm,
     }
     return _FUNCTIONS
