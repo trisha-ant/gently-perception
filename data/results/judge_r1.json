@@ -1,0 +1,218 @@
+{
+  "n": 233,
+  "agree_n": 181,
+  "agree_ok": 165,
+  "disagree_n": 52,
+  "disagree_ok": 45,
+  "ensemble_acc": 90.12875536480686,
+  "judge_results": {
+    "embryo_1_83": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows two clear parallel body segments with a dark gap between them, forming a classic hairpin shape. There are only two passes visible, not the three or more overlapping coils characteristic of pretzel stage. The eggshell is not densely filled - there is still visible dark space. This is consistent with the previous 2fold observations at T80-T82."
+    },
+    "embryo_1_81": {
+      "stage": "2fold",
+      "reasoning": "The XY view clearly shows two parallel body segments with a bend between them, and there is still noticeable dark space at the poles of the eggshell. The fill is moderate (~60-65%), not densely packed as expected for pretzel. No clear third coil is visible. The prior timepoints (T78-T80) were all 2fold, making a sudden jump to pretzel unlikely. This is consistent with 2fold stage."
+    },
+    "embryo_1_80": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows two parallel body segments in a hairpin configuration with significant dark space remaining in the eggshell - not the densely filled, multi-coiled appearance of pretzel. There is no clear evidence of a third fold or multiple overlapping coils. Given the temporal continuity (T77-T79 all 2fold) and the moderate fill level, this is still 2fold."
+    },
+    "embryo_1_56": {
+      "stage": "comma",
+      "reasoning": "The XY view shows a compact, bilobed structure without clear elongation or folding. There are no parallel body segments visible, no J-shape, and no significant dark space in the eggshell indicating an elongated folded body. The morphology still matches the comma reference with two lobes (head/tail regions) rather than showing the elongated folded body characteristic of 1.5fold stage."
+    },
+    "embryo_1_86": {
+      "stage": "2fold",
+      "reasoning": "The embryo shows a moderately filled eggshell with two parallel body segments visible in the YZ view (top-right), consistent with a 2fold hairpin configuration. The fill is not dense enough to be pretzel - there are still visible dark regions and the pattern shows two layers rather than three or more overlapping coils. Consistent with the temporal progression from T83-T85."
+    },
+    "embryo_1_85": {
+      "stage": "2fold",
+      "reasoning": "The XY view clearly shows two parallel body segments (upper and lower) connected by a bend, forming the characteristic hairpin/U-shape of 2fold. There is still visible dark space between and around the segments, and the pattern is not yet densely tangled with multiple overlapping coils as required for pretzel. The YZ view shows a moderately filled cross-section, not the dense fill seen in pretzel examples. Consistent with the 2fold trajectory from T82-T84."
+    },
+    "embryo_1_82": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows two overlapping lobes/segments consistent with a folded hairpin, but not the dense multi-coil pattern seen in the reference pretzel. The XZ view shows moderate filling with visible gaps/shadows, not the densely packed multi-layer appearance of pretzel. Given the continuity from T79-T81 being 2fold and the pattern still showing distinguishable two-segment structure rather than three or more overlapping coils, this is still 2fold."
+    },
+    "embryo_1_84": {
+      "stage": "2fold",
+      "reasoning": "XY view shows an elongated body with visible curvature but only two main parallel segments, not the multiple overlapping coils characteristic of pretzel. There is still noticeable dark space within the eggshell, and the fill pattern is not as dense/tangled as the pretzel reference. Consistent with the trajectory from T81-T83 (2fold)."
+    },
+    "embryo_1_87": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows two parallel body segments with a clear hairpin/U-shape morphology. The eggshell is not yet densely packed - there's still visible space and the body shows ~2 parallel segments rather than the 3+ overlapping coils characteristic of pretzel. The XZ view shows layered segments but not the dense tangled pattern of pretzel. This is consistent with the previous T84-T86 2fold observations and matches the 2fold reference more than pretzel."
+    },
+    "embryo_1_88": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows two parallel body segments forming a hairpin shape with clear dark space at the right end of the eggshell, indicating moderate fill rather than dense packing. The previous three timepoints were all 2fold, and this image doesn't show the dense, complex multi-coil tangled pattern characteristic of pretzel stage. The XZ view shows layered structure but with only 2 main passes visible, consistent with 2fold morphology."
+    },
+    "embryo_2_46": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows an elongated body with a visible constriction/folding pattern, and the embryo is clearly more extended than the comma reference. The shape closely matches the 1.5fold reference with elongation along the eggshell and the beginning of folding. Given T45 was already classified as 1.5fold, T46 continues this progression."
+    },
+    "embryo_2_45": {
+      "stage": "comma",
+      "reasoning": "The XY view shows an elongated body with a mild constriction but no clear fold-back or parallel body segments visible. The shape still retains comma-stage characteristics with an asymmetric two-lobed appearance. The XZ view shows relatively uniform filling without the distinct folded morphology expected at 1.5fold. Given the previous frames (T42-T44) were all comma and morphology hasn't decisively transitioned, this is still comma stage."
+    },
+    "embryo_2_78": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows a clear hairpin/U-shape with two parallel body segments separated by a distinct dark gap in the middle \u2014 the hallmark of 2fold. There is still noticeable dark space within the eggshell, and I don't see evidence of three or more overlapping coils that would indicate pretzel. This is consistent with the progression from T75-T77 (all 2fold)."
+    },
+    "embryo_2_60": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows a curved elongated body, but there isn't a clear hairpin/U-shape with two distinct parallel body segments as would be expected in 2fold. Significant dark space remains in the eggshell, and the overall fill level matches the 1.5fold reference better. Given the continuity with the previous three timepoints (all 1.5fold) and the absence of a clear hairpin configuration, this is still 1.5fold."
+    },
+    "embryo_2_80": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows two parallel body segments with visible dark space at the top of the eggshell and around the edges - the eggshell is not densely filled as would be expected for pretzel. The pattern shows a clear hairpin/U-shape without the multiple overlapping coils characteristic of pretzel stage. This is consistent with the previous 2fold observations at T77-T79."
+    },
+    "embryo_2_81": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows a relatively simple elongated shape with visible dark space at the ends of the eggshell, not the dense filling characteristic of pretzel. The structure appears to have two parallel segments rather than multiple overlapping coils. Eggshell is not densely packed - there's significant dark space visible. Consistent with the 2fold pattern seen in previous timepoints."
+    },
+    "embryo_2_79": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows a clear hairpin/U-shape with two parallel body segments and visible dark space in the eggshell (approximately 65-70% fill). There's no evidence of a third coil or the densely packed, complex tangled pattern characteristic of pretzel stage. The eggshell still has clear dark regions, especially visible at the edges. This is consistent with the previous frames (T76-T78 all 2fold) and stages change slowly."
+    },
+    "embryo_3_41": {
+      "stage": "1.5fold",
+      "reasoning": "The embryo shows a clearly elongated body filling most of the eggshell length, with a single extended band visible in the XY view - more elongated than the comma reference (which shows two distinct lobes/regions). Given the temporal progression (T39, T40 both 1.5fold), and the elongated uniform appearance consistent with the 1.5fold references, this is 1.5fold."
+    },
+    "embryo_3_40": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows an elongated body with a visible curved dark line running through the middle, indicating the body has begun folding back on itself (J-shape). The embryo is more elongated than the comma references and fills more of the eggshell interior. Given T39 was already classified as 1.5fold, T40 continuing in this stage is consistent with developmental progression."
+    },
+    "embryo_3_43": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows an elongated embryo with a single visible bend/fold, and the eggshell is not densely filled - there is still dark space visible at the ends. The pattern closely matches the 1.5fold reference images rather than showing clear parallel body segments of a hairpin (2fold). Given the progression from T40-T42 all classified as 1.5fold, and no dramatic morphological change is evident, this is consistent with continued 1.5fold stage."
+    },
+    "embryo_3_44": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows an elongated embryo without clear evidence of two distinct parallel body segments that would indicate a completed hairpin/U-shape. The shape closely matches the 1.5fold reference with a single elongated mass and some dark space visible in the eggshell. Given the three preceding frames were all 1.5fold and the morphology hasn't dramatically changed, this remains 1.5fold."
+    },
+    "embryo_3_45": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows an elongated embryo without clear parallel body segments that would indicate a hairpin 2fold shape. The morphology closely matches the 1.5fold reference (elongated with granular nuclear pattern, no tight U-shape visible). Previous frames T42-T44 were all 1.5fold and this image shows no dramatic progression to suggest the tail has reached the head. Eggshell still has some dark space visible."
+    },
+    "embryo_3_42": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows an elongated oval embryo with a subtle diagonal seam, but the overall morphology (fill density, shape, and texture) closely resembles the 1.5fold reference. There is still visible dark space in the eggshell corners and the body does not show the clearly defined two parallel segments characteristic of 2fold. Given T39-T41 were all 1.5fold and this frame shows no dramatic morphological change, continuity supports 1.5fold."
+    },
+    "embryo_3_46": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows an elongated embryo with a single bend creating a two-lobed appearance, but not the clear hairpin/U-shape with two parallel body segments characteristic of 2fold. There is still significant dark space in the eggshell (especially at the ends), and the fill is not dense enough for 2fold. This is consistent with the 1.5fold reference and the progression from T43-T45. Expert B's claim of 'prior 2fold observations' contradicts the given T43-T45 labels."
+    },
+    "embryo_3_48": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows an elongated embryo with relatively uniform nuclear distribution and no clear parallel body segments or hairpin bend. There's still noticeable dark space in the eggshell and the overall appearance matches the 1.5fold reference (similar to T47). Following the temporal continuity with T45-T47 all being 1.5fold, and the lack of a clear two-layered U-shape, this is 1.5fold."
+    },
+    "embryo_3_49": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows a bilobed shape with a clear dark indentation/gap between two portions of the body, but the two parallel body segments characteristic of a true 2fold hairpin are not yet clearly established. There is still significant dark space in the eggshell and the fold appears incomplete - more consistent with 1.5fold. Additionally, the previous observations at T46-T48 were all 1.5fold, and this image shows similar morphology."
+    },
+    "embryo_3_47": {
+      "stage": "1.5fold",
+      "reasoning": "The embryo shows a single visible curved fold across the body (visible as a diagonal band in XY), but the body segments don't yet appear as two clearly parallel lanes characteristic of 2fold. The XZ view shows a single layered mass rather than clearly doubled parallel structure. This morphology closely matches the 1.5fold reference (T47) and is consistent with the preceding frames (T44-T46) all being classified as 1.5fold."
+    },
+    "embryo_3_50": {
+      "stage": "1.5fold",
+      "reasoning": "The XY view shows an elongated embryo with slight curvature but no clear hairpin/U-shape with two parallel body segments. Significant dark space remains in the eggshell at both ends, and the body does not appear densely packed. The bi-lobed appearance in XZ is consistent with the 1.5fold reference. Given T47-T49 were all 1.5fold and there's no dramatic morphological change, this is still 1.5fold."
+    },
+    "embryo_3_53": {
+      "stage": "2fold",
+      "reasoning": "The XY view clearly shows two parallel body segments with a dark gap/groove between them, indicating the tail has folded back and reached toward the head (hairpin shape). This matches 2fold morphology. Combined with temporal continuity (T50-T52 all 2fold), this is consistent with 2fold stage."
+    },
+    "embryo_3_51": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows a clear hairpin/U-shape with a distinct dark notch in the upper left where the fold occurs, and two parallel body segments visible. The tail appears to have curved back toward the head. This is consistent with 2fold, continuing the progression from T50. The embryo is moderately filled but not densely tangled as in pretzel."
+    },
+    "embryo_3_54": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows two overlapping lobes indicating the tail has folded back and reached near the head region, consistent with a hairpin/2fold shape. The XZ view shows layered brightness suggesting two parallel body passes. Given prior timepoints T51-T53 were classified as 2fold and embryos don't regress developmentally, this is consistent with continued 2fold stage."
+    },
+    "embryo_3_52": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows a clear hairpin shape with two parallel body segments visible, and there's a dark curve/gap in the middle-right indicating the tail has folded back alongside the head. The eggshell is moderately filled (~70%), consistent with 2fold rather than 1.5fold which would have more empty space. Temporal continuity with T50 and T51 (both 2fold) also supports this classification - regression to 1.5fold would be biologically unlikely."
+    },
+    "embryo_3_55": {
+      "stage": "2fold",
+      "reasoning": "The XY view clearly shows two parallel body segments with a visible dark gap between them forming a U/hairpin shape - the tail has reached back toward the head. The fill level is moderate (~65%) without the complex multi-coil tangling of pretzel. This is consistent with the previous 2fold observations at T52-T54."
+    },
+    "embryo_3_56": {
+      "stage": "2fold",
+      "reasoning": "The XY view clearly shows two parallel body segments with a dark gap/space between them in the middle of the embryo, forming a hairpin/U-shape configuration. This indicates the tail has folded back and reached toward the head - characteristic of 2fold. The 1.5fold reference shows a more uniformly filled elongated shape without the clear two-parallel-segment appearance visible here. Consistent with the T53-T55 2fold observations."
+    },
+    "embryo_3_58": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows a clear elongated embryo with a visible darker gap in the middle suggesting two parallel body segments folded back on each other. Developmentally, preceding frames T55-T57 were already classified as 2fold, and embryos progress forward (not backward) in development. The embryo fill and layered pattern match the 2fold reference better than 1.5fold."
+    },
+    "embryo_3_59": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows two clearly distinct lobes with a constriction between them, indicating the body has folded with the tail reaching back toward the head. This matches the 2fold pattern rather than the J-shape of 1.5fold. Previous frames T56-T58 were all 2fold, supporting temporal continuity. The eggshell is moderately filled with visible dark space, consistent with 2fold rather than the densely filled pretzel stage."
+    },
+    "embryo_3_57": {
+      "stage": "2fold",
+      "reasoning": "The XY view shows an elongated embryo with two parallel body segments visible, indicating the tail has folded back toward the head. The embryo fill is moderate (not sparse like 1.5fold, not densely coiled like pretzel). Given the temporal consistency with T54-T56 all being 2fold and the clear hairpin morphology visible, this is 2fold."
+    },
+    "embryo_3_75": {
+      "stage": "pretzel",
+      "reasoning": "The eggshell is densely filled with nuclei throughout, with minimal dark empty space. The XY view shows a complex overlapping pattern with multiple body segments visible, and the XZ view shows multiple layers of overlapping tissue characteristic of multiple coils. This matches the pretzel reference examples, and is consistent with the prior timepoints T72-T74 all being pretzel."
+    },
+    "embryo_3_76": {
+      "stage": "pretzel",
+      "reasoning": "The eggshell is densely filled with overlapping signal across all three views. The XZ view shows multiple layered body segments with complex tangled pattern characteristic of pretzel. The XY view shows dense, complex structure rather than the clean two-parallel-segment hairpin of 2fold. Consistent with the prior three timepoints classified as pretzel."
+    },
+    "embryo_3_74": {
+      "stage": "pretzel",
+      "reasoning": "The XY view shows multiple overlapping body segments with a complex tangled pattern, and the eggshell is densely filled with signal. The XZ view shows the characteristic multi-layered appearance of a coiled embryo. Combined with the prior context (T71-T73 all pretzel), this is consistent with continued pretzel stage rather than regression to 2fold."
+    },
+    "embryo_3_73": {
+      "stage": "pretzel",
+      "reasoning": "The YZ view shows multiple stacked layers (3+ body segments visible as distinct bright regions), indicating complex folding beyond simple 2fold hairpin. The XZ view also shows layered, overlapping body segments consistent with pretzel morphology. Additionally, stages don't regress\u2014three prior timepoints (T70-T72) were already classified as pretzel, and the morphology here is consistent with continued pretzel stage."
+    },
+    "embryo_3_72": {
+      "stage": "pretzel",
+      "reasoning": "Given the temporal context (T69-T71 all classified as pretzel), development cannot regress. The eggshell is densely filled throughout with complex overlapping signal visible in both XY and XZ views. While there is an apparent dark horizontal gap in the XY view that could suggest a 2fold hairpin, the XZ bottom view shows dense multi-layered signal filling the entire eggshell, and the overall complexity/density matches the pretzel reference rather than the cleaner two-segment 2fold pattern."
+    },
+    "embryo_3_80": {
+      "stage": "pretzel",
+      "reasoning": "The XY view shows a densely filled eggshell with multiple overlapping body segments and what appears to be more than two parallel passes of the body. The XZ (bottom-left) view shows complex layered filling throughout the entire eggshell height, consistent with multiple coils rather than a simple hairpin. The pattern is tangled and complex, matching the pretzel reference. Additionally, the preceding frames (T77-T79) were all classified as pretzel, making regression to 2fold biologically implausible."
+    },
+    "embryo_3_78": {
+      "stage": "pretzel",
+      "reasoning": "The eggshell is densely filled with multiple overlapping body segments visible in the XY view - I can discern at least 3 parallel segments with complex tangled pattern. The XZ view shows dense filling throughout the eggshell with multiple overlapping coils. This matches the pretzel reference pattern better than a simple 2fold hairpin, and is consistent with the three previous timepoints (T75-T77) being pretzel."
+    },
+    "embryo_3_77": {
+      "stage": "pretzel",
+      "reasoning": "Prior three timepoints (T74-76) were pretzel, and embryos don't regress. The XY view shows a densely filled eggshell with the body wrapping around, and the XZ view shows multiple layered/overlapping bands consistent with 3+ coils. The apparent dark center in XY is the coil loop interior typical of pretzel, not a 2fold gap."
+    },
+    "embryo_3_79": {
+      "stage": "pretzel",
+      "reasoning": "The XY view shows a closed ring/loop pattern with nuclei wrapping around a central dark region, indicating the body is coiled with multiple folds rather than a simple U-shape. The eggshell is densely filled, and the YZ view shows a ring-like cross-section consistent with multiple body passes. Combined with the temporal context (T76-T78 all pretzel), this is clearly pretzel stage, not a 2fold hairpin which would show an open U with only two parallel segments."
+    },
+    "embryo_3_81": {
+      "stage": "pretzel",
+      "reasoning": "The eggshell is densely filled with the embryo body occupying most of the interior with minimal dark space. The XY view shows multiple overlapping bands/coils creating a complex tangled pattern rather than a clean two-parallel-segment hairpin. Given the previous three frames (T78-T80) were all pretzel and the pattern is consistent with that dense, multi-coil morphology, this is pretzel."
+    },
+    "embryo_3_83": {
+      "stage": "pretzel",
+      "reasoning": "The eggshell is densely filled with overlapping signal, and the XY view shows complex coiling with multiple body segments crossing rather than a clean two-parallel hairpin. The XZ view shows densely packed tissue filling nearly the entire eggshell width with little dark space. This is consistent with the prior pretzel classifications at T80-T82 and matches the pretzel reference pattern."
+    },
+    "embryo_3_109": {
+      "stage": "pretzel",
+      "reasoning": "The XY view shows a tangled, coiled morphology with multiple overlapping body segments crossing each other within an intact eggshell boundary. There's no clear indication of the worm emerging from the shell - the shape is contained within an ovoid eggshell outline visible in the YZ and XZ views. This matches the pretzel stage description of multiple overlapping coils, and is consistent with the previous three timepoints being pretzel."
+    },
+    "embryo_3_82": {
+      "stage": "pretzel",
+      "reasoning": "The eggshell is densely filled with signal, and the XY view shows a pattern very similar to the pretzel reference (which also displays a central darker region from the coiled body). The XZ view shows dense multi-layered fluorescence consistent with multiple overlapping body coils. Additionally, embryos do not regress from pretzel back to 2fold, and T79-T81 were all pretzel, making continuity with pretzel the correct call."
+    },
+    "embryo_3_84": {
+      "stage": "pretzel",
+      "reasoning": "The XY view shows dense filling of the eggshell with complex folded structure - while there's a U-shape visible, the body appears to have multiple overlapping segments with the tail curving back along the dorsal side, creating the characteristic pretzel pattern seen in the T82 reference. The XZ view shows dense, complex packing consistent with multiple coils. Combined with the temporal context (T81-T83 all pretzel), this is continuous pretzel stage rather than a regression to 2fold."
+    },
+    "embryo_3_85": {
+      "stage": null,
+      "reasoning": ""
+    }
+  }
+}
