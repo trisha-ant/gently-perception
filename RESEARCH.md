@@ -122,31 +122,56 @@ committing as a post-processing option but not the main path.
 
 ## Experimental results
 
-### Judge ensemble: 90.6 ± 1.3% (N=3 pairs) ✅
+### Judge ensemble — ablation found a GT leak; corrected result below
 
-Implemented as a post-processing step on archived hybrid@4.6 × vote3_mm@4.7
-runs. The judge (opus-4-7, effort=xhigh, adaptive thinking) gets the image,
-history, and both experts' predictions + reasoning, and must pick one.
-Falls back to "more advanced" on parse failure.
+Initial test reported 90.6 ± 1.3% (N=3 pairs). **An ablation revealed this
+was inflated by a ground-truth leak:** the judge's history context was
+built from GT stages for all frames, but the real harness uses the model's
+own *predicted* stages for scored frames. GT and predicted history differ
+on 56% of disagreement frames — exactly where the judge operates.
+
+**Ablation (pair 1, 52 disagreement frames):**
+
+| Config | judge acc on disagree | ensemble |
+|---|---|---|
+| GT history + reasoning + refs (leaky) | 90.4% | 91.0% |
+| No history | 50.0% | 82.0% |
+| GT history, no reasoning | 84.6% | 89.7% |
+| GT history, no references | 80.8% | 88.8% |
+| **Predicted (hybrid's) history** | 63.5% | 85.0% |
+| "More advanced" heuristic (no judge) | 61.5% | 84.5% |
+
+History is the dominant signal (B: no history = coin flip). GT history
+gives the judge a ~27pp boost it wouldn't have in production. Reasoning
+helps +5.8pp and references +9.6pp — both legitimate, non-leaky.
+
+**Corrected (sequential, honest history) judge ensemble: 83.3 ± 0.7%**
+
+The production-realistic configuration runs the judge sequentially per
+embryo, feeding it the *ensemble's own* predicted history built
+frame-by-frame. N=3 pairs:
 
 | pair | hybrid | vote3_mm | judge on disagree | ensemble |
 |---|---|---|---|---|
-| 1 | 82.8 | 81.1 | 88.5 | 90.6 |
-| 2 | 83.3 | 80.3 | 81.8 | 89.3 |
-| 3 | 79.0 | 81.1 | 92.3 | 91.8 |
-| **mean ± std** | 81.7 ± 2.4 | 80.8 ± 0.5 | **87.5 ± 5.3** | **90.6 ± 1.3** |
+| 1 | 82.8 | 81.1 | 51.9 | 82.4 |
+| 2 | 83.3 | 80.3 | 58.2 | 83.7 |
+| 3 | 79.0 | 81.1 | 63.1 | 83.7 |
+| **mean ± std** | 81.7 ± 2.4 | 80.8 ± 0.5 | **57.7 ± 5.6** | **83.3 ± 0.7** |
 
-Per-stage (pair 1): 1.5fold 65.9, 2fold 94.9, pretzel 96.2. **The first
-harness change that lifts all three stages.** 1.5fold matches hybrid's
-best, 2fold near vote3_mm's best, pretzel beats both.
+Per-stage: 1.5fold 56.9 ± 7.5, 2fold 95.5 ± 2.0, pretzel 86.0 ± 0.4.
 
-vs hybrid@4.6: +8.9pp, t≈5.6 — highly significant.
-vs oracle ceiling (93.6): captures ~76% of the available headroom.
+**+1.6pp vs hybrid, t≈1.1 — not significant.** The judge is only 57.7%
+accurate on disagreements (vs 90.4% with GT history). The ensemble's gain
+comes almost entirely from agreement filtering, not from the judge.
 
-Cost: 1 (hybrid) + 3 (vote3_mm) + ~0.22 (judge on ~22% of frames) ≈ 4.2
-calls/frame. A cheaper variant pairing hybrid + multimeasure (1 call) gives
-the same oracle ceiling (93.7%) and should work at ~2.2 calls/frame — not
-yet tested.
+The cascade problem applies to the judge too: if the judge errs at T70,
+that corrupted history feeds the judge at T71 and beyond. The sequential
+result (83.3%) is *lower* than the parallel proxy with hybrid-only history
+(85.0%) because the ensemble's own history becomes more corrupted as
+judge errors accumulate. This is the same dynamic the classifiers have.
+
+The one clear win: variance drops from ±2.4 to ±0.7. The ensemble gives a
+tighter estimate, useful for benchmark comparisons, but not a higher one.
 
 ### Transition refinement: 76.8% (−6.0pp) ❌
 
@@ -163,27 +188,54 @@ systematic "pick later" bias in ordered sequences.
 
 ## Conclusion and recommendation
 
-**The judge ensemble is the best harness found: 90.6 ± 1.3%, +8.9pp over
-the previous best.** It works because hybrid@4.6 and vote3_mm@4.7 are
-complementary (different strengths per stage), agreement is high-precision
-(91.2%), and a cold judge with both arguments correctly arbitrates 87.5%
-of disagreements.
+**The judge ensemble does not meaningfully improve accuracy once the GT
+leak is removed: 83.3 ± 0.7 vs hybrid@4.6's 81.7 ± 2.4, t≈1.1, not
+significant.** The 90.6% headline was an artifact of the GT history leak.
 
-Production notes:
-- Cost is ~4.2× a single classifier. The cheaper hybrid+multimeasure
-  pairing (~2.2×) is worth testing before deployment.
-- The judge prompt sees no ground truth; it receives only the image,
-  history, and the two competing predictions + reasoning.
-- Remaining gap to 93.6% oracle: the ~13% of disagreements the judge gets
-  wrong, plus the ~9% of agreements that are both-wrong.
+The oracle ceiling of 93.6% is real, but it turns out to require an
+information source the production system doesn't have. The judge with GT
+history reaches it because GT history disambiguates the two candidates
+perfectly (stages are monotone, so knowing the recent history constrains
+the current stage tightly). Without it, the judge is barely better than a
+coin flip (57.7%).
 
-Further directions:
-- Test hybrid + multimeasure pairing (half the cost)
-- Test a 2-of-3 committee (hybrid@4.6, multimeasure@4.7, a third variant)
-  with majority vote, using the judge only on 3-way splits
-- The remaining errors are almost all at stage boundaries — a monotone
-  smoothing pass on the ensemble output might recover another 1-2pp
+**What the investigation actually established:**
+
+1. The errors are transition-timing blocks, not per-frame noise.
+2. hybrid@4.6 and vote3_mm@4.7 are highly complementary (oracle 93.6%).
+3. Reaching that ceiling requires history accuracy near 100%, which is
+   circular — the history IS the ensemble's output.
+4. The judge, reasoning, and references all contribute — but only when the
+   history is already accurate. They don't help the judge overcome a
+   corrupted history.
+5. The ensemble's one real benefit is variance reduction (±0.7 vs ±2.4).
+
+**Lessons about evaluation methodology:**
+- **Always ablate new harnesses before reporting.** The GT history leak was
+  a single line of code (`tc.ground_truth_stage` vs model prediction) and
+  inflated the result by ~6pp — enough to turn a null result into a
+  "breakthrough."
+- History/temporal-context signals are particularly leak-prone because the
+  harness uses GT for skipped frames (by design) and the line between
+  "legitimate lead-in" and "oracle leakage" is subtle.
+- Ablation also quantified the contribution of reasoning (+5.8pp) and
+  references (+9.6pp) to the judge's accuracy, conditional on GT history.
+
+**Recommendation: stick with `hybrid` on opus-4-6 (what's on master).**
+It's 81.7 ± 2.4 at 1× cost. Nothing tested in this investigation or the
+earlier experiment loops defensibly beats it. The judge ensemble ties it
+at 4.2× cost.
+
+Further directions if pursuing this more:
 - Restore embryo_4 (88 frames missing from all evals)
+- The true bottleneck is transition-timing. A harness that estimated
+  transition points directly rather than classifying per-frame could
+  theoretically do much better — but the transition-refinement experiment
+  (multi-frame window queries) failed (−6pp). A different approach is needed.
+- Cross-modal help: the GT-history result (90.6%) shows that if the
+  classifier had an oracle-quality temporal signal, it would nearly solve
+  the task. Is there an external temporal signal (wall-clock, imaging
+  metadata, embryo size) that correlates with GT transitions?
 
 ## Not pursuing
 
