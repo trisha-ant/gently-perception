@@ -173,6 +173,28 @@ judge errors accumulate. This is the same dynamic the classifiers have.
 The one clear win: variance drops from ±2.4 to ±0.7. The ensemble gives a
 tighter estimate, useful for benchmark comparisons, but not a higher one.
 
+### Timepoint-based routing (calibrated by coarse pass): 79.8–81.8%, ties or worse ❌
+
+Route each frame to the stage-appropriate model (hybrid for 1.5fold/pretzel
+regions, vote3 for 2fold region) based on which side of the coarse pass's
+*predicted transition timepoints* it falls on. Tested four coarse-pass
+sources, computed entirely from archived predictions (no API calls):
+
+| Coarse pass | router acc (N=3) | vs hybrid |
+|---|---|---|
+| multimeasure | 79.8 ± 3.8 | −1.9 |
+| hybrid's own | 81.8 ± 1.4 | +0.1 |
+| vote3's own | 78.5 ± 4.8 | −3.2 |
+| per-frame coarse stage | 79.8 ± 3.0 | −1.9 |
+| GT regions (LEAKY ceiling) | 89.1 ± 4.7 | +7.4 |
+
+The coarse pass's transition estimates are off by 7–14 frames — the same
+magnitude as the per-frame errors. Those mis-estimated frames get routed
+to the wrong model, and they're exactly the frames where the two models
+disagree. **The routing signal has the same root error as the thing it
+routes.** Even GT-perfect routing (89.1%) is below the per-frame oracle
+(93.6%) because single-model regions still have within-region errors.
+
 ### Transition refinement: 76.8% (−6.0pp) ❌
 
 Sent 8-frame windows around coarse transitions with "find the first frame
@@ -226,16 +248,23 @@ It's 81.7 ± 2.4 at 1× cost. Nothing tested in this investigation or the
 earlier experiment loops defensibly beats it. The judge ensemble ties it
 at 4.2× cost.
 
+**The structural bottleneck (what every failed approach has in common):**
+
+Judge ensemble, transition refinement, timepoint routing, and
+prediction-based routing (`hybrid_fillpct`) all fail for the same reason:
+the routing/arbitration/refinement signal is derived from the same noisy
+transition estimate that produces the errors. The system needs to know
+roughly which stage region a frame is in to pick the right model — but
+knowing the stage region IS the task. Breaking this circularity requires
+an external signal that correlates with developmental time:
+- Wall-clock since first cleavage (in imaging metadata)
+- Embryo body-length measurement (computable from images via classical CV)
+- A few manually-annotated anchor frames per embryo (~2 clicks/embryo)
+
 Further directions if pursuing this more:
-- Restore embryo_4 (88 frames missing from all evals)
-- The true bottleneck is transition-timing. A harness that estimated
-  transition points directly rather than classifying per-frame could
-  theoretically do much better — but the transition-refinement experiment
-  (multi-frame window queries) failed (−6pp). A different approach is needed.
-- Cross-modal help: the GT-history result (90.6%) shows that if the
-  classifier had an oracle-quality temporal signal, it would nearly solve
-  the task. Is there an external temporal signal (wall-clock, imaging
-  metadata, embryo size) that correlates with GT transitions?
+- **Restore embryo_4** (88 frames missing from all evals)
+- **Get more embryos** — 3 isn't enough to validate any routing strategy
+- **Test wall-clock as routing signal** — file timestamps (`embryo_X_YYYYMMDD_HHMMSS.tif`) give absolute time; if developmental rate is roughly constant per embryo, this is a non-circular transition-timing prior
 
 ## Not pursuing
 

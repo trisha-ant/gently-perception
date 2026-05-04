@@ -29,7 +29,26 @@ python run.py --variant hybrid --stages pretzel 2fold 1.5fold --force
 
 ## Results
 
-The best prompt experiment (hybrid) achieves **83.2%** exact accuracy on hard stages. See [experiments/prompt/README.md](experiments/prompt/README.md) for the full results table, variant descriptions, and key findings.
+`hybrid` on opus-4-6 (master config: temperature=0, no thinking) achieves **81.7 ± 2.4%** exact accuracy on hard stages (N=3 replicated, n=233 frames, embryos 1–3). See [experiments/prompt/README.md](experiments/prompt/README.md) for the per-variant table and [RESEARCH.md](RESEARCH.md) for the full investigation.
+
+### Key findings (April–May 2026 investigation)
+
+~50 configurations tested across z-slice subagents, opus-4.7 migration, prompt variants, ensembles, and routing. **Nothing defensibly beats `hybrid` on master.**
+
+| Config | Exact (N≥3) | Notes |
+|---|---|---|
+| **hybrid@4.6 (master)** | **81.7 ± 2.4** | best replicated; 1× cost |
+| sequential judge ensemble | 83.3 ± 0.7 | +1.6pp not significant; 4.2× cost |
+| vote3_mm@4.7 | 80.8 ± 0.5 | best 2fold (97.7%); 3× cost |
+| multimeasure@4.7 | 80.3 ± 4.8 | 1× cost |
+| fillpct@4.6 / @4.7 | 77.5 / 76.1 | 4.6 ≈ 4.7 head-to-head |
+
+**The bottleneck:** errors are contiguous 8–17-frame blocks at stage *transition boundaries*, not per-frame noise. Every routing/ensembling strategy tested (judge, transition-refinement, timepoint-based routing) fails the same way — the signal needed to route correctly *is* the transition timing, which is the thing being estimated. Breaking the ceiling (~93.6% oracle) requires a non-circular external signal: wall-clock developmental time, classical-CV body-length measurement, or sparse manual anchor frames.
+
+**Methodology lessons:**
+- Adaptive thinking adds ~5pp run-to-run variance on both 4.6 and 4.7. **Always run N≥3 and report mean±std.** Single-run results are not defensible.
+- **Ablate before reporting.** A one-line GT-history leak in the judge ensemble inflated a null result (83.3%) to a "breakthrough" (90.6%).
+- embryo_4's volumes are missing on disk (1 of ~190 .tif files). All recent evals are silently on n=233 (embryos 1–3) instead of n=321.
 
 ## Architecture
 
