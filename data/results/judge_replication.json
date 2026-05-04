@@ -1,0 +1,35 @@
+[
+  {
+    "n": 233,
+    "agree_n": 181,
+    "agree_ok": 165,
+    "disagree_n": 52,
+    "disagree_ok": 46,
+    "hyb_acc": 82.83261802575107,
+    "vote3_acc": 81.11587982832619,
+    "ensemble_acc": 90.55793991416309,
+    "judge_acc_on_disagree": 88.46153846153847
+  },
+  {
+    "n": 233,
+    "agree_n": 178,
+    "agree_ok": 163,
+    "disagree_n": 55,
+    "disagree_ok": 45,
+    "hyb_acc": 83.2618025751073,
+    "vote3_acc": 80.25751072961373,
+    "ensemble_acc": 89.27038626609442,
+    "judge_acc_on_disagree": 81.81818181818181
+  },
+  {
+    "n": 233,
+    "agree_n": 168,
+    "agree_ok": 154,
+    "disagree_n": 65,
+    "disagree_ok": 60,
+    "hyb_acc": 78.96995708154506,
+    "vote3_acc": 81.11587982832619,
+    "ensemble_acc": 91.84549356223177,
+    "judge_acc_on_disagree": 92.3076923076923
+  }
+]

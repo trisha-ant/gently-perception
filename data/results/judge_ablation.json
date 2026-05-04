@@ -1,0 +1,13 @@
+{
+  "n": 233,
+  "agree_ok": 165,
+  "disagree_n": 52,
+  "results": {
+    "A: GT-hist + reasoning + refs": 47,
+    "B: NO history": 26,
+    "C: GT-hist + NO reasoning + refs": 44,
+    "D: GT-hist + reasoning + NO refs": 42,
+    "F: PRED-hist + reasoning + refs": 33,
+    "E: heuristic more-advanced": 32
+  }
+}

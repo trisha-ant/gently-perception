@@ -44,6 +44,17 @@ def get_functions() -> dict:
     from .zslice import perceive_zslice
     from .zslice_asym import perceive_zslice_asym
     from .zslice_multi import perceive_zslice_multi
+    from .fillpct import perceive_fillpct
+    from .pairwise import perceive_pairwise
+    from .hybrid_fillpct import perceive_hybrid_fillpct
+    from .multimeasure import perceive_multimeasure
+    from .nohist_mm import perceive_nohist_mm
+    from .mm_v2 import perceive_mm_v2
+    from .mm_v3 import perceive_mm_v3
+    from .vote3_mm import perceive_vote3_mm
+    from .sepview_mm import perceive_sepview_mm
+    from .mm_v4 import perceive_mm_v4
+    from .vote3_mm_v4 import perceive_vote3_mm_v4
 
     _FUNCTIONS = {
         "minimal": perceive_minimal,
@@ -64,5 +75,16 @@ def get_functions() -> dict:
         "zslice": perceive_zslice,
         "zslice_asym": perceive_zslice_asym,
         "zslice_multi": perceive_zslice_multi,
+        "fillpct": perceive_fillpct,
+        "pairwise": perceive_pairwise,
+        "hybrid_fillpct": perceive_hybrid_fillpct,
+        "multimeasure": perceive_multimeasure,
+        "nohist_mm": perceive_nohist_mm,
+        "mm_v2": perceive_mm_v2,
+        "mm_v3": perceive_mm_v3,
+        "vote3_mm": perceive_vote3_mm,
+        "sepview_mm": perceive_sepview_mm,
+        "mm_v4": perceive_mm_v4,
+        "vote3_mm_v4": perceive_vote3_mm_v4,
     }
     return _FUNCTIONS

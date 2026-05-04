@@ -85,6 +85,8 @@ async def call_claude(
         client.messages.create,
         model=model,
         max_tokens=max_tokens,
+        thinking={"type": "adaptive"},
+        output_config={"effort": "xhigh"},
         system=system_blocks,
         messages=[{"role": "user", "content": content}],
     )

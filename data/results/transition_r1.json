@@ -1,0 +1,57 @@
+{
+  "coarse_acc": 82.83261802575107,
+  "refined_acc": 76.82403433476395,
+  "transitions": {
+    "embryo_1": [
+      [
+        62,
+        "comma",
+        "1.5fold"
+      ],
+      [
+        63,
+        "1.5fold",
+        "2fold"
+      ],
+      [
+        83,
+        "2fold",
+        "pretzel"
+      ]
+    ],
+    "embryo_2": [
+      [
+        66,
+        "1.5fold",
+        "2fold"
+      ],
+      [
+        78,
+        "2fold",
+        "pretzel"
+      ]
+    ],
+    "embryo_3": [
+      [
+        39,
+        "comma",
+        "1.5fold"
+      ],
+      [
+        60,
+        "1.5fold",
+        "2fold"
+      ],
+      [
+        78,
+        "2fold",
+        "pretzel"
+      ],
+      [
+        104,
+        "pretzel",
+        "hatching"
+      ]
+    ]
+  }
+}
