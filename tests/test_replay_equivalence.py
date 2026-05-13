@@ -14,7 +14,6 @@ Phase A is run).
 from __future__ import annotations
 
 import asyncio
-import json
 from pathlib import Path
 
 import pytest
@@ -39,62 +38,72 @@ def _recording_for(variant: str) -> Path | None:
     return matches[0] if matches else None
 
 
-def _legacy_result_for(variant: str) -> Path | None:
-    """The legacy run.py writes results/{variant}_{stages}.json. The recording
-    CLI invokes run_variant() but doesn't persist the result, so we may not
-    have this for the smoke run — fall back to recording-only check."""
-    suffix = "_" + "+".join(sorted(STAGES))
-    p = RESULTS / f"{variant}{suffix}.json"
-    return p if p.exists() else None
-
-
 @pytest.mark.slow
 @pytest.mark.parametrize("variant", ["hybrid"])
 def test_new_harness_replays_without_cache_miss(variant):
-    """Load-bearing assertion: every request the new loop emits was emitted by
-    the old loop. A CacheMiss means the harnesses diverged."""
+    """Two assertions, both against the SAME recording:
+
+    1. (request-level) The new loop never raises CacheMiss → every request it
+       emits was emitted by the old loop.
+    2. (prediction-level) Replaying the recording through the OLD loop and the
+       NEW loop yields identical per-frame predictions.
+    """
     rec_path = _recording_for(variant)
     if rec_path is None:
         pytest.skip(f"no recording for {variant} (run record_replay --record first)")
 
     from benchmark.ground_truth import GroundTruth
     from benchmark.testset import OfflineTestset
+    from gently_perception.render import CachedFrameSource
+    from perception import get_functions
+    import run as legacy_run
 
     rec = Recorder(rec_path)
-    perceive = discover_variants()[variant]
     gt = GroundTruth.from_json(REPO_ROOT / "data" / "ground_truth" / "59799c78.json")
-    src = OfflineTestset(session_path=REPO_ROOT / "data" / "volumes",
-                         ground_truth=gt, load_volumes=True)
+    src = CachedFrameSource(
+        OfflineTestset(session_path=REPO_ROOT / "data" / "volumes",
+                       ground_truth=gt, load_volumes=True),
+        cache_dir=REPO_ROOT / "data" / "cache" / "frames",
+    )
+    refs = _refs()
+
+    # ---- OLD harness replay ----------------------------------------------- #
+    legacy_fn = get_functions()[variant]
+    with install_replay(rec):
+        _, old_report = asyncio.run(legacy_run.run_variant(
+            variant_name=variant, perceive_fn=legacy_fn, testset=src,
+            references=refs, max_timepoints=None, target_stages=set(STAGES),
+        ))
+
+    # ---- NEW harness replay ----------------------------------------------- #
+    new_fn = discover_variants()[variant]
     cfg = RunConfig(variant=variant, model="replay", thinking=None, seed=0,
                     stages=STAGES)
-
     try:
         with install_replay(rec):
-            result = asyncio.run(run_variant(perceive, src, _refs(), cfg,
-                                             concurrency=1))
+            new_report = asyncio.run(run_variant(new_fn, src, refs, cfg,
+                                                 concurrency=1))
     except CacheMiss as e:
         pytest.fail(f"NEW harness emitted a request the OLD harness didn't:\n  {e}")
 
-    # Non-trivial run
-    assert result["total_predictions"] > 100
+    assert new_report["total_predictions"] == old_report["total_predictions"] > 100
 
-    # If a legacy result JSON exists, compare per-frame predictions.
-    legacy_path = _legacy_result_for(variant)
-    if legacy_path:
-        legacy = json.loads(legacy_path.read_text())
-        new_preds = {(er["embryo_id"], p["timepoint"]): p["predicted_stage"]
-                     for er in result["embryo_results"]
-                     for p in er["predictions"]}
-        old_preds = {(er["embryo_id"], p["timepoint"]): p["predicted_stage"]
-                     for er in legacy["embryo_results"]
-                     for p in er["predictions"]}
-        common = set(new_preds) & set(old_preds)
-        diffs = [(k, old_preds[k], new_preds[k])
-                 for k in sorted(common) if old_preds[k] != new_preds[k]]
-        assert not diffs, (
-            f"{len(diffs)} frame(s) differ old→new:\n  "
-            + "\n  ".join(f"{k}: {o}→{n}" for k, o, n in diffs[:10])
-        )
+    old_preds = _flatten(old_report)
+    new_preds = _flatten(new_report)
+    diffs = [(k, old_preds[k], new_preds[k])
+             for k in sorted(old_preds) if old_preds[k] != new_preds.get(k)]
+    assert not diffs, (
+        f"{len(diffs)} frame(s) differ old→new under identical model output:\n  "
+        + "\n  ".join(f"{k}: {o}→{n}" for k, o, n in diffs[:10])
+    )
+    # Accuracy must therefore be identical too.
+    assert new_report["overall_accuracy"] == pytest.approx(
+        old_report["overall_accuracy"], abs=1e-12)
+
+
+def _flatten(report: dict) -> dict:
+    return {(er["embryo_id"], p["timepoint"]): p["predicted_stage"]
+            for er in report["embryo_results"] for p in er["predictions"]}
 
 
 def _refs():
