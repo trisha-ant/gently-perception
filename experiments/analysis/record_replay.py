@@ -132,6 +132,25 @@ def _patch_targets() -> list[tuple[Any, str]]:
     return targets
 
 
+def _extract_content(args: tuple, kwargs: dict, fn_name: str) -> list[dict]:
+    """Pull the content list out of however the caller invoked call_claude.
+    Handles positional, ``content=``, and ``messages=`` (conversation)."""
+    if "content" in kwargs:
+        return kwargs["content"]
+    if "messages" in kwargs:
+        return kwargs["messages"][-1]["content"]
+    if len(args) >= 2:
+        second = args[1]
+        if fn_name == "call_claude_conversation":
+            return second[-1]["content"]
+        return second
+    raise TypeError(f"{fn_name}: could not locate content/messages argument")
+
+
+def _extract_system(args: tuple, kwargs: dict) -> str:
+    return kwargs.get("system", args[0] if args else "")
+
+
 @contextmanager
 def install_record(recorder: Recorder):
     """Wrap call_claude so every live response is also written to ``recorder``."""
@@ -140,13 +159,11 @@ def install_record(recorder: Recorder):
         orig = getattr(mod, name)
         originals.append((mod, name, orig))
 
-        async def wrapped(system: str, content_or_msgs, *a,
-                          __orig=orig, __name=name, **kw) -> str:
-            content = (content_or_msgs[-1]["content"]
-                       if __name == "call_claude_conversation"
-                       else content_or_msgs)
+        async def wrapped(*args, __orig=orig, __name=name, **kwargs) -> str:
+            system = _extract_system(args, kwargs)
+            content = _extract_content(args, kwargs, __name)
             key = request_key(system, content)
-            resp = await __orig(system, content_or_msgs, *a, **kw)
+            resp = await __orig(*args, **kwargs)
             recorder.put(key, resp, meta={
                 "system_sha": hashlib.sha256(system.encode()).hexdigest()[:12],
                 "n_blocks": len(content),
@@ -170,13 +187,10 @@ def install_replay(recorder: Recorder):
         orig = getattr(mod, name)
         originals.append((mod, name, orig))
 
-        async def wrapped(system: str, content_or_msgs, *_a,
-                          __name=name, **_kw) -> str:
-            content = (content_or_msgs[-1]["content"]
-                       if __name == "call_claude_conversation"
-                       else content_or_msgs)
-            key = request_key(system, content)
-            return recorder.get(key)
+        async def wrapped(*args, __name=name, **kwargs) -> str:
+            system = _extract_system(args, kwargs)
+            content = _extract_content(args, kwargs, __name)
+            return recorder.get(request_key(system, content))
 
         setattr(mod, name, wrapped)
     try:
@@ -224,6 +238,9 @@ async def _record_variant(variant: str, stages: list[str]) -> None:
 
 
 def main() -> None:
+    import logging
+    logging.basicConfig(level=logging.INFO,
+                        format="%(asctime)s %(levelname)s %(message)s")
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--record", action="store_true",
                    help="Hit live API and write recordings (costs tokens).")
