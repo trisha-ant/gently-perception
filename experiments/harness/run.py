@@ -80,29 +80,36 @@ async def main() -> None:
         sys.exit(f"unknown variant: {args.variant}. available: {sorted(variants)}")
     perceive = variants[args.variant]
 
+    from gently_perception.render import CachedFrameSource
+
     gt = GroundTruth.from_json(GROUND_TRUTH_PATH)
-    testset = OfflineTestset(session_path=Path(args.volumes), ground_truth=gt,
-                             load_volumes=True)
+    testset = CachedFrameSource(
+        OfflineTestset(session_path=Path(args.volumes), ground_truth=gt,
+                       load_volumes=True),
+        cache_dir=DATA_DIR / "cache" / "frames",
+    )
     references = _load_references()
     thinking = None if args.thinking == "none" else args.thinking
 
-    reports: list[dict] = []
-    for i in range(args.n_runs):
-        seed = args.seed_base + i
+    async def one_seed(seed: int) -> dict:
         cfg = RunConfig.capture(variant=args.variant, model=args.model,
                                 thinking=thinking, seed=seed,
                                 stages=tuple(args.stages))
         out_path = cfg.result_path(RESULTS_DIR)
         out_path.parent.mkdir(parents=True, exist_ok=True)
         ev_log = EventLog(out_path.with_suffix(".events.jsonl"))
-
         logger.info(f"[seed {seed}] → {out_path}")
         report = await run_variant(perceive, testset, references, cfg,
                                    event_log=ev_log)
         ev_log.close()
         out_path.write_text(json.dumps(report, indent=2, default=str))
-        reports.append(report)
         print(f"  seed {seed}: {report['overall_accuracy']:.1%}")
+        return report
+
+    reports = await asyncio.gather(
+        *(one_seed(args.seed_base + i) for i in range(args.n_runs))
+    )
+    print(f"render cache: {testset.stats()}")
 
     rs = RunSet.from_reports(args.variant, reports)
     print(f"\n{args.variant} @ {args.model} ({args.thinking}): {rs.mean_std_pct()}  (N={rs.n})")

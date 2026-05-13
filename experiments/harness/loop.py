@@ -96,27 +96,19 @@ def _verify_monotone(pred: str, hist: list[_HistEntry]) -> bool:
 # The loop
 # --------------------------------------------------------------------------- #
 
-async def run_variant(
+async def _run_embryo(
+    embryo_id: str,
+    frames: Iterable[Frame],
     perceive: PerceiveFn,
-    source: FrameSource,
     references: dict[str, list[str]],
-    cfg: RunConfig,
-    *,
-    event_log: EventLog | None = None,
-    extras_fn: Callable[[Frame], dict] | None = None,
-) -> dict:
-    """Run one seed of one variant. Returns the result dict (also derivable
-    from ``event_log`` via :func:`reduce_events`)."""
-    log = event_log or EventLog(path=None)
-    log.emit("run_start", config=cfg.to_dict())
+    target: set[str] | None,
+    log: EventLog,
+    extras_fn: Callable[[Frame], dict] | None,
+) -> None:
+    hist: list[_HistEntry] = []
+    first_scored_tp: int | None = None
 
-    target = set(cfg.stages) if cfg.stages else None
-
-    for embryo_id, frames in source.iter_all():
-        hist: list[_HistEntry] = []
-        first_scored_tp: int | None = None
-
-        for fr in frames:
+    for fr in frames:
             gt = fr.ground_truth_stage
 
             # ---- skip / lead-in ---------------------------------------- #
@@ -169,6 +161,37 @@ async def run_variant(
 
             # ---- record ------------------------------------------------- #
             hist.append(_HistEntry(fr.timepoint, out.stage, source="pred"))
+
+
+async def run_variant(
+    perceive: PerceiveFn,
+    source: FrameSource,
+    references: dict[str, list[str]],
+    cfg: RunConfig,
+    *,
+    event_log: EventLog | None = None,
+    extras_fn: Callable[[Frame], dict] | None = None,
+    concurrency: int = 4,
+) -> dict:
+    """Run one seed of one variant over all embryos.
+
+    Embryos are independent (history is per-embryo), so they run concurrently
+    under a semaphore. Set ``concurrency=1`` for deterministic event ordering.
+    """
+    import asyncio
+
+    log = event_log or EventLog(path=None)
+    log.emit("run_start", config=cfg.to_dict())
+    target = set(cfg.stages) if cfg.stages else None
+
+    sem = asyncio.Semaphore(max(1, concurrency))
+
+    async def one(eid: str, frs: Iterable[Frame]) -> None:
+        async with sem:
+            await _run_embryo(eid, frs, perceive, references, target, log,
+                              extras_fn)
+
+    await asyncio.gather(*(one(eid, frs) for eid, frs in source.iter_all()))
 
     log.emit("run_end")
     return reduce_events(log.events, cfg.to_dict())
