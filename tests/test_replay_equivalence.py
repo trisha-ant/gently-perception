@@ -38,8 +38,12 @@ def _recording_for(variant: str) -> Path | None:
     return matches[0] if matches else None
 
 
+VARIANTS = ["hybrid", "scientific", "temporal", "minimal", "fillpct",
+            "multimeasure", "vote3_mm", "ensemble"]
+
+
 @pytest.mark.slow
-@pytest.mark.parametrize("variant", ["hybrid"])
+@pytest.mark.parametrize("variant", VARIANTS)
 def test_new_harness_replays_without_cache_miss(variant):
     """Two assertions, both against the SAME recording:
 

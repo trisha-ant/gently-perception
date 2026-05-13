@@ -211,6 +211,7 @@ async def _record_variant(variant: str, stages: list[str]) -> None:
 
     from benchmark.ground_truth import GroundTruth
     from benchmark.testset import OfflineTestset
+    from gently_perception.render import CachedFrameSource
     from perception import get_functions
     from perception._base import DEFAULT_MODEL
     import run as old_run
@@ -220,8 +221,11 @@ async def _record_variant(variant: str, stages: list[str]) -> None:
         raise SystemExit(f"unknown variant: {variant}. choices: {sorted(fns)}")
 
     gt = GroundTruth.from_json(old_run.GROUND_TRUTH_PATH)
-    testset = OfflineTestset(session_path=old_run.VOLUMES_DIR,
-                             ground_truth=gt, load_volumes=True)
+    testset = CachedFrameSource(
+        OfflineTestset(session_path=old_run.VOLUMES_DIR,
+                       ground_truth=gt, load_volumes=True),
+        cache_dir=REPO_ROOT / "data" / "cache" / "frames",
+    )
     refs = old_run.load_references()
 
     rec = Recorder.for_variant(variant, DEFAULT_MODEL)
