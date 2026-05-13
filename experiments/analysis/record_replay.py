@@ -106,22 +106,29 @@ class Recorder:
 # Install shims (monkeypatch perception._base.call_claude)
 # --------------------------------------------------------------------------- #
 
+_CALL_NAMES = ("call_claude", "call_claude_conversation")
+_OUR_PREFIXES = ("perception", "gently_perception", "experiments")
+
+
 def _patch_targets() -> list[tuple[Any, str]]:
-    """Return (module, attr_name) pairs for every call_claude we need to patch.
-    Both perception._base and gently_perception.api define one."""
+    """Return (module, attr_name) for every binding of call_claude in our
+    package namespace. Variants do ``from ._base import call_claude``, so the
+    name is bound in each variant module — patching only ``_base`` misses them.
+    """
+    # Ensure the canonical definitions are loaded so they appear in sys.modules.
+    for modname in ("perception._base", "gently_perception.api"):
+        try:
+            __import__(modname)
+        except ImportError:
+            pass
+
     targets: list[tuple[Any, str]] = []
-    try:
-        from perception import _base as pb
-        targets.append((pb, "call_claude"))
-        targets.append((pb, "call_claude_conversation"))
-    except ImportError:
-        pass
-    try:
-        from gently_perception import api as ga
-        targets.append((ga, "call_claude"))
-        targets.append((ga, "call_claude_conversation"))
-    except ImportError:
-        pass
+    for name, mod in list(sys.modules.items()):
+        if mod is None or not name.startswith(_OUR_PREFIXES):
+            continue
+        for attr in _CALL_NAMES:
+            if callable(getattr(mod, attr, None)):
+                targets.append((mod, attr))
     return targets
 
 
