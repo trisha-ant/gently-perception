@@ -127,6 +127,6 @@ def test_config_provenance_captured_and_embedded():
     assert d["variant"] == "hybrid"
     assert d["git_sha"]  # non-empty in a git repo
     assert "captured_at" in d
-    # result_path is append-only shape
+    # result_path is append-only shape and includes thinking
     p = cfg.result_path(__import__("pathlib").Path("/tmp/r"))
-    assert p.parts[-3:] == ("hybrid", "m", f"{cfg.git_short}_0.json")
+    assert p.parts[-4:] == ("hybrid", "m", "none", f"{cfg.git_short}_0.json")

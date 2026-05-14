@@ -1,0 +1,934 @@
+{"kind": "run_start", "embryo_id": null, "timepoint": null, "config": {"variant": "hybrid", "model": "claude-opus-4-7", "thinking": "adaptive", "seed": 2, "stages": ["1.5fold", "2fold", "pretzel"], "structured_output": false, "n_embryos_expected": null, "git_sha": "1990261b2e3bcadd3c51bb18f3b2ded7bd200d55", "git_dirty": true, "captured_at": "2026-05-14T19:20:51.383280+00:00"}}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 55, "extras": []}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 45, "extras": []}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 39, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 39, "predicted": "comma", "reasoning": "The embryo shows an elongated shape with a slight groove/indentation visible in the XY view, matching the comma stage references. No clear elongation into 1.5fold folding pattern yet."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 39, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 39, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The embryo shows an elongated shape with a slight groove/indentation visible in the XY view, matching the comma stage references. No clear elongation into 1.5fold folding pattern yet."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 40, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 55, "predicted": "comma", "reasoning": "The XY view shows two lobes with a slight constriction, matching the comma reference. No clear elongation into 1.5fold shape yet."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 55, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 55, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows two lobes with a slight constriction, matching the comma reference. No clear elongation into 1.5fold shape yet."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 56, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 45, "predicted": "comma", "reasoning": "The XY view shows a two-lobed shape with a visible constriction, similar to comma references. The embryo hasn't elongated enough to be 1.5fold, and the overall appearance matches the comma stage patte"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 45, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 45, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows a two-lobed shape with a visible constriction, similar to comma references. The embryo hasn't elongated enough to be 1.5fold, and the overall appearance matches the comma stage pattern."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 46, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 40, "predicted": "comma", "reasoning": "XY view shows elongated embryo with slight curvature developing along one side, matching comma references. No clear 1.5fold elongation yet. Previous was comma, so continuing."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 40, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 40, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows elongated embryo with slight curvature developing along one side, matching comma references. No clear 1.5fold elongation yet. Previous was comma, so continuing."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 41, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 56, "predicted": "comma", "reasoning": "The XY view shows a two-lobed structure similar to comma references, without the clear elongation seen in 1.5fold. Shape still compact and bean/comma-like."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 56, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 56, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows a two-lobed structure similar to comma references, without the clear elongation seen in 1.5fold. Shape still compact and bean/comma-like."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 57, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 46, "predicted": "comma", "reasoning": "The XY view shows two-lobed structure matching comma references, with no clear elongation yet. YZ is still relatively round. Consistent with previous comma observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 46, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 46, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows two-lobed structure matching comma references, with no clear elongation yet. YZ is still relatively round. Consistent with previous comma observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 47, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 47, "predicted": "1.5fold", "reasoning": "The image matches the 1.5fold reference almost exactly - elongated shape with bright elongated region on the right side, oval YZ cross-section, and the characteristic layering in the XZ view. The embr"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 47, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 47, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The image matches the 1.5fold reference almost exactly - elongated shape with bright elongated region on the right side, oval YZ cross-section, and the characteristic layering in the XZ view. The embryo has elongated beyond the comma shape."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 48, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 41, "predicted": "comma", "reasoning": "Embryo has elongated slightly with uniform cell distribution but no clear fold bands yet. Matches comma reference with full embryo shape and no parallel elongated structures yet."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 41, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 41, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Embryo has elongated slightly with uniform cell distribution but no clear fold bands yet. Matches comma reference with full embryo shape and no parallel elongated structures yet."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 42, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 57, "predicted": "1.5fold", "reasoning": "The embryo shows elongation with the body filling more of the eggshell compared to comma. The XY view shows a more uniform elongated shape without the clear bean-like indentation of comma, matching th"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 57, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 57, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows elongation with the body filling more of the eggshell compared to comma. The XY view shows a more uniform elongated shape without the clear bean-like indentation of comma, matching the 1.5fold reference."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 58, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 48, "predicted": "1.5fold", "reasoning": "Elongated shape with uniform body thickness, matching 1.5fold reference. No clear parallel bands yet indicating 2fold. Consistent with previous timepoint."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 48, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 48, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Elongated shape with uniform body thickness, matching 1.5fold reference. No clear parallel bands yet indicating 2fold. Consistent with previous timepoint."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 49, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 42, "predicted": "comma", "reasoning": "The embryo shows a comma-like shape with a visible indentation/groove in the XY view, consistent with the comma stage. No clear elongation into 1.5fold yet. Matches previous observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 42, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 42, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The embryo shows a comma-like shape with a visible indentation/groove in the XY view, consistent with the comma stage. No clear elongation into 1.5fold yet. Matches previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 43, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 49, "predicted": "1.5fold", "reasoning": "The image closely matches the 1.5fold reference, showing an elongating embryo with distinct bright regions but not yet showing clearly separated parallel bands characteristic of 2fold. Consistent with"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 49, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 49, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The image closely matches the 1.5fold reference, showing an elongating embryo with distinct bright regions but not yet showing clearly separated parallel bands characteristic of 2fold. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 50, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 50, "predicted": "1.5fold", "reasoning": "The elongated shape with visible nuclei and emerging layered structure in XZ matches the 1.5fold reference. No clear parallel bands yet for 2fold."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 50, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 50, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The elongated shape with visible nuclei and emerging layered structure in XZ matches the 1.5fold reference. No clear parallel bands yet for 2fold."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 51, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 43, "predicted": "comma", "reasoning": "Shape still shows a comma-like profile with a visible notch/indent on the ventral side in XY, similar to comma references. No clear elongation into 1.5fold yet."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 43, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 43, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Shape still shows a comma-like profile with a visible notch/indent on the ventral side in XY, similar to comma references. No clear elongation into 1.5fold yet."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 44, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 51, "predicted": "1.5fold", "reasoning": "The XY view shows an elongated embryo with a tapered end, matching the 1.5fold reference. No clear parallel bands separated yet indicating 2fold. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 51, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 51, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The XY view shows an elongated embryo with a tapered end, matching the 1.5fold reference. No clear parallel bands separated yet indicating 2fold. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 52, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 58, "predicted": "1.5fold", "reasoning": "The embryo shows elongation along the XY axis with the characteristic tapered anterior end and thicker posterior, matching the 1.5fold references. The YZ view shows a slightly asymmetric cross-section"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 58, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 58, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows elongation along the XY axis with the characteristic tapered anterior end and thicker posterior, matching the 1.5fold references. The YZ view shows a slightly asymmetric cross-section. No clear parallel bands of 2fold visible yet."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 59, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 52, "predicted": "1.5fold", "reasoning": "The elongated shape with roughly uniform thickness and granular cell distribution matches the 1.5fold reference. No clear parallel bands indicating 2fold yet."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 52, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 52, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The elongated shape with roughly uniform thickness and granular cell distribution matches the 1.5fold reference. No clear parallel bands indicating 2fold yet."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 53, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 59, "predicted": "1.5fold", "reasoning": "Elongated shape with tapered ends, matches 1.5fold reference. No clear parallel bands yet for 2fold."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 59, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 59, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Elongated shape with tapered ends, matches 1.5fold reference. No clear parallel bands yet for 2fold."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 60, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 53, "predicted": "1.5fold", "reasoning": "Elongated shape consistent with 1.5fold reference, no clear parallel bands of 2fold yet. Matches previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 53, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 53, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Elongated shape consistent with 1.5fold reference, no clear parallel bands of 2fold yet. Matches previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 54, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 44, "predicted": "comma", "reasoning": "Shape still shows comma-like morphology with uneven distribution but not yet elongated into 1.5fold. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 44, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 44, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Shape still shows comma-like morphology with uneven distribution but not yet elongated into 1.5fold. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 45, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 60, "predicted": "1.5fold", "reasoning": "Elongated body with uniform nuclei distribution, no clear parallel folded bands yet. Matches 1.5fold references closely."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 60, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 60, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Elongated body with uniform nuclei distribution, no clear parallel folded bands yet. Matches 1.5fold references closely."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 61, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 54, "predicted": "1.5fold", "reasoning": "The embryo shows elongated shape with distinct nuclei, matching the 1.5fold references. No clear parallel bands indicating 2fold yet."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 54, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 54, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows elongated shape with distinct nuclei, matching the 1.5fold references. No clear parallel bands indicating 2fold yet."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 55, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 45, "predicted": "comma", "reasoning": "Shape still shows a bean/comma-like form with slight indentation, rounded YZ cross-section. No clear elongation into 1.5fold yet. Matches comma reference."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 45, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 45, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Shape still shows a bean/comma-like form with slight indentation, rounded YZ cross-section. No clear elongation into 1.5fold yet. Matches comma reference."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 46, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 61, "predicted": "1.5fold", "reasoning": "The embryo shows an elongated shape with granular nuclei distribution similar to 1.5fold reference. No clear parallel bands indicating 2fold yet. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 61, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 61, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows an elongated shape with granular nuclei distribution similar to 1.5fold reference. No clear parallel bands indicating 2fold yet. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 62, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 55, "predicted": "1.5fold", "reasoning": "Elongated shape with uniform nuclei distribution along the body matches the 1.5fold reference. No clear separation into parallel bands yet that would indicate 2fold. Consistent with recent observation"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 55, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 55, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Elongated shape with uniform nuclei distribution along the body matches the 1.5fold reference. No clear separation into parallel bands yet that would indicate 2fold. Consistent with recent observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 56, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 46, "predicted": "comma", "reasoning": "The XY view shows an elongating embryo with a visible curvature/indent along the ventral side, matching the comma reference. Not yet elongated enough for 1.5fold."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 46, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 46, "predicted": "comma", "gt": "1.5fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows an elongating embryo with a visible curvature/indent along the ventral side, matching the comma reference. Not yet elongated enough for 1.5fold."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 47, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 62, "predicted": "1.5fold", "reasoning": "Elongated shape with uniform cell distribution, no clear parallel bright bands indicating 2fold. Matches 1.5fold references well; consistent with recent observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 62, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 62, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Elongated shape with uniform cell distribution, no clear parallel bright bands indicating 2fold. Matches 1.5fold references well; consistent with recent observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 63, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 47, "predicted": "1.5fold", "reasoning": "The embryo shows elongation with a curved shape visible in XY (comma-like curve becoming more defined), and the body has begun to elongate along the eggshell. Compared to comma references which show t"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 47, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 47, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows elongation with a curved shape visible in XY (comma-like curve becoming more defined), and the body has begun to elongate along the eggshell. Compared to comma references which show two distinct lobes, this image shows a more uniform elongated body matching 1.5fold references."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 48, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 56, "predicted": "1.5fold", "reasoning": "The embryo shape matches the 1.5fold reference - elongated body with visible cellular detail, no clear parallel bands indicating 2fold. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 56, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 56, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shape matches the 1.5fold reference - elongated body with visible cellular detail, no clear parallel bands indicating 2fold. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 57, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 48, "predicted": "1.5fold", "reasoning": "Elongated body with curved shape visible in XY, matching 1.5fold references. No clear parallel bands yet that would indicate 2fold."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 48, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 48, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Elongated body with curved shape visible in XY, matching 1.5fold references. No clear parallel bands yet that would indicate 2fold."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 49, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 63, "predicted": "1.5fold", "reasoning": "XY view shows an elongated embryo with cells distributed throughout, matching 1.5fold references. No clear parallel bright bands indicating 2fold. Consistent with prior timepoints."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 63, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 63, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY view shows an elongated embryo with cells distributed throughout, matching 1.5fold references. No clear parallel bright bands indicating 2fold. Consistent with prior timepoints."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 64, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 57, "predicted": "1.5fold", "reasoning": "Elongated shape with tapering, matches 1.5fold references. No clear parallel bands of 2fold yet."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 57, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 57, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Elongated shape with tapering, matches 1.5fold references. No clear parallel bands of 2fold yet."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 58, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 49, "predicted": "1.5fold", "reasoning": "The embryo shows an elongated shape with a slight curve visible in XY, consistent with 1.5fold. No clear parallel bands indicating 2fold are visible. Matches previous observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 49, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 49, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows an elongated shape with a slight curve visible in XY, consistent with 1.5fold. No clear parallel bands indicating 2fold are visible. Matches previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 50, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 64, "predicted": "1.5fold", "reasoning": "Elongated body shape with uniform cell distribution, no clear parallel bands visible yet. Matches 1.5fold references more than 2fold."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 64, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 64, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Elongated body shape with uniform cell distribution, no clear parallel bands visible yet. Matches 1.5fold references more than 2fold."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 65, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 58, "predicted": "1.5fold", "reasoning": "The embryo shows an elongated shape with visible nuclei distribution similar to 1.5fold references. No clear two parallel bands visible yet, consistent with late 1.5fold. Preferring earlier stage per "}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 58, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 58, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows an elongated shape with visible nuclei distribution similar to 1.5fold references. No clear two parallel bands visible yet, consistent with late 1.5fold. Preferring earlier stage per guidance."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 59, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 65, "predicted": "1.5fold", "reasoning": "The XY view shows elongated embryo with slight curvature, similar to 1.5fold reference. No clear parallel bands indicating 2fold. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 65, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 65, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The XY view shows elongated embryo with slight curvature, similar to 1.5fold reference. No clear parallel bands indicating 2fold. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 66, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 50, "predicted": "1.5fold", "reasoning": "The embryo shows elongation with a slight curvature visible in XY view, consistent with 1.5fold references. No clear parallel bands indicating 2fold yet."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 50, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 50, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The embryo shows elongation with a slight curvature visible in XY view, consistent with 1.5fold references. No clear parallel bands indicating 2fold yet."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 51, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 66, "predicted": "1.5fold", "reasoning": "Elongated shape with visible nuclei and some curvature, but no clear parallel bands yet. Consistent with recent 1.5fold observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 66, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 66, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Elongated shape with visible nuclei and some curvature, but no clear parallel bands yet. Consistent with recent 1.5fold observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 67, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 51, "predicted": "1.5fold", "reasoning": "XY view shows an elongated embryo with a slight curve/indentation at top, matching the 1.5fold reference. No clearly separated parallel bands visible that would indicate 2fold. Consistent with prior o"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 51, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 51, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows an elongated embryo with a slight curve/indentation at top, matching the 1.5fold reference. No clearly separated parallel bands visible that would indicate 2fold. Consistent with prior observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 52, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 59, "predicted": "1.5fold", "reasoning": "The embryo shows an elongated shape similar to the 1.5fold reference, without clearly separated parallel bands that would indicate 2fold. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 59, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 59, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows an elongated shape similar to the 1.5fold reference, without clearly separated parallel bands that would indicate 2fold. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 60, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 67, "predicted": "1.5fold", "reasoning": "The embryo shows elongation with a tapered end, similar to 1.5fold references. No clear parallel bands indicating 2fold are visible. Consistent with recent observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 67, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 67, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows elongation with a tapered end, similar to 1.5fold references. No clear parallel bands indicating 2fold are visible. Consistent with recent observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 68, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 52, "predicted": "1.5fold", "reasoning": "Elongated shape filling eggshell with visible curvature/indentation in XY, matches 1.5fold references. No clear two parallel bands yet to indicate 2fold."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 52, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 52, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Elongated shape filling eggshell with visible curvature/indentation in XY, matches 1.5fold references. No clear two parallel bands yet to indicate 2fold."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 53, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 53, "predicted": "1.5fold", "reasoning": "The embryo shows elongated shape with a slight curve/indentation visible in XY view, consistent with 1.5fold reference. No clear parallel bands indicating 2fold yet. Matches previous observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 53, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 53, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The embryo shows elongated shape with a slight curve/indentation visible in XY view, consistent with 1.5fold reference. No clear parallel bands indicating 2fold yet. Matches previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 54, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 68, "predicted": "1.5fold", "reasoning": "The embryo shows elongated shape with tapering head, similar to 1.5fold references. No clear parallel bands indicating 2fold yet. Matches previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 68, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 68, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows elongated shape with tapering head, similar to 1.5fold references. No clear parallel bands indicating 2fold yet. Matches previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 69, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 60, "predicted": "1.5fold", "reasoning": "XY view shows an elongated embryo with a slight curve/bend but no clear parallel bands yet. Matches 1.5fold reference better than 2fold, which would show more pronounced folding. Consistent with prior"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 60, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 60, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows an elongated embryo with a slight curve/bend but no clear parallel bands yet. Matches 1.5fold reference better than 2fold, which would show more pronounced folding. Consistent with prior observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 61, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 69, "predicted": "1.5fold", "reasoning": "The embryo shape in XY shows an elongated form with a tapered end, consistent with 1.5fold references. No clear parallel bands yet indicating 2fold. Continuing from previous 1.5fold observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 69, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 69, "predicted": "1.5fold", "gt": "1.5fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shape in XY shows an elongated form with a tapered end, consistent with 1.5fold references. No clear parallel bands yet indicating 2fold. Continuing from previous 1.5fold observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 70, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 54, "predicted": "1.5fold", "reasoning": "Shape matches 1.5fold reference - elongated with two lobes visible but no clear parallel bands yet. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 54, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 54, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Shape matches 1.5fold reference - elongated with two lobes visible but no clear parallel bands yet. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 55, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 61, "predicted": "2fold", "reasoning": "The XY view shows elongation with a curved shape resembling the 2fold reference, and bands are becoming visible. However, given the previous observation was 1.5fold and the change is subtle, this coul"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 61, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 61, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The XY view shows elongation with a curved shape resembling the 2fold reference, and bands are becoming visible. However, given the previous observation was 1.5fold and the change is subtle, this could still be late 1.5fold transitioning. The shape shows more elongation and curvature typical of 2fold."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 62, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 55, "predicted": "1.5fold", "reasoning": "The embryo shows an elongated shape with visible cell structure but no clear parallel bands indicating 2fold. Matches the 1.5fold reference closely, consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 55, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 55, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The embryo shows an elongated shape with visible cell structure but no clear parallel bands indicating 2fold. Matches the 1.5fold reference closely, consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 56, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 70, "predicted": "1.5fold", "reasoning": "The XY view shows an elongated embryo with a slight curve, similar to the 1.5fold reference. No clear parallel bright bands indicating 2fold are visible. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 70, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 70, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows an elongated embryo with a slight curve, similar to the 1.5fold reference. No clear parallel bright bands indicating 2fold are visible. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 71, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 62, "predicted": "2fold", "reasoning": "Image matches the 2fold reference exactly - two parallel body segments visible in the XY view with moderate eggshell fill. No significant change from previous timepoint."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 62, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 62, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Image matches the 2fold reference exactly - two parallel body segments visible in the XY view with moderate eggshell fill. No significant change from previous timepoint."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 63, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 63, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a bend, matching 2fold morphology. Eggshell is moderately filled with some dark space remaining. Consistent with previous T62 classification."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 63, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 63, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a bend, matching 2fold morphology. Eggshell is moderately filled with some dark space remaining. Consistent with previous T62 classification."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 64, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 56, "predicted": "1.5fold", "reasoning": "Elongated shape with hollow/curved interior visible in XY, still showing granular nuclei distribution consistent with 1.5fold references. No clearly separated parallel bright bands indicating 2fold ye"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 56, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 56, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Elongated shape with hollow/curved interior visible in XY, still showing granular nuclei distribution consistent with 1.5fold references. No clearly separated parallel bright bands indicating 2fold yet."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 57, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 71, "predicted": "2fold", "reasoning": "The XY view shows a more elongated, curved shape with visible body bending and a clearer head-tail distinction, matching 2fold references better than 1.5fold. The embryo shows progression from the mor"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 71, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 71, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The XY view shows a more elongated, curved shape with visible body bending and a clearer head-tail distinction, matching 2fold references better than 1.5fold. The embryo shows progression from the more uniformly filled 1.5fold appearance."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 72, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 64, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a clear bend, matching the 2fold hairpin morphology. Eggshell is moderately filled with some dark space remaining. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 64, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 64, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a clear bend, matching the 2fold hairpin morphology. Eggshell is moderately filled with some dark space remaining. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 65, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 72, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a clear bend, matching 2fold reference. Consistent with previous observation."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 72, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 72, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a clear bend, matching 2fold reference. Consistent with previous observation."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 73, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 57, "predicted": "1.5fold", "reasoning": "Elongated shape with visible cell nuclei, similar to 1.5fold reference. No clear parallel bands yet indicating 2fold. Consistent with prior observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 57, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 57, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Elongated shape with visible cell nuclei, similar to 1.5fold reference. No clear parallel bands yet indicating 2fold. Consistent with prior observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 58, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 65, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view, consistent with 2fold hairpin morphology. Matches T62 reference well."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 65, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 65, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view, consistent with 2fold hairpin morphology. Matches T62 reference well."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 66, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 73, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference best, consistent with previous timepoints."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 73, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 73, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference best, consistent with previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 74, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 58, "predicted": "1.5fold", "reasoning": "Elongated shape with visible cellular structure, matches 1.5fold references. No clear parallel bands indicating 2fold yet."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 58, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 58, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Elongated shape with visible cellular structure, matches 1.5fold references. No clear parallel bands indicating 2fold yet."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 59, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 66, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend, matching 2fold reference. No increased coiling suggesting pretzel yet."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 66, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 66, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend, matching 2fold reference. No increased coiling suggesting pretzel yet."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 67, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 74, "predicted": "2fold", "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference closely, consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 74, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 74, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference closely, consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 75, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 59, "predicted": "1.5fold", "reasoning": "Shape still shows two-lobed elongated structure similar to 1.5fold references, without clearly separated parallel bands that would indicate 2fold. Consistent with recent observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 59, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 59, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Shape still shows two-lobed elongated structure similar to 1.5fold references, without clearly separated parallel bands that would indicate 2fold. Consistent with recent observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 60, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 75, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference well and consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 75, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 75, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference well and consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 76, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 67, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view, consistent with 2fold hairpin. Matches 2fold reference closely and consistent with prior ti"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 67, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 67, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view, consistent with 2fold hairpin. Matches 2fold reference closely and consistent with prior timepoints."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 68, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 76, "predicted": "2fold", "reasoning": "Shell is moderately filled with some dark space remaining. Two parallel body segments visible in the top view with a hairpin fold, matching 2fold reference. No dense pretzel-like coiling yet."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 76, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 76, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Shell is moderately filled with some dark space remaining. Two parallel body segments visible in the top view with a hairpin fold, matching 2fold reference. No dense pretzel-like coiling yet."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 77, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 68, "predicted": "2fold", "reasoning": "The XY view shows an elongated curved body with two parallel segments suggesting a hairpin fold. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference best; consistent "}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 68, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 68, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The XY view shows an elongated curved body with two parallel segments suggesting a hairpin fold. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference best; consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 69, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 60, "predicted": "1.5fold", "reasoning": "XY view shows elongated embryo with a curved body outline forming a loop-like shape, consistent with 1.5fold. No clear parallel bands indicating 2fold yet. Continuing from previous 1.5fold observation"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 60, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 60, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows elongated embryo with a curved body outline forming a loop-like shape, consistent with 1.5fold. No clear parallel bands indicating 2fold yet. Continuing from previous 1.5fold observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 61, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 61, "predicted": "1.5fold", "reasoning": "The XY view shows an elongated embryo with a visible dark groove/curvature suggesting folding, similar to 1.5fold references. No clear parallel bands indicating 2fold yet. Consistent with previous 1.5"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 61, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 61, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows an elongated embryo with a visible dark groove/curvature suggesting folding, similar to 1.5fold references. No clear parallel bands indicating 2fold yet. Consistent with previous 1.5fold observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 62, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 62, "predicted": "1.5fold", "reasoning": "Elongated shape with bright cells concentrated on one side, no clear parallel bands yet. Matches 1.5fold reference closely, consistent with recent observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 62, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 62, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Elongated shape with bright cells concentrated on one side, no clear parallel bands yet. Matches 1.5fold reference closely, consistent with recent observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 63, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 63, "predicted": "1.5fold", "reasoning": "XY shows an elongated shape with a slight curve/fold visible, matching 1.5fold references. No clear two-band parallel structure yet that would indicate 2fold. Consistent with previous timepoints."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 63, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 63, "predicted": "1.5fold", "gt": "2fold", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY shows an elongated shape with a slight curve/fold visible, matching 1.5fold references. No clear two-band parallel structure yet that would indicate 2fold. Consistent with previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 64, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 64, "predicted": "2fold", "reasoning": "XY view shows two clearly separated parallel bright bands with a dark gap between them, characteristic of 2fold stage. This is a clear progression from 1.5fold where the embryo has now folded further "}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 64, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 64, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY view shows two clearly separated parallel bright bands with a dark gap between them, characteristic of 2fold stage. This is a clear progression from 1.5fold where the embryo has now folded further along the length of the egg."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 65, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 77, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space still visible at the ends. Two parallel body segments are visible in the XY view, consistent with 2fold hairpin morphology. Matches 2fold reference w"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 77, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 77, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space still visible at the ends. Two parallel body segments are visible in the XY view, consistent with 2fold hairpin morphology. Matches 2fold reference well, no clear advance to pretzel."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 78, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 69, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments (hairpin) with some dark space still visible in the eggshell. Fill is moderate, not dense enough for pretzel. Matches 2fold reference well."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 69, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 69, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments (hairpin) with some dark space still visible in the eggshell. Fill is moderate, not dense enough for pretzel. Matches 2fold reference well."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 70, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 65, "predicted": "2fold", "reasoning": "Eggshell moderately filled with two parallel body segments visible in the XY view, consistent with 2fold stage. Matches prior observation at T64."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 65, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 65, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with two parallel body segments visible in the XY view, consistent with 2fold stage. Matches prior observation at T64."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 66, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 66, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY view with a bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference and consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 66, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 66, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY view with a bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference and consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 67, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 70, "predicted": "2fold", "reasoning": "Two parallel body segments visible with a bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference closely; consistent with previous timepoints."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 70, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 70, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible with a bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference closely; consistent with previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 71, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 78, "predicted": "2fold", "reasoning": "Eggshell moderately filled with some dark space remaining. Top view shows two lobes consistent with a folded hairpin. Matches 2fold reference well; no dense pretzel coiling yet."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 78, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 78, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with some dark space remaining. Top view shows two lobes consistent with a folded hairpin. Matches 2fold reference well; no dense pretzel coiling yet."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 79, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 67, "predicted": "2fold", "reasoning": "The embryo shows two parallel body segments with moderate eggshell fill, consistent with 2fold morphology seen in previous timepoints. No clear increase in complexity or overlapping coils that would i"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 67, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 67, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The embryo shows two parallel body segments with moderate eggshell fill, consistent with 2fold morphology seen in previous timepoints. No clear increase in complexity or overlapping coils that would indicate pretzel."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 68, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 68, "predicted": "2fold", "reasoning": "Eggshell moderately filled with dark space remaining at both ends. Two parallel body segments visible in top view with a central dark region (the fold gap). Matches 2fold reference well, consistent wi"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 68, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 68, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with dark space remaining at both ends. Two parallel body segments visible in top view with a central dark region (the fold gap). Matches 2fold reference well, consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 69, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 69, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space visible at the ends. Two parallel body segments visible in the XY view, consistent with a hairpin/U-shape. Matches 2fold reference well; no clear tra"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 69, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 69, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space visible at the ends. Two parallel body segments visible in the XY view, consistent with a hairpin/U-shape. Matches 2fold reference well; no clear transition to pretzel (which would show denser fill and multiple coils)."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 70, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 71, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY view with a clear horizontal gap between them, moderate eggshell fill with some dark space remaining. Matches 2fold reference."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 71, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 71, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY view with a clear horizontal gap between them, moderate eggshell fill with some dark space remaining. Matches 2fold reference."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 72, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 79, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference well; no clear change from previous."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 79, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 79, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference well; no clear change from previous."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 80, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 80, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a bend, consistent with 2fold hairpin. Eggshell moderately filled with some dark space remaining. No multiple overlapping coils yet, so not pretzel. Match"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 80, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 80, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a bend, consistent with 2fold hairpin. Eggshell moderately filled with some dark space remaining. No multiple overlapping coils yet, so not pretzel. Matches previous 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 81, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 70, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY view with a clear bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference well."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 70, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 70, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY view with a clear bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference well."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 71, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 72, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with moderate eggshell fill (dark space at ends remains). Matches 2fold reference closely, consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 72, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 72, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with moderate eggshell fill (dark space at ends remains). Matches 2fold reference closely, consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 73, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 81, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with visible dark space at top and bottom edges. Two parallel body segments visible in XY view with a bend. Matches 2fold reference better than pretzel which would show d"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 81, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 81, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with visible dark space at top and bottom edges. Two parallel body segments visible in XY view with a bend. Matches 2fold reference better than pretzel which would show denser fill."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 82, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 73, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space visible. The XY view shows two parallel body segments indicative of a hairpin fold. Matches 2fold reference well; no clear progression to dense pretz"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 73, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 73, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space visible. The XY view shows two parallel body segments indicative of a hairpin fold. Matches 2fold reference well; no clear progression to dense pretzel fill."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 74, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 71, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XZ view with moderate eggshell fill; matches 2fold reference. No clear multiple coils yet."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 71, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 71, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XZ view with moderate eggshell fill; matches 2fold reference. No clear multiple coils yet."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 72, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 82, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference well, consistent with previous timepoints."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 82, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 82, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference well, consistent with previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 83, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 74, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY view with a bend, moderate eggshell fill with some dark space remaining. Consistent with previous 2fold observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 74, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 74, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY view with a bend, moderate eggshell fill with some dark space remaining. Consistent with previous 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 75, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 75, "predicted": "2fold", "reasoning": "Eggshell moderately filled with dark space still visible at top. Two parallel body segments visible in XY view with a bend, matching 2fold reference. No clear multi-coil pretzel pattern yet."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 75, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 75, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with dark space still visible at top. Two parallel body segments visible in XY view with a bend, matching 2fold reference. No clear multi-coil pretzel pattern yet."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 76, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 83, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY view with a clear bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference well."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 83, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 83, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY view with a clear bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference well."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 84, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 72, "predicted": "2fold", "reasoning": "Two parallel body segments are visible in the XY view with a dark gap between them, indicating a hairpin fold. Eggshell is moderately filled with some dark space remaining. Consistent with previous 2f"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 72, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 72, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Two parallel body segments are visible in the XY view with a dark gap between them, indicating a hairpin fold. Eggshell is moderately filled with some dark space remaining. Consistent with previous 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 73, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 76, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill. Matches 2fold reference closely, consistent with previous timepoint."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 76, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 76, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill. Matches 2fold reference closely, consistent with previous timepoint."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 77, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 84, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a bend, matching 2fold reference. Eggshell is moderately filled with some dark space remaining, not densely packed as in pretzel. Consistent with previous"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 84, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 84, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a bend, matching 2fold reference. Eggshell is moderately filled with some dark space remaining, not densely packed as in pretzel. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 85, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 73, "predicted": "2fold", "reasoning": "Eggshell moderately filled with two parallel body segments visible in XY view, consistent with 2fold hairpin morphology. Matches prior observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 73, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 73, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with two parallel body segments visible in XY view, consistent with 2fold hairpin morphology. Matches prior observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 74, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 85, "predicted": "2fold", "reasoning": "XY shows two parallel body segments forming a hairpin; moderate fill of the eggshell with some dark space remaining. Matches 2fold reference."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 85, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 85, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY shows two parallel body segments forming a hairpin; moderate fill of the eggshell with some dark space remaining. Matches 2fold reference."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 86, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 77, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill, matching 2fold reference. No dense pretzel-like multi-coil pattern yet."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 77, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 77, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill, matching 2fold reference. No dense pretzel-like multi-coil pattern yet."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 78, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 78, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a dark gap between them (hairpin shape), eggshell is moderately filled with some dark space remaining. Matches 2fold reference."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 78, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 78, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a dark gap between them (hairpin shape), eggshell is moderately filled with some dark space remaining. Matches 2fold reference."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 79, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 86, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view, matching 2fold reference. No dense coiling/overlap typical of pretzel yet."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 86, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 86, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view, matching 2fold reference. No dense coiling/overlap typical of pretzel yet."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 87, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 74, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a clear bend - a hairpin shape. Eggshell is moderately filled with some dark space remaining. Not yet the dense tangle of pretzel. Consistent with previou"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 74, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 74, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a clear bend - a hairpin shape. Eggshell is moderately filled with some dark space remaining. Not yet the dense tangle of pretzel. Consistent with previous 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 75, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 75, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space still visible at top and bottom edges. Two parallel body segments appear visible in the XY view with a bend. Matches 2fold reference better than pret"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 75, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 75, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space still visible at top and bottom edges. Two parallel body segments appear visible in the XY view with a bend. Matches 2fold reference better than pretzel (not densely packed). Consistent with previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 76, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 79, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference well; no clear progression to dense pretzel packing yet"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 79, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 79, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference well; no clear progression to dense pretzel packing yet."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 80, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 87, "predicted": "2fold", "reasoning": "The XY view shows two parallel body segments with a bend, and the eggshell is moderately filled with some dark space remaining. Morphology matches the 2fold reference, not yet the dense filling of pre"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 87, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 87, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The XY view shows two parallel body segments with a bend, and the eggshell is moderately filled with some dark space remaining. Morphology matches the 2fold reference, not yet the dense filling of pretzel."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 88, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 76, "predicted": "2fold", "reasoning": "Eggshell moderately filled with dark space still visible, two parallel body segments visible in XY view consistent with hairpin folding. Matches 2fold reference closely; no clear progression to dense "}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 76, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 76, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with dark space still visible, two parallel body segments visible in XY view consistent with hairpin folding. Matches 2fold reference closely; no clear progression to dense pretzel packing yet."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 77, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 88, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view with a bend. Matches 2fold reference better than pretzel (which shows denser fill)."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 88, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 88, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view with a bend. Matches 2fold reference better than pretzel (which shows denser fill)."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 89, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 89, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space visible (notably a gap in the YZ view). Two parallel body segments visible in XY with a bend, consistent with 2fold hairpin morphology. Not yet dense"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 89, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 89, "predicted": "2fold", "gt": "2fold", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space visible (notably a gap in the YZ view). Two parallel body segments visible in XY with a bend, consistent with 2fold hairpin morphology. Not yet densely packed like pretzel."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 90, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 80, "predicted": "2fold", "reasoning": "The XY view shows two parallel body segments with a dark gap between them, consistent with a hairpin/U-shape. Eggshell is moderately filled with dark space still visible. Matches 2fold reference bette"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 80, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 80, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows two parallel body segments with a dark gap between them, consistent with a hairpin/U-shape. Eggshell is moderately filled with dark space still visible. Matches 2fold reference better than pretzel (no dense multi-coil overlap)."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 81, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 77, "predicted": "2fold", "reasoning": "The XY view shows two parallel body segments with a dark gap between them (hairpin shape), and moderate eggshell fill with visible dark space remaining. This matches 2fold reference. No clear multi-co"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 77, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 77, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows two parallel body segments with a dark gap between them (hairpin shape), and moderate eggshell fill with visible dark space remaining. This matches 2fold reference. No clear multi-coil pretzel pattern yet."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 78, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 81, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend, consistent with 2fold hairpin morphology. Not yet densely packed enough for pre"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 81, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 81, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend, consistent with 2fold hairpin morphology. Not yet densely packed enough for pretzel."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 82, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 78, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a visible dark gap between them (hairpin shape). Eggshell is moderately filled with some dark space remaining. Matches 2fold reference better than pretzel"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 78, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 78, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a visible dark gap between them (hairpin shape). Eggshell is moderately filled with some dark space remaining. Matches 2fold reference better than pretzel (not densely filled with overlapping coils)."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 79, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 82, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with signal, little dark space remaining. XZ view shows multiple overlapping body layers with complex tangled pattern matching the pretzel reference exactly."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 82, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 82, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with signal, little dark space remaining. XZ view shows multiple overlapping body layers with complex tangled pattern matching the pretzel reference exactly."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 83, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 83, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with signal, multiple overlapping body layers visible in XZ view showing complex tangled pattern. Matches pretzel reference well, consistent with previous T82 observation."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 83, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 83, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with signal, multiple overlapping body layers visible in XZ view showing complex tangled pattern. Matches pretzel reference well, consistent with previous T82 observation."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 84, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 79, "predicted": "2fold", "reasoning": "XY view shows a clear hairpin/U-shape with two parallel body segments and a dark gap in the middle — characteristic of 2fold. Eggshell is moderately filled, not yet densely packed as in pretzel."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 79, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 79, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows a clear hairpin/U-shape with two parallel body segments and a dark gap in the middle — characteristic of 2fold. Eggshell is moderately filled, not yet densely packed as in pretzel."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 80, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 90, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XZ view (bottom-left), consistent with a hairpin/U-shape. Matches 2fold reference better than pr"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 90, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 90, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XZ view (bottom-left), consistent with a hairpin/U-shape. Matches 2fold reference better than pretzel (not densely filled with multiple coils)."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 91, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 80, "predicted": "2fold", "reasoning": "Two parallel body segments visible with a dark gap between them in XY view, moderate eggshell fill with some dark space remaining. Matches 2fold reference closely."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 80, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 80, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible with a dark gap between them in XY view, moderate eggshell fill with some dark space remaining. Matches 2fold reference closely."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 81, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 81, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space visible, especially in XY view where two parallel body segments can be seen with a bend. Matches 2fold reference better than pretzel (which is densel"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 81, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 81, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space visible, especially in XY view where two parallel body segments can be seen with a bend. Matches 2fold reference better than pretzel (which is densely filled)."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 82, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 84, "predicted": "pretzel", "reasoning": "Eggshell appears densely filled with overlapping fluorescent signal, with multiple body layers visible in both XY and XZ views. Consistent with previous pretzel classification."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 84, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 84, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell appears densely filled with overlapping fluorescent signal, with multiple body layers visible in both XY and XZ views. Consistent with previous pretzel classification."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 85, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 85, "predicted": "pretzel", "reasoning": "XY view shows two parallel body segments with additional overlapping structure; eggshell is densely filled with signal, consistent with pretzel stage matching previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 85, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 85, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with additional overlapping structure; eggshell is densely filled with signal, consistent with pretzel stage matching previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 86, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 91, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments visible in XY view with a bend. Matches 2fold reference better than pretzel (not densely filled). Consisten"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 91, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 91, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments visible in XY view with a bend. Matches 2fold reference better than pretzel (not densely filled). Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 92, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 92, "predicted": "2fold", "reasoning": "Eggshell moderately filled with some dark space at ends. Two parallel body segments visible in XZ view with a fold. Consistent with previous 2fold observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 92, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 92, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with some dark space at ends. Two parallel body segments visible in XZ view with a fold. Consistent with previous 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 93, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 86, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping fluorescent signal, and multiple body layers visible in YZ view showing coiled structure. Consistent with previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 86, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 86, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping fluorescent signal, and multiple body layers visible in YZ view showing coiled structure. Consistent with previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 87, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 93, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view suggesting hairpin fold. Matches 2fold reference better than pretzel (not densely filled)."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 93, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 93, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view suggesting hairpin fold. Matches 2fold reference better than pretzel (not densely filled)."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 94, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 82, "predicted": "2fold", "reasoning": "XY view shows a clear hairpin with two parallel body segments and a central dark space, matching 2fold. Eggshell is moderately filled, not densely packed like pretzel. Consistent with previous observa"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 82, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 82, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows a clear hairpin with two parallel body segments and a central dark space, matching 2fold. Eggshell is moderately filled, not densely packed like pretzel. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 83, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 87, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body layers visible in both XY and XZ projections. Consistent with previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 87, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 87, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body layers visible in both XY and XZ projections. Consistent with previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 88, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 94, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space still visible at edges. Two parallel body segments visible in XY view consistent with hairpin shape. Not yet densely packed like pretzel. Matches 2fo"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 94, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 94, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space still visible at edges. Two parallel body segments visible in XY view consistent with hairpin shape. Not yet densely packed like pretzel. Matches 2fold reference."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 95, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 88, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping bright signal, multiple coiled body layers visible especially in XZ view. Matches pretzel reference and continues from previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 88, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 88, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping bright signal, multiple coiled body layers visible especially in XZ view. Matches pretzel reference and continues from previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 89, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 83, "predicted": "2fold", "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible in XY view forming a hairpin/U-shape. Matches 2fold reference closely, not yet densely packed as pretzel."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 83, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 83, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible in XY view forming a hairpin/U-shape. Matches 2fold reference closely, not yet densely packed as pretzel."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 84, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 84, "predicted": "2fold", "reasoning": "XY view shows a clear hairpin with two parallel body segments connected by a bend at the left end, with some dark space still visible in the middle. Eggshell is moderately filled, not yet densely pack"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 84, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 84, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows a clear hairpin with two parallel body segments connected by a bend at the left end, with some dark space still visible in the middle. Eggshell is moderately filled, not yet densely packed like pretzel. Consistent with prior 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 85, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 89, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple coils visible in XY view, consistent with continued pretzel stage."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 89, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 89, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple coils visible in XY view, consistent with continued pretzel stage."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 90, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 95, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with bend at one end. Matches 2fold reference better than dense pretzel pattern."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 95, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 95, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with bend at one end. Matches 2fold reference better than dense pretzel pattern."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 96, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 90, "predicted": "pretzel", "reasoning": "Eggshell shows dense signal with multiple overlapping body segments visible in XY view. Consistent with previous pretzel classification."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 90, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 90, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell shows dense signal with multiple overlapping body segments visible in XY view. Consistent with previous pretzel classification."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 91, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 96, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XZ view, consistent with 2fold hairpin. Matches 2fold reference closely."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 96, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 96, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XZ view, consistent with 2fold hairpin. Matches 2fold reference closely."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 97, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 85, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY with clear hairpin bend; eggshell moderately filled with some dark space remaining. Matches 2fold reference."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 85, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 85, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY with clear hairpin bend; eggshell moderately filled with some dark space remaining. Matches 2fold reference."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 86, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 91, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body segments visible in side view indicating multiple folds. Matches pretzel reference and consistent with previous timepoints."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 91, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 91, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body segments visible in side view indicating multiple folds. Matches pretzel reference and consistent with previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 92, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 97, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. The morphology matches 2fold reference - two parallel body segments visible. No clear advancement to dense pretzel-like filling."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 97, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 97, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. The morphology matches 2fold reference - two parallel body segments visible. No clear advancement to dense pretzel-like filling."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 98, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 86, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a visible dark gap between them (hairpin shape), and moderate eggshell fill with some dark space remaining. This matches the 2fold reference better than p"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 86, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 86, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a visible dark gap between them (hairpin shape), and moderate eggshell fill with some dark space remaining. This matches the 2fold reference better than pretzel (which would be densely packed with multiple overlapping coils)."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 87, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 92, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple coiled body segments visible in XY view, consistent with previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 92, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 92, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple coiled body segments visible in XY view, consistent with previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 93, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 87, "predicted": "2fold", "reasoning": "The eggshell is moderately filled with some dark space visible (notably a dark region on the left side of XY). Two parallel body segments are visible in the XY view with a bend, consistent with a hair"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 87, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 87, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The eggshell is moderately filled with some dark space visible (notably a dark region on the left side of XY). Two parallel body segments are visible in the XY view with a bend, consistent with a hairpin/U-shape. Not yet densely packed like pretzel. Matches 2fold reference."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 88, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 98, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the top view suggesting a hairpin fold. Matches 2fold reference closely, not yet dense enough for pr"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 98, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 98, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the top view suggesting a hairpin fold. Matches 2fold reference closely, not yet dense enough for pretzel."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 99, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 93, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with complex overlapping coils; multiple body segments visible in XY view. Matches pretzel reference and consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 93, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 93, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with complex overlapping coils; multiple body segments visible in XY view. Matches pretzel reference and consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 94, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 88, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with visible dark gap in the middle of the XY view showing two parallel body segments with a bend. Matches 2fold reference better than pretzel (which has denser filling)."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 88, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 88, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with visible dark gap in the middle of the XY view showing two parallel body segments with a bend. Matches 2fold reference better than pretzel (which has denser filling). Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 89, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 99, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference better than pretzel (not yet densely filled with multip"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 99, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 99, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference better than pretzel (not yet densely filled with multiple overlapping coils)."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 100, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 89, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XZ view (bottom-left) indicating hairpin U-shape. Consistent with previous 2fold observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 89, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 89, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XZ view (bottom-left) indicating hairpin U-shape. Consistent with previous 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 90, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 94, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with complex overlapping fluorescent signal, multiple body layers visible in XY and XZ views. Consistent with previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 94, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 94, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with complex overlapping fluorescent signal, multiple body layers visible in XY and XZ views. Consistent with previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 95, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 90, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill - some dark space remains. Matches 2fold reference better than the densely-packed pretzel stage. Consistent with previous obse"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 90, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 90, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill - some dark space remains. Matches 2fold reference better than the densely-packed pretzel stage. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 91, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 100, "predicted": "2fold", "reasoning": "The embryo shows a clear elongated body with visible curvature and some dark space still present within the eggshell. The XZ view shows two parallel body segments forming a hairpin shape. Fill is mode"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 100, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 100, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The embryo shows a clear elongated body with visible curvature and some dark space still present within the eggshell. The XZ view shows two parallel body segments forming a hairpin shape. Fill is moderate, not dense enough for pretzel. Matches 2fold reference."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 101, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 91, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill. Some dark space remains, not densely packed enough for pretzel. Consistent with prior 2fold observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 91, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 91, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill. Some dark space remains, not densely packed enough for pretzel. Consistent with prior 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 92, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 95, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping signal, multiple body layers visible in XZ view. Consistent with previous pretzel classification."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 95, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 95, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping signal, multiple body layers visible in XZ view. Consistent with previous pretzel classification."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 96, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 92, "predicted": "2fold", "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible in the XY view consistent with hairpin/U-shape. Matches 2fold reference better than pretzel (not densely p"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 92, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 92, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible in the XY view consistent with hairpin/U-shape. Matches 2fold reference better than pretzel (not densely packed)."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 93, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 101, "predicted": "2fold", "reasoning": "The embryo shows two parallel body segments with moderate eggshell fill — some dark space remains. Morphology matches the 2fold reference closely, consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 101, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 101, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The embryo shows two parallel body segments with moderate eggshell fill — some dark space remains. Morphology matches the 2fold reference closely, consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 102, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 96, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body segments visible in XZ view showing coiled appearance. Matches pretzel reference and consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 96, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 96, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body segments visible in XZ view showing coiled appearance. Matches pretzel reference and consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 97, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 102, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Signal pattern shows elongated body with visible parallel segments but not yet densely packed/coiled like pretzel. Consistent with previou"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 102, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 102, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Signal pattern shows elongated body with visible parallel segments but not yet densely packed/coiled like pretzel. Consistent with previous 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 103, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 93, "predicted": "2fold", "reasoning": "The eggshell shows moderate fill with two parallel body segments visible in the XY view, consistent with 2fold hairpin morphology. Some dark space remains within the eggshell, not yet densely packed l"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 93, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 93, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The eggshell shows moderate fill with two parallel body segments visible in the XY view, consistent with 2fold hairpin morphology. Some dark space remains within the eggshell, not yet densely packed like pretzel. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 94, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 97, "predicted": "pretzel", "reasoning": "Eggshell densely filled with multiple overlapping body segments visible in XY view, consistent with previous pretzel classification. No sign of hatching."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 97, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 97, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with multiple overlapping body segments visible in XY view, consistent with previous pretzel classification. No sign of hatching."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 98, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 103, "predicted": "2fold", "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible in the XY view with a hairpin shape. Matches 2fold reference better than pretzel (not densely filled with "}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 103, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 103, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible in the XY view with a hairpin shape. Matches 2fold reference better than pretzel (not densely filled with multiple overlapping coils)."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 104, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 94, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a clear bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference well. No clear progression to dense pretzel packing yet."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 94, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 94, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a clear bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference well. No clear progression to dense pretzel packing yet."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 95, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 98, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible in both XY and XZ views. Pattern is complex and tangled, consistent with pretzel stage and matching previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 98, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 98, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible in both XY and XZ views. Pattern is complex and tangled, consistent with pretzel stage and matching previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 99, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 95, "predicted": "2fold", "reasoning": "The XY view shows two parallel body segments with a dark gap between them (hairpin shape), consistent with 2fold. Eggshell is moderately filled with some dark space remaining — not yet densely packed "}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 95, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 95, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows two parallel body segments with a dark gap between them (hairpin shape), consistent with 2fold. Eggshell is moderately filled with some dark space remaining — not yet densely packed like pretzel."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 96, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 104, "predicted": "2fold", "reasoning": "The eggshell is moderately filled with some dark space visible, and the XY view shows two parallel body segments with a bend, consistent with a hairpin/U-shape. Not yet densely packed like pretzel. Ma"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 104, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 104, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The eggshell is moderately filled with some dark space visible, and the XY view shows two parallel body segments with a bend, consistent with a hairpin/U-shape. Not yet densely packed like pretzel. Matches 2fold references."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 105, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 99, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping fluorescent signal, multiple coiled layers visible in YZ and XZ views. Consistent with previous pretzel stage."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 99, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 99, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping fluorescent signal, multiple coiled layers visible in YZ and XZ views. Consistent with previous pretzel stage."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 100, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 96, "predicted": "2fold", "reasoning": "Eggshell moderately filled with visible dark gap in the middle of XY view showing two parallel body segments connected by a bend. Matches 2fold reference better than pretzel (not densely packed)."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 96, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 96, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with visible dark gap in the middle of XY view showing two parallel body segments connected by a bend. Matches 2fold reference better than pretzel (not densely packed)."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 97, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 100, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping coils of signal; multiple parallel body segments visible in the XZ view indicating multiple folds. Matches pretzel reference and consistent with prior obser"}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 100, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 100, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping coils of signal; multiple parallel body segments visible in the XZ view indicating multiple folds. Matches pretzel reference and consistent with prior observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 101, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 105, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space still visible. XZ view shows two parallel body segments typical of hairpin 2fold structure. Not yet densely filled/coiled enough for pretzel. Consist"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 105, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 105, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space still visible. XZ view shows two parallel body segments typical of hairpin 2fold structure. Not yet densely filled/coiled enough for pretzel. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 106, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 101, "predicted": "pretzel", "reasoning": "Densely filled eggshell with complex overlapping signal and multiple body layers visible in side view, matching pretzel reference. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 101, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 101, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Densely filled eggshell with complex overlapping signal and multiple body layers visible in side view, matching pretzel reference. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 102, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 97, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY with a dark gap between them (hairpin shape). Eggshell is moderately filled with some dark space remaining. Matches 2fold reference better than pretzel which w"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 97, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 97, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY with a dark gap between them (hairpin shape). Eggshell is moderately filled with some dark space remaining. Matches 2fold reference better than pretzel which would be denser with more overlapping coils."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 98, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 102, "predicted": "pretzel", "reasoning": "Multiple overlapping coils visible with complex tangled pattern in XY view; eggshell densely filled with signal. Consistent with previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 102, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 102, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Multiple overlapping coils visible with complex tangled pattern in XY view; eggshell densely filled with signal. Consistent with previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 103, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 98, "predicted": "2fold", "reasoning": "Eggshell shows moderate fill with some dark space visible at ends; two parallel body segments visible in XY view with a bend. Matches 2fold reference better than densely packed pretzel."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 98, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 98, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell shows moderate fill with some dark space visible at ends; two parallel body segments visible in XY view with a bend. Matches 2fold reference better than densely packed pretzel."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 99, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 103, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping coiled signal, multiple body layers visible in XY and XZ views. Consistent with previous pretzel classification."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 103, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 103, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping coiled signal, multiple body layers visible in XY and XZ views. Consistent with previous pretzel classification."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 104, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 99, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with a visible dark gap running through the middle (XY view), indicating two parallel body segments forming a hairpin. Not yet densely coiled like pretzel. Consistent wit"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 99, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 99, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with a visible dark gap running through the middle (XY view), indicating two parallel body segments forming a hairpin. Not yet densely coiled like pretzel. Consistent with previous 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 100, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 100, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments forming a hairpin with visible dark space between them. Eggshell is moderately filled, not densely packed. Matches 2fold reference."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 100, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 100, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments forming a hairpin with visible dark space between them. Eggshell is moderately filled, not densely packed. Matches 2fold reference."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 101, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 104, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping bright signal and multiple body layers visible, consistent with pretzel stage and continuous with prior observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 104, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 104, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping bright signal and multiple body layers visible, consistent with pretzel stage and continuous with prior observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 105, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 106, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space still visible at the ends. Two parallel body segments visible in the XY view with a bend, matching 2fold reference. Not dense enough to be pretzel."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 106, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 106, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space still visible at the ends. Two parallel body segments visible in the XY view with a bend, matching 2fold reference. Not dense enough to be pretzel."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 107, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 101, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a central dark gap between them, characteristic of a hairpin/U-shape. Eggshell is moderately filled with some dark space remaining. Matches 2fold referenc"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 101, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 101, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a central dark gap between them, characteristic of a hairpin/U-shape. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference better than pretzel (no multiple overlapping coils)."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 102, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 107, "predicted": "2fold", "reasoning": "XZ view shows two parallel body segments with a clear hairpin bend. Eggshell is moderately filled with some dark space remaining. Consistent with previous 2fold observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 107, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 107, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XZ view shows two parallel body segments with a clear hairpin bend. Eggshell is moderately filled with some dark space remaining. Consistent with previous 2fold observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 108, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 102, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a visible dark gap between them (hairpin shape). Eggshell is moderately filled with some dark space remaining. Consistent with 2fold stage, matching previ"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 102, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 102, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a visible dark gap between them (hairpin shape). Eggshell is moderately filled with some dark space remaining. Consistent with 2fold stage, matching previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 103, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 108, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining, two parallel body segments visible in XY view with a bend, matching the 2fold reference. No clear progression to dense pretzel-like fillin"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 108, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 108, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining, two parallel body segments visible in XY view with a bend, matching the 2fold reference. No clear progression to dense pretzel-like filling yet."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 109, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 105, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping coils of nuclei; multiple body segments visible in both top and side views. Matches pretzel reference and consistent with previous timepoints."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 105, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 105, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping coils of nuclei; multiple body segments visible in both top and side views. Matches pretzel reference and consistent with previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 106, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 106, "predicted": "pretzel", "reasoning": "Dense overlapping signal with complex folded pattern visible in XY view, consistent with previous pretzel classification. No clear hatching/emergence seen."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 106, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 106, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Dense overlapping signal with complex folded pattern visible in XY view, consistent with previous pretzel classification. No clear hatching/emergence seen."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 107, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 109, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments with a clear central gap/bend, consistent with hairpin U-shape. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference better th"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 109, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 109, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments with a clear central gap/bend, consistent with hairpin U-shape. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference better than pretzel (not densely filled)."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 110, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 103, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space still visible at ends. Two parallel body segments visible in XY view. Matches 2fold reference better than pretzel (which would be denser)."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 103, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 103, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space still visible at ends. Two parallel body segments visible in XY view. Matches 2fold reference better than pretzel (which would be denser)."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 104, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 107, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping bright signal and multiple coils visible in XZ view, consistent with prior pretzel stage."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 107, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 107, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping bright signal and multiple coils visible in XZ view, consistent with prior pretzel stage."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 108, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 110, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space still visible at periphery. Two parallel body segments visible in the XY view with a clear hairpin structure. Matches 2fold reference well; no strong"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 110, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 110, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space still visible at periphery. Two parallel body segments visible in the XY view with a clear hairpin structure. Matches 2fold reference well; no strong indication of pretzel-level density yet."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 111, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 104, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space visible, particularly around the edges. Two parallel body segments visible in the XY view forming a hairpin shape. Matches 2fold reference better tha"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 104, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 104, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space visible, particularly around the edges. Two parallel body segments visible in the XY view forming a hairpin shape. Matches 2fold reference better than pretzel (not densely packed with multiple overlapping coils). Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 105, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 108, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping bright bands visible in XY and XZ views, consistent with multiple coils. Matches pretzel reference. Continuing from previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 108, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 108, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping bright bands visible in XY and XZ views, consistent with multiple coils. Matches pretzel reference. Continuing from previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 109, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 105, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view, consistent with 2fold hairpin. Not yet densely packed enough for pretzel."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 105, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 105, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view, consistent with 2fold hairpin. Not yet densely packed enough for pretzel."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 106, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 109, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping coils of signal, multiple body layers visible creating complex tangled pattern. Matches pretzel reference and continues from previous timepoints."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 109, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 109, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping coils of signal, multiple body layers visible creating complex tangled pattern. Matches pretzel reference and continues from previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 110, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 106, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments visible in XY view, consistent with 2fold hairpin morphology. Not yet dense enough for pretzel."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 106, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 106, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments visible in XY view, consistent with 2fold hairpin morphology. Not yet dense enough for pretzel."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 107, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 110, "predicted": "pretzel", "reasoning": "Eggshell densely filled with multiple overlapping body layers visible, matching pretzel reference. Consistent with previous timepoints."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 110, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 110, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with multiple overlapping body layers visible, matching pretzel reference. Consistent with previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 111, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 111, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view consistent with hairpin shape. Matches 2fold reference better than pretzel (not densely pack"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 111, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 111, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view consistent with hairpin shape. Matches 2fold reference better than pretzel (not densely packed)."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 112, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 107, "predicted": "2fold", "reasoning": "XY view shows two parallel body segments visible with moderate eggshell fill. Signal density matches 2fold reference, not yet densely packed like pretzel. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 107, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 107, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "XY view shows two parallel body segments visible with moderate eggshell fill. Signal density matches 2fold reference, not yet densely packed like pretzel. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 108, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 112, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space visible at top and bottom. Two parallel body segments visible in XY view with a bend. Signal density and morphology matches 2fold reference, not yet "}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 112, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 112, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space visible at top and bottom. Two parallel body segments visible in XY view with a bend. Signal density and morphology matches 2fold reference, not yet densely packed like pretzel."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 113, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 108, "predicted": "2fold", "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible with a bend, forming a hairpin shape. Matches 2fold reference better than pretzel (not densely filled/tang"}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 108, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 108, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible with a bend, forming a hairpin shape. Matches 2fold reference better than pretzel (not densely filled/tangled)."}
+{"kind": "render", "embryo_id": "embryo_3", "timepoint": 109, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 111, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with signal, multiple overlapping body layers visible in both XY and XZ views. Matches pretzel reference well, consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 111, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 111, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with signal, multiple overlapping body layers visible in both XY and XZ views. Matches pretzel reference well, consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 112, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_3", "timepoint": 109, "predicted": "2fold", "reasoning": "The XY view shows two parallel body segments with a clear bend, consistent with a hairpin/U-shape. The eggshell has some dark space remaining (moderate fill), not densely packed like pretzel. Matches "}
+{"kind": "verify", "embryo_id": "embryo_3", "timepoint": 109, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_3", "timepoint": 109, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "The XY view shows two parallel body segments with a clear bend, consistent with a hairpin/U-shape. The eggshell has some dark space remaining (moderate fill), not densely packed like pretzel. Matches 2fold reference."}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 112, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping bright signal, multiple body layers visible in the projections, consistent with previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 112, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 112, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping bright signal, multiple body layers visible in the projections, consistent with previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 113, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 113, "predicted": "2fold", "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill; matches 2fold reference. No dense multi-coil pretzel pattern yet."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 113, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 113, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill; matches 2fold reference. No dense multi-coil pretzel pattern yet."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 114, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 113, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping coils visible in both XY and XZ views. Complex tangled pattern consistent with previous pretzel classifications."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 113, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 113, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping coils visible in both XY and XZ views. Complex tangled pattern consistent with previous pretzel classifications."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 114, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 114, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with signal, multiple overlapping body segments visible creating a complex tangled pattern. Consistent with previous pretzel classifications."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 114, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 114, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with signal, multiple overlapping body segments visible creating a complex tangled pattern. Consistent with previous pretzel classifications."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 115, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 114, "predicted": "2fold", "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments visible in XZ view with a clear hairpin shape. Matches 2fold references well; not yet densely packed like p"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 114, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 114, "predicted": "2fold", "gt": "pretzel", "is_correct": false, "is_adjacent_correct": true, "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments visible in XZ view with a clear hairpin shape. Matches 2fold references well; not yet densely packed like pretzel."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 115, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 115, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping body segments visible in XY view, consistent with pretzel stage. No sign of hatching yet."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 115, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 115, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping body segments visible in XY view, consistent with pretzel stage. No sign of hatching yet."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 116, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 116, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping fluorescent signal, multiple body layers visible in both top and side views. Matches pretzel reference. Continuation from previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 116, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 116, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping fluorescent signal, multiple body layers visible in both top and side views. Matches pretzel reference. Continuation from previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 117, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 115, "predicted": "pretzel", "reasoning": "The eggshell appears densely filled with signal, and the XZ view shows multiple overlapping body segments/coils rather than a simple hairpin. The pattern looks complex and tangled, matching the pretze"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 115, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 115, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The eggshell appears densely filled with signal, and the XZ view shows multiple overlapping body segments/coils rather than a simple hairpin. The pattern looks complex and tangled, matching the pretzel reference."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 116, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 117, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body layers visible in the XY and XZ views. Matches pretzel reference; consistent with previous timepoints."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 117, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 117, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body layers visible in the XY and XZ views. Matches pretzel reference; consistent with previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 118, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 118, "predicted": "pretzel", "reasoning": "Eggshell densely filled with multiple overlapping body segments visible in YZ view showing coiled morphology. Consistent with previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 118, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 118, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with multiple overlapping body segments visible in YZ view showing coiled morphology. Consistent with previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 119, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 116, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with bright fluorescent signal, showing complex overlapping pattern with multiple body layers visible. Consistent with previous pretzel classification."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 116, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 116, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with bright fluorescent signal, showing complex overlapping pattern with multiple body layers visible. Consistent with previous pretzel classification."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 117, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 119, "predicted": "pretzel", "reasoning": "Eggshell densely filled with multiple overlapping body layers visible; complex tangled pattern consistent with pretzel. Continues from previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 119, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 119, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with multiple overlapping body layers visible; complex tangled pattern consistent with pretzel. Continues from previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 120, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 120, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping coils visible in XY view. Pattern is complex/tangled matching pretzel reference. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 120, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 120, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping coils visible in XY view. Pattern is complex/tangled matching pretzel reference. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 121, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 117, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with bright signal, multiple overlapping body segments visible creating a complex tangled pattern. Consistent with previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 117, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 117, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with bright signal, multiple overlapping body segments visible creating a complex tangled pattern. Consistent with previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 118, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 121, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping body layers visible in XY and XZ views, consistent with pretzel stage. Continuation from previous timepoints."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 121, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 121, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping body layers visible in XY and XZ views, consistent with pretzel stage. Continuation from previous timepoints."}
+{"kind": "render", "embryo_id": "embryo_2", "timepoint": 122, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_2", "timepoint": 122, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible, matching pretzel morphology. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_2", "timepoint": 122, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_2", "timepoint": 122, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible, matching pretzel morphology. Consistent with previous observations."}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 118, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping coils visible in all views. Matches pretzel reference well, consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 118, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 118, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping coils visible in all views. Matches pretzel reference well, consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 119, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 119, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping coils of bright signal visible in both top and side views. Consistent with previous pretzel classifications."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 119, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 119, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping coils of bright signal visible in both top and side views. Consistent with previous pretzel classifications."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 120, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 120, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with complex overlapping signal, multiple body layers visible. Matches pretzel reference and consistent with prior timepoints."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 120, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 120, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with complex overlapping signal, multiple body layers visible. Matches pretzel reference and consistent with prior timepoints."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 121, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 121, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping bright signal, multiple body layers visible in side view, consistent with previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 121, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 121, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping bright signal, multiple body layers visible in side view, consistent with previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 122, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 122, "predicted": "pretzel", "reasoning": "Eggshell densely filled with signal, multiple overlapping coils visible in XY view with complex tangled pattern. Matches pretzel reference well."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 122, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 122, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with signal, multiple overlapping coils visible in XY view with complex tangled pattern. Matches pretzel reference well."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 123, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 123, "predicted": "pretzel", "reasoning": "Densely filled eggshell with multiple overlapping body segments visible, complex tangled pattern consistent with pretzel stage. Continues from previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 123, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 123, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Densely filled eggshell with multiple overlapping body segments visible, complex tangled pattern consistent with pretzel stage. Continues from previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 124, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 124, "predicted": "pretzel", "reasoning": "Eggshell densely filled with complex overlapping signal, multiple body segments visible in the XZ view indicating multiple coils. Matches pretzel reference and consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 124, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 124, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with complex overlapping signal, multiple body segments visible in the XZ view indicating multiple coils. Matches pretzel reference and consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 125, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 125, "predicted": "pretzel", "reasoning": "Multiple overlapping coils visible with densely filled eggshell; consistent with previous pretzel stage."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 125, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 125, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Multiple overlapping coils visible with densely filled eggshell; consistent with previous pretzel stage."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 126, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 126, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping coils; multiple body layers visible in XZ view. Consistent with prior pretzel classification."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 126, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 126, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping coils; multiple body layers visible in XZ view. Consistent with prior pretzel classification."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 127, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 127, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping coils of signal, matching pretzel reference. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 127, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 127, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping coils of signal, matching pretzel reference. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 128, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 128, "predicted": "pretzel", "reasoning": "The eggshell is densely filled with multiple overlapping body segments visible in the XY view, showing the complex coiled pattern characteristic of pretzel stage. Consistent with previous observations"}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 128, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 128, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "The eggshell is densely filled with multiple overlapping body segments visible in the XY view, showing the complex coiled pattern characteristic of pretzel stage. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 129, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 129, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping coiled signal, multiple body layers visible. Consistent with previous pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 129, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 129, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping coiled signal, multiple body layers visible. Consistent with previous pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 130, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 130, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping coils visible, complex tangled pattern consistent with pretzel stage. Matches previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 130, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 130, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping coils visible, complex tangled pattern consistent with pretzel stage. Matches previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 131, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 131, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with signal showing multiple overlapping body segments and complex tangled pattern, consistent with prior pretzel observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 131, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 131, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with signal showing multiple overlapping body segments and complex tangled pattern, consistent with prior pretzel observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 132, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 132, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible, matching pretzel reference. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 132, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 132, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible, matching pretzel reference. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 133, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 133, "predicted": "pretzel", "reasoning": "Eggshell densely filled with complex overlapping coils visible in both XY and YZ views. Multiple body segments overlap, matching pretzel reference. Consistent with previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 133, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 133, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with complex overlapping coils visible in both XY and YZ views. Multiple body segments overlap, matching pretzel reference. Consistent with previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 134, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 134, "predicted": "pretzel", "reasoning": "Eggshell densely filled with multiple overlapping coils of nuclei, consistent with prior pretzel observations. No sign of hatching."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 134, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 134, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with multiple overlapping coils of nuclei, consistent with prior pretzel observations. No sign of hatching."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 135, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 135, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible, consistent with pretzel stage. Continues from previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 135, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 135, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible, consistent with pretzel stage. Continues from previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 136, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 136, "predicted": "pretzel", "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible in the XY view, consistent with pretzel stage. Matches previous observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 136, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 136, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible in the XY view, consistent with pretzel stage. Matches previous observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 137, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 137, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping coiled signal, multiple body segments visible in XY view with complex tangled pattern. Matches pretzel reference and consistent with prior observations."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 137, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 137, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping coiled signal, multiple body segments visible in XY view with complex tangled pattern. Matches pretzel reference and consistent with prior observations."}
+{"kind": "render", "embryo_id": "embryo_1", "timepoint": 138, "extras": []}
+{"kind": "classify", "embryo_id": "embryo_1", "timepoint": 138, "predicted": "pretzel", "reasoning": "Eggshell densely filled with overlapping bright signal, multiple coils visible with no significant dark space. Matches pretzel reference."}
+{"kind": "verify", "embryo_id": "embryo_1", "timepoint": 138, "monotone": true}
+{"kind": "score", "embryo_id": "embryo_1", "timepoint": 138, "predicted": "pretzel", "gt": "pretzel", "is_correct": true, "is_adjacent_correct": true, "reasoning": "Eggshell densely filled with overlapping bright signal, multiple coils visible with no significant dark space. Matches pretzel reference."}
+{"kind": "run_end", "embryo_id": null, "timepoint": null}

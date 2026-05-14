@@ -1,0 +1,1926 @@
+{
+  "config": {
+    "variant": "hybrid",
+    "model": "claude-opus-4-6",
+    "thinking": "adaptive",
+    "seed": 2,
+    "stages": [
+      "1.5fold",
+      "2fold",
+      "pretzel"
+    ],
+    "structured_output": false,
+    "n_embryos_expected": null,
+    "git_sha": "1990261b2e3bcadd3c51bb18f3b2ded7bd200d55",
+    "git_dirty": true,
+    "captured_at": "2026-05-14T18:47:09.574020+00:00"
+  },
+  "embryo_results": [
+    {
+      "embryo_id": "embryo_3",
+      "predictions": [
+        {
+          "timepoint": 39,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with a slight indentation/bend characteristic of the comma stage, closely matching the comma reference images (T40-T44). The XZ view shows two bright lobes separated by a darker midline, consistent with comma references. The embryo has not yet adopted the more uniformly elongated shape seen in the 1.5fold references (T47+). With T36-T38 all classified as comma, and no clear morphological transition to 1.5fold visible, this remains comma.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 40,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with a shape consistent with the comma reference at T40 - still showing some asymmetry/indentation rather than the smoother, more uniformly elongated shape of 1.5fold. The XZ view shows a relatively uniform rectangular projection without clear layering/folding. The YZ cross-section remains roughly round. Previous three timepoints were all comma, and while the embryo is approaching the transition to 1.5fold, there is no clear morphological change indicating it has entered that stage. Following the rule to prefer the earlier stage when uncertain.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 41,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with a slight indentation/asymmetry consistent with comma stage, matching the comma reference images (especially T44). The shape is smoothing out but hasn't yet developed the clear elongation and folding characteristic of 1.5fold. The YZ view shows a round cross-section and XZ shows a broad, relatively uniform mass similar to comma references. Previous three timepoints were all comma, and at T41 (just one timepoint later), there is no clear morphological transition to 1.5fold visible.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 42,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo that still retains slight asymmetry consistent with the comma stage reference images (particularly T42-T44). While the shape is becoming more elongated, there is no clear single elongated body plan characteristic of 1.5fold. The XZ view shows a bright mass with some internal structure variation but no distinct parallel layering. The YZ view shows a roughly round cross-section. Given 3 consecutive comma observations (T39-T41) and the rule to prefer the earlier stage when uncertain, this remains comma.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 43,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo that still matches the comma reference images (especially T44). The shape is becoming more elongated but hasn't yet transitioned to the clearly uniform elongation seen in 1.5fold references (T47+). The XZ view shows a broad, relatively uniform bright mass without the distinct layering/folding characteristic of 1.5fold. Previous three timepoints were all comma, and the reference comma extends to T44, so T43 is still well within the comma range. No clear morphological transition to 1.5fold is evident yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 44,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with a comma-like shape that closely matches the comma T44 reference image. The embryo is elongating but has not yet achieved the smoother, more uniformly elongated shape characteristic of the 1.5fold stage (reference T47). The XZ view shows layering consistent with late comma. The YZ cross-section remains relatively round. With three consecutive comma observations (T41-T43) and morphology still matching the comma references rather than showing clear 1.5fold elongation, this remains comma.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 45,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows the embryo has become noticeably more elongated compared to the comma references (T40-T44), with the body thinning and extending along the anterior-posterior axis. The overall shape closely matches the early 1.5fold reference (T47) rather than the comma references. The head region remains bulbous on one end while the tail is extending and beginning to fold back. The XZ view also shows a pattern consistent with the 1.5fold reference, with the bright mass becoming more horizontally extended. This represents a clear morphological change from the comma stage seen at T42-T44.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 46,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with a clear two-lobed shape and the tail beginning to fold back, consistent with early 1.5fold (matching reference T47). The XZ view shows early layering/folding at the bottom, distinguishing it from the comma stage. The previous timepoint (T45) was classified as 1.5fold, and the morphology here is consistent with that stage continuing.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 47,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with the body beginning to fold along one side, closely matching the T47 1.5fold reference image. The XZ view shows early layering but not yet two clearly separated parallel bright bands that would indicate 2fold. The YZ cross-section shows a round shape with some asymmetric internal brightness. Previous observations at T45-T46 were 1.5fold, and this image is consistent with continued 1.5fold morphology without clear evidence of transition to 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 48,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo filling the eggshell with a relatively uniform, smooth shape \u2014 closely matching the 1.5fold reference (especially T47). The XZ view shows some internal layering/bright spots but no clear two separated parallel bright bands that would indicate 2fold. The YZ cross-section appears round with diffuse internal structure. Only one timepoint after the last confirmed 1.5fold (T47), and there is no clear morphological change to suggest advancement to 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 49,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows a bilobed/figure-8 shape with a visible constriction, consistent with the 1.5fold stage where the embryo has folded back on itself. The XZ view shows layered bright regions but does not yet show two clearly separated parallel bright bands that would indicate 2fold. Comparing to references, this matches the 1.5fold T47-T52 range well. Previous three timepoints were all 1.5fold, and there is no clear morphological leap to 2fold\u2014preferring the earlier stage as instructed.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 50,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with a clear curve/fold, consistent with the 1.5fold reference images (especially T52). The body is bending back on itself but I do not see TWO clearly separated parallel bright bands that would indicate 2fold. The XZ view shows some layering but not the distinct three-layer pattern characteristic of 2fold. The YZ cross-section is roughly round with diffuse internal structure. Previous three timepoints were all 1.5fold, and the morphology here remains consistent with that stage.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 51,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with a clear curved/folded morphology, consistent with 1.5fold. The body curves but does not yet show TWO CLEARLY SEPARATED parallel bright bands that would indicate 2fold. The XZ view shows some layering with two bright lobes, but this is consistent with late 1.5fold (compare to reference T52). The YZ view shows a round cross-section with internal structure. Previous three timepoints were all 1.5fold, and while the embryo is progressing, there is no definitive morphological change to warrant advancing to 2fold yet. Per the rule to prefer the earlier stage when uncertain between 1.5fold and 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 52,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo filling the eggshell with a relatively uniform body shape, closely matching the 1.5fold reference at T52. The XZ (bottom-left) view shows some layering with bright regions but does not show TWO CLEARLY SEPARATED parallel bright bands that would indicate 2fold. The YZ cross-section is consistent with 1.5fold. Previous three observations were all 1.5fold, and there is no clear morphological change warranting advancement to 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 53,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with a slight constriction/folding visible, consistent with 1.5fold references (especially T52-T57). The XZ view shows early layering but not two clearly separated parallel bright bands that would indicate 2fold. The YZ cross-section is still relatively round/compact. Previous three timepoints were all 1.5fold, and without clear evidence of two distinct separated parallel bands, I prefer the earlier stage classification.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 54,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two bright lobes forming an S/figure-8 shape, suggesting the embryo is folding further. However, comparing to references, this appearance is consistent with late 1.5fold transitioning toward 2fold. The 2fold references show TWO CLEARLY SEPARATED parallel bright bands, and while this image is approaching that, the separation is not yet as distinct as in the 2fold reference. The XZ view shows emerging layering but not the clear double-band pattern of 2fold. Given that the previous 3 timepoints were all 1.5fold and the rule to prefer the earlier stage when in doubt between adjacent stages, this is classified as late 1.5fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 55,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with distributed bright nuclei, closely matching the late 1.5fold reference (T57). The XZ view shows some layering/banding but not the two clearly separated parallel bright bands characteristic of 2fold. The YZ cross-section is relatively compact without the complex multi-lobed pattern seen in 2fold references. Previous three timepoints were all 1.5fold, and per the rule to prefer the earlier stage when uncertain between 1.5fold and 2fold, this remains classified as 1.5fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 56,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with some internal structural organization consistent with the 1.5fold reference at T57. While there are hints of folding beginning (slight brightness asymmetry and emerging layering in the XZ view), I do not see TWO CLEARLY SEPARATED parallel bright bands that would indicate 2fold. The YZ cross-section shows a slightly irregular shape but not the distinctly complex/layered profile of 2fold. Previous three timepoints were all 1.5fold, and per the rule to prefer the earlier stage when uncertain between 1.5fold and 2fold, this remains 1.5fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 57,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with body folding, consistent with 1.5fold references (especially T57 reference). The XZ view shows some layering but does not yet display TWO CLEARLY SEPARATED parallel bright bands that would indicate 2fold. The YZ cross-section remains relatively compact. Previous three timepoints were all 1.5fold, and per the rule to prefer the earlier stage when uncertain between late 1.5fold and early 2fold, this remains 1.5fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 58,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo filling the eggshell, very similar to the late 1.5fold reference (T57). The XZ view shows some layering/banding beginning to develop but does not yet show TWO CLEARLY SEPARATED parallel bright bands that would define 2fold. The YZ cross-section is consistent with 1.5fold. Previous three timepoints were all 1.5fold, and per the rule to prefer the earlier stage when uncertain between 1.5fold and 2fold, this remains 1.5fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 59,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows a bilobed shape with two bright masses, and the XZ view shows some layering, suggesting the embryo is in late 1.5fold transitioning toward 2fold. However, I do not see TWO CLEARLY SEPARATED parallel bright bands that would definitively indicate 2fold. The bilobed appearance is consistent with late 1.5fold where the tail is folding back. Previous three timepoints were all 1.5fold, and per the rule to prefer the earlier stage when uncertain between adjacent stages, this remains 1.5fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 60,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with some internal organization suggestive of continued folding. The YZ view (top-right) shows a somewhat complex pattern with a hint of ring-like structure, but the XZ view (bottom-left) does not yet show TWO CLEARLY SEPARATED parallel bright bands that would define 2fold. The overall appearance is consistent with late 1.5fold - more elongated than the 1.5fold reference at T47 but not yet matching the 2fold reference at T62. Per the rule to prefer the earlier stage when distinguishing late 1.5fold from early 2fold, and with previous three timepoints all at 1.5fold, this remains 1.5fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 61,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with a clear dark gap running through the middle, creating two distinctly separated parallel bright bands \u2014 this is the hallmark of the 2fold stage. The XZ view (bottom-left) confirms this with two clearly separated layers of bright signal stacked vertically. This matches very closely with the 2fold reference at T62. The transition from the previous 1.5fold (T58-60) is supported by the clear separation of the two bands, which goes beyond the more uniformly filled appearance of the 1.5fold references.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 62,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with signal - more than 1.5fold but not densely packed like pretzel. In the XY view (top-left), two parallel body segments are discernible with some dark space remaining, particularly on the right side. The XZ view (bottom-left) shows two distinct layers of signal separated by a darker gap, consistent with a hairpin/U-fold. This matches the 2fold reference images well (notably the T62 reference). The previous timepoint was also classified as 2fold, and there is no clear morphological change suggesting progression to pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 63,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 there is still visible dark space within the eggshell boundary, particularly at the periphery, but less than at 1.5fold. In the XY view, the embryo body shows an elongated shape with two roughly parallel segments consistent with a hairpin/U-fold. The fill fraction is not yet dense enough for pretzel (no complex overlapping coils filling the entire shell). This matches the 2fold reference images well and is consistent with the previous classification at T61-T62.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 64,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two parallel body segments forming a hairpin/U-shape, consistent with 2fold morphology. The eggshell is moderately filled \u2014 there is some dark space remaining (especially visible on the right side of the XY view), but the body occupies a substantial portion of the shell. The XZ view shows distinct layered signal from the fold. This is not yet pretzel \u2014 the shell isn't densely filled with complex overlapping coils, and individual body segments are still distinguishable. Consistent with the previous 2fold classifications at T61-T63 and matches the 2fold reference images well.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 65,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two parallel body segments in a hairpin/U-shape, consistent with 2fold. The eggshell is moderately filled \u2014 there's still visible dark space inside the shell boundary, not yet the dense, complex coiling seen in pretzel. The XZ view shows layered signal but not the tightly packed multiple-overlap pattern of pretzel. This matches well with the 2fold reference images (e.g., T62-T68) and is consistent with the previous three observations at 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 66,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 there is still some dark space visible within the eggshell boundary, particularly in the XY view where gaps between body segments can be seen. The XZ view shows what appears to be 2 main parallel body layers. The fill fraction is not yet dense enough for pretzel (which would show very little empty space and a more complex, tangled pattern). Consistent with the 2fold references and the previous three observations at 2fold. No clear morphological change to warrant advancing to pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 67,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view, two parallel body segments are visible forming a hairpin/U-shape, consistent with 2fold morphology. The eggshell is moderately filled with signal \u2014 some dark space remains but the body occupies a substantial portion. This matches the 2fold reference images (e.g., T68) well. The shell is not yet densely filled with overlapping coils as would be expected for pretzel. Consistent with the previous three observations at 2fold, with no clear morphological change toward pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 68,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view, the embryo shows a clear hairpin/U-shaped fold with two parallel body segments connected by a bend, characteristic of 2fold. The eggshell is moderately filled - there is visible dark space remaining inside the shell boundary, but less than at 1.5fold. The body has not yet formed the multiple overlapping coils that would indicate pretzel stage. This matches well with the 2fold reference images and is consistent with the previous three observations at T65-T67.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 69,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows two parallel body segments with a bend, forming a clear hairpin/U-shape characteristic of 2fold. The eggshell is moderately filled \u2014 some dark space remains but less than in 1.5fold. The XZ view shows layered bright bands consistent with two overlapping body segments. This matches well with the 2fold reference images (T62-T75 range) and is consistent with the previous three observations at T66-T68 all being 2fold. The fill fraction is not dense enough to indicate pretzel stage.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 70,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "In the XY view (top-left), the embryo shows a clear folded body with two roughly parallel segments visible, and the eggshell is moderately filled \u2014 some dark space remains inside the shell boundary, consistent with 2fold rather than pretzel. The XZ view (bottom-left) shows a complex but not yet densely packed pattern. While the folding is becoming more elaborate compared to earlier 2fold references, the fill fraction is not yet dense enough for pretzel (which would show very little empty space). Previous three timepoints were all 2fold, and stages change slowly, so maintaining 2fold classification.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 71,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows two parallel body segments with moderate eggshell filling - some dark space remains but less than 1.5fold. The XZ view shows layered structure consistent with a hairpin fold. The fill fraction is moderate, not yet densely packed as in pretzel. This matches the 2fold reference images (T62-T75 range). Consistent with previous three observations at 2fold, and no clear morphological change to pretzel is evident.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 72,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is moderately filled \u2014 more than sparse but not yet densely packed like pretzel references. In the XY view, I can see folded body segments forming a hairpin/U-shape pattern, consistent with 2fold. While the fill fraction is increasing compared to earlier 2fold, it hasn't reached the dense, complex overlapping coil pattern of the pretzel reference (which begins around T82). The XZ view shows layered but still distinguishable segments. Previous three timepoints were all 2fold, and stages change slowly, so maintaining 2fold classification.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 73,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows the embryo body with two parallel segments visible in a hairpin/U-shape configuration. The eggshell is moderately filled \u2014 some dark space remains but less than in 1.5fold. The XZ view (bottom-left) shows layered bright bands consistent with folded body segments. The fill fraction is moderate, not yet the dense/complex pattern seen in pretzel. This matches well with the 2fold reference images (e.g., T75). Consistent with the previous three timepoints classified as 2fold, with no clear transition to pretzel yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 74,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows a folded embryo with two parallel body segments forming a hairpin/U-shape, consistent with 2fold morphology. The eggshell is moderately filled \u2014 there is still some dark space visible within the eggshell boundary, not yet the dense, complex filling seen in pretzel references. The XZ view shows multiple bright bands but the overall pattern matches the 2fold reference (especially T75). Previous three timepoints were all 2fold, and there is no clear transition to the more densely packed, tangled pretzel pattern yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 75,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 more than sparse but not yet densely packed like pretzel. In the XY view, the body shows a folded structure with two parallel segments visible, and there is still some dark space within the eggshell boundary. The XZ view shows internal complexity but not the dense, multi-layered overlapping pattern characteristic of pretzel stage. This matches the 2fold reference at T75. Previous three timepoints were all 2fold, and no clear transition to pretzel-level density is observed.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 76,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows an elongated embryo with two parallel body segments forming a hairpin/U-shape, consistent with 2fold. The eggshell fill fraction is moderate \u2014 signal fills a good portion but dark spaces remain, not yet the dense, complex packing seen in pretzel references. The XZ view shows similar moderate filling with visible internal structure but not the multiple overlapping coils characteristic of pretzel. This matches well with the 2fold reference images (e.g., T75). Previous three timepoints were all 2fold, and no clear transition to pretzel-level complexity is evident.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 77,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 there are still some dark gaps visible, especially in the XY view. Two parallel body segments are discernible forming a hairpin/U-shape, consistent with 2fold. The fill fraction is not yet dense enough for pretzel (no complex multi-coil overlapping pattern). This matches the later 2fold reference images (T75). Previous three timepoints were all 2fold, and no clear transition to pretzel-level complexity is evident.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 78,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "In the XY view, I can see a folded body forming a clear hairpin/U-shape with approximately two parallel body segments visible. The eggshell is moderately filled \u2014 there is some dark space visible, particularly in the center of the loop and at the edges, but less than in earlier stages. The fill fraction is moderate, not yet densely packed as in pretzel references. Compared to pretzel references, the pattern is not yet as complex or tangled, and there's still visible empty space within the eggshell. The XZ view (bottom-left) shows layered bright bands consistent with 2fold morphology. Previous three timepoints were all 2fold, and while this may be approaching the transition to pretzel, the morphology does not yet show the dense, multi-coil filling characteristic of pretzel stage.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 79,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "In the XY view, the embryo body forms a ring/loop pattern with a visible dark center, indicating the body has folded more than twice and is wrapping around inside the eggshell. This goes beyond the U-shaped hairpin of 2fold. The YZ view also shows a ring-like pattern with a dark center consistent with multiple coils. The eggshell fill is moderate-to-dense, and the XZ view shows complex layered signal. This matches the pretzel reference at T82, where the body begins showing multiple overlapping folds. The morphology has clearly progressed beyond the 2fold stage seen in previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 80,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "In the XY view, the embryo body shows multiple overlapping segments with complex folding patterns, consistent with 3+ folds. The eggshell is densely filled with signal \u2014 more so than the 2fold reference, though some dark gaps remain. The XZ view shows a complex, layered pattern typical of pretzel stage. This is consistent with the previous T79 classification of pretzel, and the morphology matches the pretzel reference images well.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 81,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal \u2014 very little empty/dark space remains inside the eggshell boundary in the XY view. Multiple overlapping body segments are visible, creating a complex pattern rather than a simple hairpin (2fold). The XZ view (bottom-left) shows complex layered internal structure consistent with multiple body folds. This matches the pretzel reference images well and is consistent with the previous two timepoints (T79, T80) both classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 82,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal with very little empty/dark space inside. The XY view shows complex, overlapping coils with multiple body segments visible \u2014 a tangled pattern characteristic of pretzel stage. The XZ view also shows dense, layered signal. This matches the pretzel reference images well and is consistent with the previous three observations (T79-T81 all pretzel).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 83,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal with very little empty/dark space inside the boundary. In the XY view, multiple overlapping body segments create a complex, tangled pattern with numerous nuclei visible across the full extent of the eggshell. The XZ view shows bright, complex layered signal filling the shell. This matches the pretzel reference images well and is consistent with the previous three observations (T80-T82) all being pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 84,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows a densely filled eggshell with multiple overlapping body segments forming a complex coiled pattern. At least 3 parallel body layers are visible, with a clear looping/folded structure. The XZ view (bottom-left) confirms multiple overlapping layers of signal. Very little empty dark space remains within the eggshell boundary. This matches the pretzel reference images well and is consistent with the previous three observations (all pretzel). No sign of hatching (no worm body extending outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 85,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping coils/body segments. In the XY view, complex tangled pattern with multiple parallel body segments visible (3+ folds). The morphology is consistent with the pretzel reference images and unchanged from previous timepoints T82-T84.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 86,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body segments creating a complex, tangled pattern in the XY view. The XZ view also shows layered coils filling most of the shell interior. This matches the pretzel reference images well. No sign of hatching (no elongated worm outside the shell). Consistent with the previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 87,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. This matches the pretzel reference images well, and is consistent with the previous three observations all being pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 88,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal \u2014 complex, overlapping coils are visible in the XY view with multiple body segments creating a tangled pattern. The XZ view (bottom-left) shows multiple bright layers. Very little empty/dark space remains inside the eggshell. This matches the pretzel reference images well and is consistent with the previous three observations (T85-T87) all classified as pretzel. No sign of hatching (no elongated worm shape outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 89,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows multiple overlapping coiled body segments within the eggshell - at least 3 parallel bands of nuclei are visible, creating a complex, tangled pattern. The eggshell is densely filled with fluorescent signal, with little empty dark space remaining inside the shell boundary. The XZ view (bottom-left) also shows the complex folded structure characteristic of the pretzel stage. This matches the pretzel reference images well and is consistent with the previous three observations (T86-T88) all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 90,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body segments/coils, consistent with pretzel stage. In the XY view, the body appears complexly folded with at least 3 layers visible. The XZ projection shows a complex, tangled pattern with bright overlapping regions. There is very little empty/dark space within the eggshell boundary. No sign of the worm emerging from the shell (no hatching). This matches the pretzel reference images well, and is consistent with the previous three timepoints all being pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 91,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, showing multiple overlapping body segments creating a complex, tangled pattern. In the XY view, the elongated embryo body fills most of the eggshell with little dark/empty space. The XZ view shows bright, complex layered signal consistent with multiple coils. This matches the pretzel reference images well and is consistent with the previous three timepoints all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 92,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coiled body segments \u2014 multiple folds are visible in the XY view with a tangled pattern. The XZ projection (bottom-left) also shows dense, complex signal filling the shell. This matches the pretzel reference images well and is consistent with the previous three timepoints (T89-T91) all classified as pretzel. No sign of hatching (no signal extending outside the eggshell boundary).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 93,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows multiple overlapping coiled body segments within the eggshell, with at least 3 parallel bands visible \u2014 characteristic of the pretzel stage. The eggshell is densely filled with signal, and the XZ projection (bottom-left) confirms multiple bright layers of the folded body. This matches the pretzel reference images well and is consistent with the previous three observations (T90-T92 all pretzel). No signs of hatching (no elongated worm outside the shell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 94,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal and multiple overlapping body segments/coils are visible in the XY view, creating a complex tangled pattern. The XZ view shows layered bright signal consistent with multiple folds. This matches the pretzel reference images well. No sign of hatching (no worm body extending outside the eggshell). Consistent with the previous three observations all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 95,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal and little dark/empty space remains inside. In the XY view, multiple overlapping body segments are visible with a complex, coiled pattern \u2014 at least 3 parallel segments can be discerned. The XZ view shows a complex multi-layered structure. This matches the pretzel reference images well, and is consistent with the previous three timepoints all classified as pretzel. No signs of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 96,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coils characteristic of the pretzel stage. In the XY view, multiple body segments create a tangled pattern with relatively little empty space inside the eggshell. The XZ view shows complex layered bright structures consistent with 3+ folds. No sign of hatching (no elongated worm outside the eggshell). Consistent with previous observations at T93-T95.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 97,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coils of the embryo body. Multiple body segments are visible in the XY view with a tangled/looped pattern characteristic of pretzel stage. The XZ view shows complex internal structure with multiple overlapping layers. This matches the pretzel reference images well and is consistent with the previous three observations at pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 98,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coils - multiple body segments are visible in the XY view with a tangled pattern. The XZ view shows a complex internal structure consistent with 3+ folds. This matches pretzel reference images well. No sign of hatching (no elongated worm outside the shell). Consistent with previous three timepoints all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 99,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. The XZ view shows dense, complex signal filling most of the shell. This matches the pretzel reference images well and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 100,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, showing multiple overlapping coiled body segments visible in the XY view (at least 3 parallel segments creating a complex, tangled pattern). The XZ view confirms dense, bright signal filling most of the eggshell interior. This matches the pretzel reference images well, with the characteristic multiple-fold morphology. Consistent with previous observations at T97-T99 (all pretzel), and no sign of hatching (no worm body extending outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 101,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows multiple overlapping coiled body segments forming a complex, tangled pattern within the eggshell. The eggshell is densely filled with fluorescent signal, with little empty space remaining. The XZ view confirms multiple body layers. This matches the pretzel reference images well and is consistent with the previous three observations at pretzel stage. No sign of hatching (no worm body extending outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 102,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows multiple overlapping coils of the embryo body within the eggshell, with bright nuclei arranged in a complex looping pattern (3+ parallel segments visible). The eggshell is densely filled with signal, with relatively little empty dark space inside the shell boundary. The XZ view also shows a dense, complex pattern consistent with multiple body folds. This matches the pretzel reference images and is consistent with the previous three timepoints all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 103,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. This matches the pretzel reference images well, and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 104,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coils \u2014 multiple body segments are visible in the XY view with a tangled morphology. The XZ view (bottom-left) also shows multiple overlapping layers. This matches the pretzel reference images well. No evidence of hatching (no elongated worm outside the eggshell). Consistent with the previous three observations (T101-T103) all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 105,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in all three views. The XY view shows multiple body segments creating a tangled pattern that fills most of the eggshell interior, consistent with 3+ folds. The XZ view shows dense, layered signal throughout. This matches the pretzel reference images well. No sign of hatching (no elongated worm outside the eggshell). Consistent with previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 106,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body segments/coils \u2014 characteristic of the pretzel stage. The XY view shows complex, tangled structure filling most of the eggshell with little empty dark space. The XZ view confirms multiple overlapping layers. This matches the pretzel reference images and is consistent with the previous three observations (T103-T105 all pretzel). No sign of hatching (no elongated worm outside eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 107,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coils visible in the XY view. The body shows complex, tangled folding patterns with 3+ parallel segments, consistent with the pretzel stage. The XZ view shows dense, layered signal filling the shell. This matches the pretzel reference images well and is consistent with the previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 108,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows multiple overlapping coils of the embryo body within the eggshell, with a complex, tangled pattern characteristic of the pretzel stage. The eggshell is densely filled with signal. Multiple body segments are visible crossing each other. This matches the pretzel reference images well and is consistent with the previous three observations all being pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 109,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows a complex, densely filled structure with multiple overlapping coils within the eggshell. While the bilobed appearance in the XY projection might suggest early hatching, the YZ and XZ views still show a densely packed structure consistent with a pretzel stage. The eggshell appears mostly filled with signal and multiple body segments are visible. The previous three timepoints were all pretzel, and without clear evidence of an elongated worm body extending outside the eggshell boundary, I maintain the pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        }
+      ],
+      "accuracy": 0.6197183098591549,
+      "adjacent_accuracy": 1.0
+    },
+    {
+      "embryo_id": "embryo_2",
+      "predictions": [
+        {
+          "timepoint": 45,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo that is becoming smoother compared to the more clearly indented comma references, but has not yet achieved the distinctly uniform elongation seen in the 1.5fold references (T47+). The XZ view still shows the two-lobe brightness pattern characteristic of comma stage. The YZ cross-section remains compact and round, similar to comma references. Previous three timepoints were all comma, and while the embryo is transitioning toward 1.5fold, it hasn't clearly reached that stage yet. Following the rule to prefer the earlier stage when uncertain.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 46,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with a slight curvature, and the XZ view shows two bright lobes characteristic of late comma. While the embryo is becoming more elongated compared to earlier comma timepoints, it hasn't yet reached the clearly elongated, more uniform shape seen in the 1.5fold reference (T47). Previous three observations were all comma, and the 1.5fold reference begins at T47 \u2014 this T46 image appears transitional. Following the rule to prefer the earlier stage when uncertain, this remains comma.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 47,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "This image matches the 1.5fold reference at T47 very closely. The XY view shows the embryo has elongated significantly compared to the comma stage, losing the distinct two-lobed comma shape and becoming a more uniformly elongated form. The YZ cross-section shows an oval shape with a bright central region, and the XZ view shows a broad, relatively uniform structure \u2014 all consistent with 1.5fold references. This represents a clear morphological transition from the comma stage observed at T44-T46, and 1.5fold is the valid next stage after comma.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 48,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo that matches the 1.5fold reference images well - the body is becoming more elongated and streamlined compared to comma stage. The YZ view shows a relatively round/oval cross-section with a bright band, and the XZ view shows the embryo filling the eggshell with some layering beginning but not yet showing the clear two parallel bands characteristic of 2fold. This is consistent with early 1.5fold, matching the T47 reference. The previous observation was 1.5fold at T47, and this T48 image shows no significant advancement beyond 1.5fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 49,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with dispersed nuclei matching the 1.5fold reference (T47-T52). The YZ cross-section is oval without complex internal structure, and the XZ view shows a broad mass without the two clearly separated parallel bright bands that would indicate 2fold. Only 2 timepoints after entering 1.5fold (T47), this is consistent with remaining in the 1.5fold stage, which typically lasts many timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 50,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo consistent with 1.5fold, closely matching the T52 reference. The YZ view shows some hint of internal banding but not the two clearly separated parallel bright bands characteristic of 2fold. The XZ view shows layering similar to 1.5fold references. Previous three timepoints were all 1.5fold, and this timepoint falls within the typical 1.5fold range (T47-T57 in references). Following the rule to prefer the earlier stage when uncertain between 1.5fold and 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 51,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo consistent with the 1.5fold reference (especially T52). The shape is elongated but lacks the two clearly separated parallel bright bands characteristic of 2fold. The XZ view shows a relatively uniform mass without the distinct layered/banded pattern seen in 2fold references. The YZ cross-section is round with concentrated bright spots, matching 1.5fold. Previous three timepoints were all 1.5fold, and no clear morphological transition to 2fold is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 52,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo consistent with 1.5fold references (compare to T52 reference). The XZ view shows some layering/brightness variations but not the two clearly separated parallel bright bands characteristic of 2fold. The YZ cross-section appears roughly round with some internal structure. The overall morphology closely matches the 1.5fold reference images, and the previous three timepoints were all 1.5fold. No clear morphological transition to 2fold is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 53,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo consistent with the 1.5fold reference images (especially T52). The XZ view shows some layering but does not yet display the two clearly separated parallel bright bands characteristic of 2fold. The YZ cross-section shows some irregularity but not the distinct bilobed pattern of 2fold. Previous three timepoints were all 1.5fold, and without clear evidence of two separated parallel bands, I maintain 1.5fold classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 54,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo consistent with 1.5fold reference images (especially T52-T57). The XZ view shows emerging layering with bright spots but not the clearly separated parallel double bands characteristic of 2fold. The YZ cross-section shows a roughly round shape with some asymmetric bright features. The overall morphology closely matches the 1.5fold references, and there is no clear evidence of two distinctly separated parallel bands that would justify advancing to 2fold. Previous three observations were all 1.5fold, consistent with this classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 55,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with a compact body shape consistent with the 1.5fold reference (especially T57). The XZ view shows some early layering but lacks the TWO CLEARLY SEPARATED parallel bright bands characteristic of 2fold. The YZ cross-section is still relatively compact. Comparing to 2fold references (T62+), the distinct double-band separation in XZ is not yet present. Previous three timepoints were all 1.5fold, and without clear evidence of progression to 2fold, the earlier stage is preferred.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 56,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated, curved embryo consistent with late 1.5fold - the body is folding but I do not see TWO CLEARLY SEPARATED parallel bright bands that would indicate 2fold. The XZ view shows two bright lobes side by side similar to the 1.5fold reference, not the distinct layered bands seen in 2fold references. The YZ cross-section shows some internal structure but remains relatively compact. With previous observations all at 1.5fold (T53-T55), and following the rule to prefer the earlier stage when uncertain between 1.5fold and 2fold, this remains 1.5fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 57,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with the body beginning to fold back on itself, closely matching the 1.5fold reference at T57. The XZ view shows emerging layering but does not yet display two clearly separated parallel bright bands that would indicate 2fold. The YZ cross-section remains relatively compact. Previous three timepoints were all 1.5fold, and without clear evidence of two distinct parallel bands, I maintain the 1.5fold classification per the rule to prefer the earlier stage when uncertain.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 58,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with some narrowing/folding, consistent with late 1.5fold. The XZ view shows developing layering but lacks the TWO CLEARLY SEPARATED parallel bright bands characteristic of 2fold. Comparing to references, this matches the late 1.5fold (T57) more than the 2fold (T62). Previous three timepoints were all 1.5fold, and per the rule to prefer the earlier stage when uncertain between adjacent stages, this remains 1.5fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 59,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo filling the eggshell with relatively uniform brightness distribution, consistent with the 1.5fold reference images. The XZ view shows some layering but does not yet display the two clearly separated parallel bright bands characteristic of 2fold. The YZ cross-section remains compact without the more complex structure seen in 2fold references. Given that T56-T58 were all 1.5fold and I do not see a definitive morphological transition to 2fold, I maintain the 1.5fold classification per the rule to prefer the earlier stage when uncertain.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 60,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated, curved embryo with folding beginning, consistent with late 1.5fold. While there is some layering visible in the XZ view, I do not see TWO CLEARLY SEPARATED parallel bright bands that would define 2fold. The curvature and shape closely match the late 1.5fold reference (T57). The 2fold reference begins at T62 and shows more pronounced separation of bands. Given the previous three timepoints were all 1.5fold and the rule to prefer the earlier stage when uncertain, this remains 1.5fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 61,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with some folding/curvature visible, and the XZ view shows emerging layering but not yet two clearly separated parallel bright bands characteristic of 2fold. Comparing to references, this most closely matches late 1.5fold (similar to T57 reference). While there are hints of early folding-back, the two parallel bands are not clearly separated enough to call 2fold. Previous three timepoints were all 1.5fold, and per the rule to prefer the earlier stage when uncertain between 1.5fold and 2fold, this remains 1.5fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 62,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "This image closely matches the 2fold reference. In the XZ view (bottom-left), three distinct horizontal bright bands are clearly visible, indicating the body has folded back on itself twice \u2014 this is the hallmark of 2fold vs 1.5fold (which shows only two bands). The XY view (top-left) shows an elongated embryo with a thickened region where the body folds overlap, and the overall shape has a bean-like asymmetry consistent with the 2fold reference at T62. The transition from 1.5fold (T59-T61) to 2fold at T62 is a natural single-stage progression.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 63,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view, two parallel body segments are visible with a clear fold/constriction between them, forming a hairpin-like shape. The eggshell is moderately filled \u2014 some dark space remains but less than at 1.5fold. The XZ view shows two distinct layers of signal consistent with a folded body. This matches the 2fold reference images (e.g., T62) well. Not yet pretzel \u2014 the shell is not densely packed with multiple overlapping coils. Consistent with the previous T62 classification of 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 64,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two main body segments forming a hairpin/U-shape, with a bright mass on the left and a curved body segment on the right connected by a bend at the bottom. The eggshell is moderately filled \u2014 some dark space remains between and around the body segments, but less than at 1.5fold. The XZ view (bottom-left) also shows layered structure consistent with two parallel segments. This matches the 2fold reference images (T62-T68 range) well. The fill fraction is not yet dense enough for pretzel. Consistent with previous 2fold classification at T62-T63.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 65,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 some dark space remains but less than at 1.5fold. In the XY view, the elongated body shows approximately two parallel segments consistent with a hairpin fold. The XZ view shows layered signal suggesting folded body segments but not yet the dense, complex multi-coil pattern of pretzel. The fill fraction and morphology closely match the 2fold reference images (e.g., T62-T68). No clear transition to pretzel is evident \u2014 the shell is not yet densely packed with overlapping coils. Consistent with previous three observations of 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 66,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows a folded embryo with two parallel body segments forming a hairpin/U-shape, consistent with 2fold. The eggshell is moderately filled - some dark space remains but the body occupies a significant portion. The XZ view (bottom-left) shows layered signal consistent with two overlapping body segments. This matches the 2fold reference images well. Not yet pretzel, as the shell is not densely filled with multiple overlapping coils. Consistent with previous observations at T63-T65.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 67,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 some dark spaces remain but the body occupies a substantial portion. In the XY view (top-left), two parallel body segments are visible in a hairpin/U-shape configuration, consistent with 2fold. The XZ view (bottom-left) shows layered horizontal bands indicating two folded segments. The fill fraction is not yet dense enough for pretzel (no complex, tangled multi-coil pattern). This matches the 2fold reference images (T62-T75 range) well, and is consistent with the previous three observations of 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 68,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with a curved body and moderate eggshell filling \u2014 some dark space remains at the ventral side but the shell is not densely packed. Two parallel body segments are discernible, consistent with a hairpin/U-fold. The XZ view shows layered bright bands indicating folding but not the complex multi-coil pattern of pretzel. This matches the 2fold reference images well and is consistent with the previous three timepoints (T65-T67) all classified as 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 69,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two parallel body segments forming a hairpin/U-shape, consistent with 2fold. The eggshell is moderately filled \u2014 there is some dark space remaining but less than 1.5fold. The signal pattern closely matches the 2fold reference images (especially T68-T75). The embryo has not yet reached the densely packed, complex coiling pattern characteristic of pretzel stage. Previous three timepoints were all 2fold, and no clear morphological change toward pretzel is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 70,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view, two body segments are visible connected by a bend, creating a dumbbell/figure-8 shape consistent with a hairpin fold. The eggshell is moderately filled \u2014 significant signal but still some dark space remains, not yet densely packed like pretzel. The XZ view shows two bright lobes corresponding to the folded body. This matches the 2fold reference images well. Previous three timepoints were all 2fold, and no clear transition to pretzel (dense filling with multiple overlapping coils) is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 71,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 some dark space remains, particularly on the right side of the XY view, but it's not yet densely packed like pretzel. In the XY projection, two parallel body segments are visible forming a hairpin/U-shape, consistent with 2fold. The XZ view (bottom-left) shows layered bands but not the complex overlapping coils of pretzel. This matches the 2fold reference images (especially around T68-T75) well. No clear morphological change from the previous 2fold classification at T70.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 72,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view (top-left), two parallel body segments are visible forming a hairpin/U-shape fold, consistent with 2fold morphology. The eggshell is moderately filled \u2014 there is some dark space remaining inside the shell boundary but less than at 1.5fold. The XZ view (bottom-left) shows layered signal consistent with two folded segments. The pattern is not yet densely filled or showing the complex overlapping coils characteristic of pretzel stage. This matches well with the 2fold reference images and is consistent with the previous three timepoints (T69-T71) all classified as 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 73,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two lobed/parallel body segments forming a hairpin or U-shape, consistent with 2fold. The eggshell is moderately filled \u2014 there is some dark space remaining but less than at 1.5fold. The XZ view confirms moderate filling with visible internal structure. This matches the 2fold reference images well and has not yet reached the dense, complex filling pattern of pretzel. Consistent with previous observations at T70-T72.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 74,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view (top-left), the embryo shows a clear folded body with two main parallel segments forming a hairpin/U-shape, consistent with 2fold. The eggshell is moderately filled \u2014 there is still visible dark space within the eggshell boundary, not yet densely packed like pretzel. The XZ view (bottom-left) shows moderately dense signal with distinguishable layered segments. Compared to the 2fold reference images, this matches well. The fill fraction is not yet dense enough for pretzel classification. Previous three timepoints were all 2fold, and there is no clear transition to the complex multi-coil pattern characteristic of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 75,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view (top-left), I can see two main body segments forming a clear hairpin/U-shape, consistent with 2fold. The eggshell is moderately filled \u2014 there is still visible dark space within the eggshell boundary, not yet densely packed as in pretzel. The XZ view (bottom-left) shows two to three bright lobes but not the complex, tangled coiling pattern of pretzel. This matches the 2fold reference images well. Previous three timepoints were all 2fold, and the morphology has not clearly advanced to pretzel-level density.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 76,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 there is still notable dark/empty space within the eggshell boundary, particularly visible in the XY view (top-left). The body shows a folded morphology with approximately two parallel segments visible, consistent with 2fold. Compared to the pretzel references (T82+), the eggshell is not yet densely filled and the pattern is not as complex/tangled. The XZ view (bottom-left) shows some layering but not the dense multi-coil pattern of pretzel. Given previous observations at T73-T75 were all 2fold and stages change slowly, this remains 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 77,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 some dark space remains, particularly visible in the XY view where gaps between body segments are apparent. The XZ (bottom-left) view shows layered parallel structures consistent with a folded body, but not yet the dense, complex coiling pattern seen in pretzel references. The fill fraction is moderate rather than dense. Previous three timepoints were all 2fold, and no clear transition to pretzel-level complexity (3+ overlapping folds, dense fill) is evident yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 78,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 there are still visible dark spaces within the eggshell boundary, particularly in the center of the XY view. In the XY projection, I can see two parallel body segments forming a hairpin/U-shape pattern. The XZ view shows layered bright bands consistent with 2fold. The YZ view shows some structural complexity but not yet the dense, tangled pattern of pretzel. Compared to the pretzel references, which show much denser filling and more complex overlapping coils, this image still has appreciable dark space. Previous three timepoints were all 2fold, and the morphology has not clearly shifted to the densely-packed pretzel pattern yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 79,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view (top-left), two main bright lobes are visible with a dark constriction between them, consistent with a two-fold hairpin structure. The eggshell fill fraction is moderate \u2014 there is still some dark space within the eggshell boundary, not yet densely packed like a pretzel. The XZ view (bottom-left) shows some layered internal structure but not the complex multi-coil pattern characteristic of pretzel. This closely matches the 2fold reference images. Previous three timepoints were all 2fold, and while there may be increasing complexity, the morphology does not yet clearly show three or more overlapping folds needed for pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 80,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows an elongated embryo with two visible parallel body segments forming a hairpin/U-shape, consistent with 2fold morphology. The eggshell fill fraction is moderate \u2014 significant signal but still some dark space remaining inside the shell boundary, not yet the dense, multi-layered filling seen in pretzel references. The XZ view shows layered structure but not the complex multi-coil pattern of pretzel. The YZ view shows some complexity developing but matches 2fold references better than pretzel. Consistent with previous three timepoints all classified as 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 81,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 there is still some dark space visible within the eggshell boundary in the XY view, though filling is increasing. The XZ view shows layered/folded structure consistent with late 2fold. While the complexity is increasing (approaching pretzel territory \u2014 reference pretzel starts at T82), the fill fraction is not yet dense enough to clearly indicate pretzel stage. Previous three observations were 2fold, and with the rule to prefer the earlier stage at transitions, 2fold is appropriate at T81.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 82,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal \u2014 very little dark/empty space remains inside the eggshell boundary. In the XY view, the body shows a complex, tangled pattern with multiple overlapping coils rather than just two parallel segments. The XZ view confirms dense, multi-layered body filling with looping/curved patterns indicative of 3+ folds. This matches the pretzel reference images (especially T82) very closely. The transition from 2fold (T79-T81) to pretzel at T82 is a natural developmental progression.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 83,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal \u2014 the XY view shows complex, overlapping body segments filling most of the eggshell interior with relatively little dark space remaining. The XZ view (bottom-left) shows a bright, complex layered pattern consistent with multiple body folds. At least 3 overlapping body segments/coils are visible in the XY projection, creating the tangled appearance characteristic of the pretzel stage. This matches the pretzel reference images well, and is consistent with the previous T82 classification of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 84,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with very little dark/empty space inside the boundary. The XY view shows complex, overlapping coiled structures indicating multiple body folds. The YZ view (top-right) shows a ring-like/donut pattern characteristic of multiple coiled body segments. This matches the pretzel reference images well. Consistent with the previous two observations (T82, T83 both pretzel), and no morphological change toward hatching is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 85,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal in the XY view, with little empty/dark space inside the shell boundary. Multiple overlapping body segments/coils are visible, creating a complex, tangled pattern of nuclei. The XZ view (bottom-left) also shows layered, complex structure consistent with 3+ folds. This matches the pretzel reference images well and is consistent with the previous three timepoints all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 86,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible. In the XY view, the body fills most of the eggshell with multiple overlapping segments. The XZ view shows layered/coiled structure. This matches the pretzel reference images well, and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 87,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal and shows a complex, tangled pattern of multiple overlapping body segments \u2014 consistent with 3+ folds. The XY view shows coiled structures throughout the eggshell with relatively little empty dark space inside the shell boundary. The XZ view confirms dense, layered signal. This matches the pretzel reference images well, and is consistent with the previous three observations (all pretzel). No sign of hatching (no elongated worm outside the shell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 88,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body segments and a complex, tangled pattern in the XY view. The XZ projection shows dense filling with intricate internal structure characteristic of multiple coils. Very little empty/dark space remains inside the eggshell boundary. This matches the pretzel reference images well and is consistent with the previous three timepoints all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 89,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal in all three views. The XY projection shows multiple overlapping coils/body segments (at least 3 folds visible), creating a complex, tangled pattern characteristic of the pretzel stage. The XZ view (bottom-left) confirms dense filling with complex internal structure. This matches the pretzel reference images well and is consistent with the previous three observations (T86-T88 all pretzel).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 90,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows a complex, multi-coiled body with multiple overlapping segments visible within the eggshell, consistent with 3+ folds. The eggshell is densely filled with signal, though some dark patches remain. The XZ view confirms dense, complex layering. This matches pretzel reference images well. No sign of elongated worm body extending outside the eggshell (hatching). Consistent with previous three observations (T87-T89) all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 91,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coils visible in the XY view. The XZ view shows complex layered structure consistent with 3+ folds. This matches the pretzel reference images well, and is consistent with the previous three observations all being pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 92,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coils visible. The XY view shows a complex, tangled pattern with multiple body segments overlapping, and the XZ view shows dense layered signal. This matches the pretzel reference images well. Consistent with previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 93,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coils visible in the XY view. The complex, tangled pattern with little empty dark space inside the eggshell is consistent with pretzel stage. The XZ view shows multiple body layers. This matches the pretzel reference images and is consistent with the previous three observations at T90-T92.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 94,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal \u2014 very little empty/dark space remains inside the eggshell boundary in the XY view. Multiple overlapping body segments/coils are visible, creating a complex, tangled pattern characteristic of 3+ folds. The XZ view (bottom-left) confirms dense, complex internal structure with multiple layers. This matches the pretzel reference images well, and is consistent with the previous three observations (T91-T93) all being pretzel. No sign of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 95,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal and shows multiple overlapping coils/body segments in the XY view, with a complex tangled pattern. The XZ (bottom-left) view shows dense, layered signal filling most of the shell interior. The YZ view shows a complex internal structure with bright spots distributed throughout. This matches the pretzel reference images well, and is consistent with the previous three timepoints all classified as pretzel. No evidence of hatching (no elongated worm shape outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 96,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal and very little empty/dark space remains inside the shell boundary. In the XY view (top-left), multiple overlapping body segments create a complex, tangled pattern. The XZ view (bottom-left) shows multiple coiled layers with high overall brightness from overlapping body segments. This matches the pretzel reference images well and is consistent with the previous three timepoints all classified as pretzel. No sign of hatching (no elongated worm shape outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 97,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coils visible in the XY view. The complex, tangled pattern of body segments filling most of the eggshell interior is consistent with pretzel stage. This matches the previous three observations (T94-T96 all pretzel), and no clear morphological change toward hatching is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 98,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows multiple overlapping coils/body segments within the eggshell, creating a complex tangled pattern. The eggshell is densely filled with fluorescent signal, with little empty dark space inside the shell boundary. The XZ view also shows dense, layered signal. This matches the pretzel reference images well and is consistent with the previous three observations all being pretzel. No sign of hatching (no elongated worm shape outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 99,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. The XZ view shows the shell nearly completely filled. This matches the pretzel reference images well and is consistent with the previous three timepoints all being pretzel. No sign of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 100,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coils with multiple body segments visible in the XY view. The XZ view (bottom-left) shows a bright, mostly filled structure with internal complexity consistent with multiple folds. This matches the pretzel reference images well and is consistent with the previous three observations of pretzel stage. No sign of hatching (no elongated worm outside eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 101,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments overlap, creating a tangled pattern. The XZ view (bottom-left) shows dense, complex internal structure. This matches the pretzel reference images well, and is consistent with the previous three observations (all pretzel). No sign of hatching (no worm extending outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 102,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows multiple overlapping coiled body segments forming a complex, tangled pattern within the eggshell. The eggshell is densely filled with signal \u2014 very little dark/empty space remains inside the shell boundary. The XZ view confirms dense, complex internal structure with multiple layers. This matches the pretzel reference images well, with 3+ body folds visible. Consistent with the previous three timepoints (all pretzel) and no sign of hatching.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 103,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coiled body segments visible in the XY view creating a complex, tangled pattern. The morphology shows at least 3 folds within the eggshell. This matches the pretzel reference images well and is consistent with the previous three observations (T100-T102) all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 104,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coils consistent with multiple body folds (3+). The XY view shows a tangled pattern with multiple overlapping segments filling most of the eggshell interior. This matches the pretzel reference images well. No sign of hatching (no elongated worm outside the eggshell). Consistent with previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 105,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coiled body segments. Multiple parallel body segments are visible in the XY view, consistent with 3+ folds. The XZ view shows the characteristic tangled/coiled pattern of pretzel stage. This matches the pretzel reference images well and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 106,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows a bilobed/figure-8 shape which could hint at early hatching, but the XZ view (bottom-left) still shows a densely filled eggshell with complex overlapping signal, consistent with pretzel. The YZ view also shows a compact, densely-packed pattern. While the bilobed XY appearance is somewhat unusual, the previous three timepoints were all pretzel, and following the rule to prefer the earlier stage when uncertain, this remains classified as pretzel. No clear elongated worm body outside the eggshell boundary is visible yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 107,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coils visible in the XY view. The XZ view shows complex layered structure consistent with 3+ folds. This matches the pretzel reference images well, and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 108,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping coiled body segments. In the XY view, a complex tangled pattern of 3+ parallel body segments is visible. The YZ view shows a ring-like cross-section pattern consistent with tightly coiled body. This matches the pretzel reference images well and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 109,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in all three views. The XY view shows multiple body segments creating a tangled pattern, and the XZ view shows dense, complex signal filling most of the eggshell. This matches the pretzel reference images well, and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 110,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in all three views. Multiple body segments can be seen in the XY view with a tangled pattern. This matches the pretzel reference images well. Previous three timepoints were all pretzel, and no morphological change toward hatching is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 111,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body segments/coils visible in all three views. The XY projection shows a complex, tangled pattern with at least 3 parallel body segments. The XZ view confirms dense filling with bright, complex internal structure. This matches pretzel reference images well. No sign of hatching (no elongated worm outside eggshell). Consistent with previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 112,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coiled body segments. Multiple parallel body segments are visible in the XZ view (bottom-left), consistent with 3+ folds. The pattern matches the pretzel reference images with tangled, multi-layered appearance. Previous three timepoints were all pretzel, and no clear morphological change toward hatching is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 113,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body segments/coils. In the XY view, the complex tangled pattern of at least 3 body folds is visible, and the XZ view confirms dense filling with visible coiled structures. This matches the pretzel reference images well. Consistent with the previous three observations of pretzel stage, and no sign of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 114,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, and the XY view shows multiple overlapping coils/body segments creating a complex, tangled pattern. The XZ view also shows dense, layered signal filling most of the eggshell. This is consistent with the pretzel stage references and the previous three observations of pretzel. No evidence of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 115,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coils visible in the XY view. The XZ view shows complex, tangled body segments consistent with 3+ folds. This matches the pretzel reference images well and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 116,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with very little empty/dark space inside the eggshell boundary. Multiple overlapping body segments/coils are visible in the XY view, creating a complex tangled pattern characteristic of pretzel stage. The XZ view (bottom-left) shows bright, densely packed signal filling the shell. This is consistent with the pretzel reference images and the previous three observations (all pretzel). No signs of hatching (no elongated worm shape outside the shell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 117,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in all three views. Multiple body segments can be seen, consistent with 3+ folds. The XZ view (bottom-left) shows a complex tangled pattern with bright overlapping regions. This matches the pretzel reference images well. No sign of hatching (no elongated worm outside eggshell). Consistent with previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 118,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible. The XY view shows an elongated, densely packed structure with multiple body segments. The XZ view shows complex internal folding patterns consistent with 3+ folds. The YZ view shows a ring-like pattern suggesting coiled body segments. This matches the pretzel reference images well, and is consistent with the previous three timepoints all being pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 119,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. This matches the pretzel reference images well. The previous three timepoints were all pretzel, and there is no sign of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 120,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. The XZ view shows the characteristic pretzel pattern with signal distributed throughout the shell interior. This matches the pretzel reference images and is consistent with the previous three observations all being pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 121,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping coils/body segments. In the XY view, complex tangled pattern with multiple parallel body segments visible (3+ folds). The XZ view shows dense, bright signal filling most of the eggshell. Consistent with previous pretzel classifications at T118-T120, and no sign of hatching (no worm extending outside eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 122,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible. In the XY view, the body fills most of the eggshell with multiple folded segments visible. The XZ view shows dense, layered signal consistent with multiple body folds. This matches the pretzel reference images well, and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        }
+      ],
+      "accuracy": 0.9230769230769231,
+      "adjacent_accuracy": 1.0
+    },
+    {
+      "embryo_id": "embryo_1",
+      "predictions": [
+        {
+          "timepoint": 55,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view (top-left) shows a clearly bilobed morphology with two distinct bright regions separated by a constriction, closely matching the comma reference images (T40-T44). The XZ view (bottom-left) similarly shows two separated bright regions. Compared to the 1.5fold references, which show a more unified, elongated shape, this embryo retains the distinct bilobed comma appearance. Previous three observations were all comma, and there is no clear morphological transition to the more elongated 1.5fold shape yet. Following the rule to prefer the earlier stage when uncertain.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 56,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view (top-left) still shows a clearly bilobed/peanut-shaped embryo with two distinct bright lobes separated by a constriction, closely matching the comma reference images. The XZ view (bottom-left) shows two bright masses side by side, also consistent with comma. Compared to the 1.5fold references, which show a more elongated, oblong shape filling the eggshell, this embryo retains the distinct two-lobed comma morphology. With the previous three timepoints all classified as comma and no clear transition to the elongated 1.5fold shape, this remains comma.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 57,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows a bilobed shape with a clear indentation between the head and body regions, closely matching the comma reference images. The YZ view shows a roughly round cross-section, and the XZ view displays two distinct bright lobes side by side, both consistent with comma stage references. While there is some elongation suggesting progression, the embryo has not yet clearly adopted the more stretched, elongated morphology seen in the 1.5fold references. With three previous comma observations and no definitive morphological shift to 1.5fold (such as clear body wrapping/extension), I classify this as late comma.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 58,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows a bilobed shape with an indentation, still consistent with comma-stage morphology. While there's some elongation suggesting a transition toward 1.5fold, the overall appearance - two-lobed structure in XY, round cross-section in YZ, and dual bright regions in XZ - closely matches the comma reference images. The shape has not yet achieved the smooth, clearly elongated form seen in the 1.5fold references. With the last three observations all being comma, and following the rule to prefer the earlier stage when uncertain, this remains comma.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 59,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows the embryo has become more smoothly elongated compared to the comma references, which display a distinct two-lobed/peanut-shaped indentation. The bilobed appearance characteristic of comma is diminishing, and the overall shape now more closely matches the early 1.5fold reference (T47) with a smoother, more elongated outline. The XZ view shows emerging layered structure consistent with the beginning of body folding. While the previous three timepoints were comma, the morphological change toward elongation and smoothing is clear enough to justify advancing to 1.5fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 60,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo consistent with the 1.5fold reference images. The XZ (bottom-left) view shows some internal layering but not the clearly separated parallel bright bands characteristic of 2fold. Comparing to the 2fold reference at T62, this image lacks the distinct two-band separation visible in the side view. The YZ cross-section is still relatively uniform without the complex internal structure seen in 2fold. Previous observation was 1.5fold at T59, and the morphology here is consistent with continuing 1.5fold rather than advancing to 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 61,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with some asymmetric bulging/curvature, but I do not see TWO CLEARLY SEPARATED parallel bright bands that would define the 2fold stage. The XZ view shows some layering beginning but not strongly separated parallel bands. The YZ cross-section shows some internal complexity but remains similar to the 1.5fold reference. The overall morphology is consistent with late 1.5fold, matching the 1.5fold references more closely than the 2fold references (T62+). Following the rule to prefer the earlier stage when uncertain between adjacent stages, and given the previous observation was 1.5fold, I classify this as 1.5fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 62,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Comparing to references: XY view shows an elongated embryo filling the eggshell, similar to late 1.5fold references. The XZ view shows a relatively uniform bright block without two clearly separated parallel bands that would characterize 2fold. The YZ cross-section shows some asymmetry but not the complex layered structure seen in 2fold references. Per the critical rule, late 1.5fold can resemble early 2fold \u2014 since I don't see TWO CLEARLY SEPARATED parallel bright bands (especially in XZ), and the previous three timepoints were all 1.5fold, I classify as 1.5fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 63,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "XY view shows a clearly bilobed structure with two distinct parallel body regions separated by a visible constriction, matching the 2fold reference at T62. XZ view shows layered bright bands consistent with body folding. This represents a clear morphological change from the previous 1.5fold observations, with two separated parallel bright bands now evident.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 64,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 more filled than 1.5fold references but not densely packed like pretzel. In the XY view, two parallel body segments are visible with a curved connection, consistent with a hairpin/U-shape fold. The XZ view shows two distinct layers of signal. This matches the 2fold reference images well. No evidence of the dense, complex coiling pattern seen in pretzel stage. Consistent with previous T63 classification of 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 65,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows a clear curved/folded body with two parallel segments forming a U or hairpin shape, consistent with 2fold morphology. The eggshell is moderately filled \u2014 some dark space remains but less than at 1.5fold. The YZ view (top-right) shows a ring-like pattern suggesting the folded body in cross-section. This matches the 2fold reference images well. No evidence of the dense, multi-layered filling characteristic of pretzel stage. Consistent with previous observations at T63-T64 (2fold).",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 66,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows two parallel body segments forming a hairpin/U-shape, consistent with 2fold. The eggshell is moderately filled \u2014 some dark space remains but less than 1.5fold. The pattern has not yet reached the dense, complex multi-coil filling characteristic of pretzel stage. This matches well with the 2fold reference images (particularly T68) and is consistent with the previous three observations at 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 67,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 some dark space remains but less than in 1.5fold. In the XY view, I can discern two parallel body segments forming a hairpin/U-shape, consistent with 2fold. The XZ view shows layered bright bands indicating two overlapping body segments. The fill fraction is moderate, not yet dense enough for pretzel. This matches the 2fold reference images (e.g., T68) well and is consistent with the previous three observations of 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 68,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The eggshell is moderately filled with signal \u2014 some dark space remains, particularly in the XY view where the embryo doesn't fully occupy the eggshell boundary. In the XY view, the body shows an elongated curved shape consistent with two parallel segments (hairpin/U-shape). The XZ view shows two-to-three separated bright lobes. This matches the 2fold reference images (especially T68) very well. The fill fraction is not yet dense enough for pretzel (no complex overlapping coils filling most of the shell). Consistent with previous three observations of 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 69,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows two parallel body segments forming a hairpin/U-shape, consistent with 2fold. The eggshell is moderately filled \u2014 some dark space remains but the body occupies a substantial portion, not yet the dense packing of pretzel. The XZ view shows two distinct layers of signal. This matches the 2fold reference images (especially T68-T75 range). No clear transition to pretzel stage (which would show 3+ overlapping coils and densely packed signal). Consistent with previous three observations of 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 70,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two parallel body segments forming a clear hairpin/U-shape fold, consistent with 2fold morphology. The eggshell is moderately filled with signal \u2014 there is still some dark space remaining inside the shell boundary, but less than in 1.5fold. The pattern is not yet dense/complex enough for pretzel (no multiple overlapping coils). This matches the 2fold reference images well. Previous three timepoints were all 2fold, and no clear morphological transition to pretzel is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 71,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two parallel body segments forming a hairpin/U-shape, consistent with 2fold. The eggshell is moderately filled \u2014 there is some dark space remaining inside the shell boundary but less than 1.5fold. The body hasn't yet formed the multiple overlapping coils or dense filling characteristic of pretzel stage. The XZ view (bottom-left) also shows layered signal suggesting two folded segments. This matches the 2fold reference images well and is consistent with the previous three timepoints classified as 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 72,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two distinct parallel body segments in a hairpin/U-shape configuration, consistent with 2fold. The eggshell fill fraction is moderate \u2014 there is still visible dark space within the eggshell boundary, particularly between the two body lobes. The XZ view shows bright bands corresponding to the folded body but not the dense, complex overlapping pattern expected in pretzel. This matches the 2fold reference images well, and there is no clear morphological change from the previous timepoints (T69-T71, all 2fold).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 73,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two main body segments in a folded configuration with moderate eggshell filling \u2014 some dark space remains but less than 1.5fold. The XZ view (bottom-left) shows two distinct layers of signal consistent with a hairpin fold. This matches the 2fold reference images (especially T75). The eggshell is not yet densely filled with complex overlapping coils as in pretzel. Consistent with previous observations at T70-T72.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 74,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two parallel body segments forming a hairpin/U-shape, consistent with 2fold morphology. The eggshell is moderately filled \u2014 some dark space remains but less than in 1.5fold. The XZ view shows layered structures indicating two body segments. This matches the 2fold reference images (especially T75) very well. The shell is not yet densely packed with multiple overlapping coils as expected for pretzel. Consistent with previous observations at T71-T73.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 75,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with signal - there's some dark space remaining but the body occupies a substantial portion. In the XY view, two parallel body segments are visible forming a hairpin/U-shape, with a brighter concentrated region on the left and the body extending rightward. The XZ view (bottom-left) shows two layers of signal with some separation. This matches the 2fold reference images well. The fill fraction is not yet dense enough for pretzel (no complex multi-coil pattern visible), and the morphology is consistent with the previous three timepoints classified as 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 76,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo body with two main parallel segments visible and moderate eggshell filling - some dark space remains within the eggshell boundary. The XZ view shows 2-3 layers of signal but not the dense, complex coiling pattern seen in pretzel references. The fill fraction is moderate rather than dense. Comparing to references, this matches the late 2fold (T75) reference more closely than the pretzel references (T82+), which show denser filling and more overlapping coils. With previous three observations all at 2fold and the rule to prefer earlier stages when uncertain, this remains 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 77,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated body within the eggshell with moderate fill fraction \u2014 noticeable dark space remains inside the shell boundary, consistent with 2fold rather than pretzel. The XZ view shows 2-3 bright parallel bands suggesting two main body segments with possible early third fold beginning. Compared to pretzel references, the eggshell is not yet densely packed with overlapping coils. Previous three timepoints were all 2fold, and while there may be slight progression, the morphology does not yet clearly show the multiple overlapping coils and dense filling characteristic of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 78,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view (top-left), two main lobes/segments of signal are visible connected by a bend, forming a hairpin-like shape consistent with 2fold morphology. The eggshell is moderately filled \u2014 there is still appreciable dark space within the eggshell boundary, unlike the densely packed pretzel stage. The XZ view (bottom-left) also shows moderate filling with visible structure but not the complex, tangled coiling pattern seen in pretzel references. This matches well with the 2fold reference images and is consistent with the previous three timepoints all classified as 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 79,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view (top-left), I see two distinct lobes of signal connected at their center, consistent with a folded body forming a hairpin/U-shape \u2014 characteristic of 2fold. The eggshell is moderately filled with signal but still has noticeable dark space, particularly around the periphery, which argues against pretzel (which would be densely filled). The YZ view (top-right) shows a roughly circular pattern with some internal structure but not the complex, overlapping coils seen in pretzel references. The XZ view (bottom-left) shows two main body layers but not three or more. Compared to the 2fold reference images, the morphology matches well. While there's increasing complexity that may suggest an approaching transition toward pretzel, the fill fraction remains moderate and the previous three timepoints were all 2fold, so I maintain this classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 80,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows a complex, multi-lobed body shape that is moderately filling the eggshell, with some dark space remaining. The XZ view shows multiple bright bands suggesting body layers. While the morphology is becoming more complex compared to earlier 2fold references, the eggshell is not yet densely filled as in the pretzel references. Given the previous three observations were all 2fold and stages change slowly, and erring toward the earlier stage when uncertain, this remains consistent with late 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 81,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two main body segment lobes connected by a bend, forming a hairpin/U-shape pattern. The eggshell is moderately filled \u2014 noticeable dark spaces remain around the periphery, consistent with 2fold rather than the densely-packed pretzel stage. The XZ view (bottom-left) shows distinct parallel bands of signal supporting two folded segments. This matches the 2fold references well. While there may be early signs of additional complexity, the fill fraction is not yet dense enough for pretzel, and previous three timepoints were all 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 82,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "In the XY view, two distinct body lobes are visible connected by a constriction, forming a clear hairpin/U-shape consistent with 2fold. The eggshell is moderately filled \u2014 there is still appreciable dark space within the eggshell boundary, not the dense filling expected for pretzel. The XZ view shows two bright parallel bands. This matches the 2fold reference images well and is consistent with the previous three observations at 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 83,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with fluorescent signal \u2014 some dark space remains inside the eggshell boundary, particularly visible in the XY view (top-left) where gaps between body segments are apparent. In the XZ view (bottom-left), I can see what appears to be two main parallel bands of signal consistent with a 2fold hairpin configuration. Compared to the pretzel references, the eggshell is not yet densely filled with multiple overlapping coils. The morphology is consistent with the 2fold reference images and shows no clear transition to pretzel-level complexity yet. Previous three timepoints were all 2fold, and stages change slowly.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 84,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is now densely filled with fluorescent signal, with little empty/dark space remaining inside the shell boundary. In the XY view, the body shows a complex, tangled pattern with multiple overlapping segments rather than just two parallel segments (characteristic of 2fold). The XZ view (bottom-left) shows complex layered structure with multiple bright bands suggesting 3+ body folds. The YZ view shows a cross-like pattern indicating multiple body segments crossing. This matches the early pretzel reference images (e.g., T82) much better than the 2fold references, which show more empty space and simpler parallel segments. The transition from 2fold to pretzel is morphologically clear at this timepoint.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 85,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, particularly evident in the XZ view (bottom-left) which shows complex overlapping/looping body structures. The XY view shows the body spanning most of the eggshell with multiple overlapping regions creating a bright, complex pattern. There are more than two parallel body segments visible, consistent with 3+ folds. This matches the pretzel reference images well, and is consistent with the previous T84 classification of pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 86,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, particularly visible in the XY view where complex, overlapping body segments occupy most of the interior. The YZ view shows a tangled pattern with multiple bright regions suggesting several coiled layers. This matches the pretzel reference images well \u2014 the fill fraction is high and the internal structure is complex, consistent with 3+ folds. Previous timepoints (T84-T85) were also pretzel, and morphology has not changed.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 87,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is densely filled with fluorescent signal with very little empty/dark space inside. The XY view shows a complex, elongated shape with multiple overlapping body segments creating a tangled appearance. The XZ view shows dense, complex internal structure with multiple bright layers. This matches the pretzel reference images well. No sign of hatching (no elongated worm outside the eggshell). Consistent with previous three observations at pretzel stage.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 88,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is densely filled with fluorescent signal and very little dark/empty space remains inside. The XY view shows complex, overlapping coiled body segments \u2014 multiple parallel bands are visible, consistent with 3+ folds. The XZ view also shows multiple layered bright bands. This matches the pretzel reference images well, and is consistent with the previous three timepoints all classified as pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 89,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping coils/body segments in the XY view \u2014 a complex, tangled pattern characteristic of pretzel stage. The XZ view (bottom-left) confirms dense, multi-layered signal filling the shell. The YZ view shows internal structure with overlapping body layers. This matches the pretzel reference images well, and is consistent with the previous three observations (T86-T88) all being pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 90,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows a complex, multi-folded body with multiple overlapping coils filling much of the eggshell interior. The XZ view (bottom-left) shows dense signal with complex internal structure. The eggshell is densely filled, consistent with pretzel stage. While there appears to be a slight protrusion on the lower-right of the XY view, there is no clear elongated worm body outside the eggshell boundary, so this does not yet qualify as hatching. Previous three timepoints were all pretzel, and the morphology remains consistent with that stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 91,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal in both XY and XZ views, with very little dark/empty space remaining inside the eggshell boundary. Multiple overlapping body segments are visible, creating a complex, tangled pattern characteristic of 3+ folds. The XZ view shows intricate layered structure consistent with multiple coils. This matches the pretzel reference images well and is consistent with the previous three observations (T88-T90 all pretzel). No sign of hatching (no worm body outside eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 92,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal and multiple overlapping body segments/coils are visible in the XY view, creating a complex tangled pattern. The XZ projection (bottom-left) also shows intricate folding with bright overlapping layers. This matches the pretzel reference images well. No sign of hatching (no elongated worm outside the eggshell). Consistent with the previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 93,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. The XZ view shows layered bright structures consistent with multiple folds. This matches the pretzel reference images well, and is consistent with the previous three observations all being pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 94,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with very little empty/dark space inside the shell boundary. Multiple overlapping body segments/coils are visible in the XY view, creating a complex tangled pattern. The XZ view shows layered, complex structure consistent with 3+ folds. This matches the pretzel reference images well. No sign of hatching (no elongated worm outside the shell). Previous three timepoints were all pretzel, consistent with slow stage progression.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 95,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in all three views. The XY view shows an elongated structure with multiple overlapping body segments filling most of the eggshell. The YZ view shows a complex pattern with bright spots distributed throughout. This matches the pretzel reference images well, and is consistent with the previous three observations at T92-T94.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 96,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in both the XY and XZ views. Multiple body segments can be seen creating a tangled pattern. The XZ view shows at least 3 distinct layers/segments. This matches the pretzel reference images well, and is consistent with the previous three observations all being pretzel. No sign of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 97,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coils in the XY view. Multiple body segments are visible with a tangled pattern. The XZ projection (bottom-left) shows dense, multi-layered signal. This matches pretzel reference images well. No signs of hatching (no worm shape outside the eggshell). Consistent with previous three observations (T94-T96 all pretzel).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 98,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in all three views. Multiple body segments can be seen creating a tangled pattern. The XY view shows the elongated body folded multiple times within the eggshell, consistent with pretzel stage. No sign of hatching (no worm body outside the eggshell). Consistent with previous three timepoints all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 99,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. The XZ view shows dense, bright signal filling most of the eggshell. This matches the pretzel reference images well, and is consistent with the previous three observations all being pretzel. No sign of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 100,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal with little empty dark space inside. The XY view shows an elongated, complex pattern with multiple overlapping body segments. The XZ view (bottom-left) displays a complex swirling/coiled pattern characteristic of multiple body folds. This matches the pretzel reference images well, consistent with the previous three timepoints all classified as pretzel. No evidence of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 101,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping body segments creating a complex, tangled pattern in the XY view. At least 3 parallel/overlapping body layers are visible. The XZ view also shows complex layered structure. This matches the pretzel reference images well, and is consistent with the previous three observations (T98-T100) all being pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 102,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body segments/coils. In the XY view, complex tangled morphology is visible with several bright nuclei and curved body segments spanning the full length of the eggshell. The YZ and XZ views confirm dense filling. This matches the pretzel reference images well, and is consistent with the previous three observations all being pretzel. No sign of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 103,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows a complex, multi-lobed structure with multiple overlapping body segments visible, consistent with 3+ folds. The eggshell is moderately to densely filled with signal, though some dark space remains on one side. The XZ view shows internal complexity with multiple layers. This matches pretzel reference images and is consistent with the previous three timepoints (T100-T102) all classified as pretzel. No evidence of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 104,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coils visible. In the XY view, the body shows complex, tangled patterns with multiple parallel segments - more than two body segments are visible, consistent with 3+ folds. The XZ view shows multiple layered bands of signal. This matches the pretzel reference images well. No sign of hatching (no elongated worm outside the eggshell). Consistent with previous observations at T101-T103.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 105,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping coils/body segments \u2014 visible in both the XY (top-left) and XZ (bottom-left) views. The YZ view (top-right) shows a complex circular/coiled pattern. There is very little empty dark space within the eggshell boundary, and the tangled, multi-layered appearance matches the pretzel reference images. No sign of the worm emerging from the eggshell, so not yet hatching. Consistent with the previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 106,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible. The XY view shows multiple body segments creating a tangled pattern within the eggshell. The XZ view shows multiple layers of signal. This matches the pretzel reference images well, and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 107,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body segments. In the XY view, a complex, tangled pattern of coiled body is visible with very little empty dark space inside the eggshell boundary. The XZ view shows clear looping/coiled patterns characteristic of 3+ folds. This matches the pretzel reference images well and is consistent with the previous three observations all being pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 108,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in all three views. Multiple body segments can be seen creating a tangled pattern. The XZ view (bottom-left) shows complex internal structure with multiple overlapping layers. This matches the pretzel reference images well. Previous three timepoints were all pretzel, and no clear morphological change toward hatching is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 109,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body coils. In the XY view (top-left), complex folded/coiled body segments are visible within the eggshell, consistent with 3+ folds. The YZ view (top-right) shows a nearly fully filled oval. This matches the pretzel reference images well. No signs of hatching (no elongated worm outside the eggshell). Consistent with the previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 110,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal in all three views. The XY projection shows complex, overlapping body segments with multiple coils visible \u2014 consistent with 3+ folds. The XZ view confirms dense, layered signal throughout the shell interior with little empty space. This matches the pretzel reference images well and is consistent with the previous three observations (T107-T109 all pretzel). No evidence of hatching (no signal outside the eggshell boundary).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 111,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body coils, consistent with pretzel stage. The XY view shows a complex, tangled pattern with at least 3 body segments overlapping. There is very little empty/dark space within the eggshell boundary. No sign of the worm extending outside the eggshell (no hatching). This matches the pretzel reference images and is consistent with the previous three timepoints (T108-T110) all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 112,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping body segments consistent with multiple folds (3+). The XY view shows a tangled pattern with bright overlapping coils on the left and additional body segments on the right. The YZ view shows complex internal structure with bright spots from overlapping layers. This matches pretzel reference images well, and is consistent with the previous three observations (T109-T111) all classified as pretzel. No sign of hatching (no elongated worm shape outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 113,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal. The XZ projection (bottom-left) shows multiple overlapping body segments creating a complex crossed/tangled pattern with at least 3 bright bands intersecting \u2014 characteristic of the pretzel stage. The XY view shows an elongated, densely packed embryo filling most of the eggshell. This matches the pretzel reference images well and is consistent with the previous three timepoints all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 114,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in all three views. Multiple body segments can be seen, consistent with 3+ folds. The XZ view shows a complex tangled pattern. This matches the pretzel reference images well and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 115,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in both the XY and XZ views. Multiple body segments create a tangled pattern consistent with pretzel stage. The XZ view shows intricate folding with at least 3 body layers. This matches the pretzel reference images well and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 116,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in both the XY and XZ views. Multiple body segments can be seen creating a tangled pattern. The XZ view shows bright, complex folding consistent with pretzel stage. This matches the pretzel reference images and is consistent with the previous three observations all being pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 117,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing a complex, tangled pattern of multiple overlapping body coils. In the XY view (top-left), at least 3 body segments are visible with overlapping loops. The XZ view (bottom-left) confirms dense filling with complex internal structure. This matches the pretzel reference images well, and is consistent with the previous three timepoints all classified as pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 118,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body segments/coils \u2014 complex, tangled pattern with little empty space inside the shell. The XY view shows at least 3 parallel body segments. The XZ view shows bright, complex overlapping layers. This matches the pretzel reference images well and is consistent with the previous three timepoints all classified as pretzel. No sign of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 119,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible. The XY view shows multiple body segments with a tangled appearance, and the YZ view shows a ring-like pattern consistent with coiled body layers. This matches the pretzel reference images well. Previous three timepoints were all pretzel, and no clear morphological change toward hatching is evident.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 120,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping body segments. In the XY view, the embryo body shows a complex, tangled pattern with multiple coils filling the eggshell interior. The XZ view (bottom-left) shows multiple bright layers/bands consistent with 3+ folds. This matches the pretzel reference images well, and is consistent with the previous three timepoints all classified as pretzel. No sign of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 121,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coiled body segments \u2014 at least 3 folds are visible in the XY view, creating a tangled pattern. The YZ view (top-right) also shows a complex, multi-layered structure. This matches the pretzel reference images well. Consistent with the previous three observations (all pretzel), and no signs of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 122,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping coils/body segments. In the XY view, complex tangled pattern of nuclei fills most of the eggshell. The YZ view shows a ring-like pattern characteristic of multiple body folds. This matches the pretzel reference images well, and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 123,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping coiled body segments, consistent with pretzel stage. The XY view shows a complex, tangled pattern with at least 3 visible body folds. The XZ view confirms dense overlapping structures. This matches the pretzel reference images and is consistent with the previous three observations (T120-T122 all pretzel). No signs of hatching (no elongated worm extending outside the eggshell boundary).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 124,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible. In the XY view (top-left), the elongated body fills most of the eggshell with multiple overlapping segments. The XZ view (bottom-left) shows multiple bright bands/layers consistent with 3+ folds. The YZ view (top-right) shows a complex pattern with visible internal structure from overlapping body segments. This matches pretzel reference images well, and is consistent with the previous three timepoints all being pretzel. No sign of hatching (no signal outside eggshell boundary).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 125,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping coils/body segments. In the XY view, a complex looping pattern is visible with at least 3 body segments, consistent with pretzel stage. The morphology matches the pretzel reference images and is consistent with the previous three observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 126,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal and very little dark/empty space remains inside the shell boundary. In the XY view (top-left), multiple overlapping body segments are visible creating a complex, tangled pattern. The XZ view (bottom-left) also shows a dense, coiled structure with multiple layers. This matches the pretzel reference images well, with 3+ body folds creating overlapping coils. No sign of hatching (no elongated worm outside shell). Consistent with the previous three observations all being pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 127,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, tangled overlapping coils \u2014 multiple body segments are visible in the XY view with little empty dark space inside the eggshell boundary. The XZ view also shows a complex layered pattern. This matches the pretzel reference images well, and is consistent with the previous three observations all being pretzel. No sign of hatching (no elongated worm outside the shell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 128,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coiled body segments \u2014 multiple (3+) parallel layers are visible in the XY view, creating a tangled pattern. The XZ view (bottom-left) confirms dense filling with intricate overlapping structures. This matches the pretzel reference images well and is consistent with the previous three observations (T125-T127 all pretzel). No evidence of hatching (no signal outside the eggshell boundary).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 129,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coils \u2014 multiple body segments are visible in the XY view with a tangled pattern. Little dark/empty space remains inside the eggshell. The XZ view (bottom-left) confirms dense, complex signal. This matches the pretzel reference images well. No evidence of hatching (no signal extending outside the eggshell). Consistent with the previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 130,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coils. In the XY view, multiple body segments are visible with a tangled pattern filling most of the eggshell interior. The YZ view shows a ring-like pattern consistent with coiled body layers. This matches the pretzel reference images well, and is consistent with the previous three timepoints all classified as pretzel. No signs of hatching (no elongated worm outside the eggshell).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 131,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. The XZ view shows dense, bright signal filling most of the eggshell. This matches the pretzel reference images well and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 132,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing complex, overlapping coils in the XY view, consistent with multiple body folds (3+). The XZ projection also shows a densely packed, complex pattern. There is relatively little empty/dark space within the eggshell boundary. This matches the pretzel reference images well. No sign of hatching (no elongated worm outside the shell). Consistent with the previous three observations of pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 133,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping coils/body segments. The YZ view (top-right) shows a characteristic ring-like pattern indicating coiled body loops. The XY view shows complex, tangled signal throughout the eggshell with little empty space. This matches the pretzel reference images well, and is consistent with the previous three observations all being pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 134,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. The XZ view shows bright, complex layered structure filling the shell. This matches the pretzel reference images well, and is consistent with the previous three observations all being pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 135,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coiled body segments visible in all three views. The XY view shows a compact, elongated mass with complex internal structure, and the XZ view shows tangled, looping patterns characteristic of 3+ folds. This matches the pretzel reference images well and is consistent with the previous three timepoints all classified as pretzel. No signs of hatching (no signal extending outside the eggshell boundary).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 136,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with multiple overlapping coils visible. In the XY view, the body shows complex, tangled patterns with multiple parallel segments filling most of the eggshell interior. The YZ view shows a ring-like pattern consistent with coiled body segments. This matches the pretzel reference images well, and is consistent with the previous three observations all being pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 137,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal showing multiple overlapping coiled body segments. In the XY view, the body forms complex loops/coils within the eggshell boundary. The YZ view shows multiple parallel bright bands indicating 3+ folds. The fill fraction is high with little empty dark space inside the shell. This matches the pretzel reference images and is consistent with the previous three observations all being pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 138,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal, with complex overlapping coils visible in the XY view. Multiple body segments can be seen creating a tangled pattern. The XZ view shows bright, complex structure filling the shell. This matches the pretzel reference images and is consistent with the previous three observations of pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        }
+      ],
+      "accuracy": 0.7976190476190477,
+      "adjacent_accuracy": 1.0
+    }
+  ],
+  "errors": [],
+  "total_predictions": 233,
+  "overall_accuracy": 0.7854077253218884,
+  "metrics": {
+    "accuracy": 0.7854077253218884,
+    "adjacent_accuracy": 1.0,
+    "per_stage": {
+      "1.5fold": {
+        "accuracy": 0.5365853658536586,
+        "n": 41
+      },
+      "2fold": {
+        "accuracy": 0.6779661016949152,
+        "n": 59
+      },
+      "pretzel": {
+        "accuracy": 0.9097744360902256,
+        "n": 133
+      }
+    }
+  }
+}

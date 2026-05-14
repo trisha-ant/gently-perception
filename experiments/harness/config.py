@@ -65,9 +65,12 @@ class RunConfig:
         return self.git_sha[:8] if self.git_sha else "nogit"
 
     def result_path(self, results_root: Path) -> Path:
-        """Append-only result location: results/{variant}/{model}/{git8}_{seed}.json"""
+        """Append-only result location:
+        results/{variant}/{model}/{thinking}/{git8}_{seed}.json"""
         safe_model = self.model.replace("/", "_").replace(":", "_")
-        return results_root / self.variant / safe_model / f"{self.git_short}_{self.seed}.json"
+        think = self.thinking or "none"
+        return (results_root / self.variant / safe_model / think
+                / f"{self.git_short}_{self.seed}.json")
 
     def to_dict(self) -> dict:
         d = asdict(self)

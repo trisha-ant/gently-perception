@@ -1,0 +1,1926 @@
+{
+  "config": {
+    "variant": "hybrid",
+    "model": "claude-opus-4-7",
+    "thinking": "adaptive",
+    "seed": 1,
+    "stages": [
+      "1.5fold",
+      "2fold",
+      "pretzel"
+    ],
+    "structured_output": false,
+    "n_embryos_expected": null,
+    "git_sha": "1990261b2e3bcadd3c51bb18f3b2ded7bd200d55",
+    "git_dirty": true,
+    "captured_at": "2026-05-14T19:12:42.722148+00:00"
+  },
+  "embryo_results": [
+    {
+      "embryo_id": "embryo_2",
+      "predictions": [
+        {
+          "timepoint": 45,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows a slightly asymmetric elongated shape with a notch, matching the comma reference. No clear elongation or parallel bands indicating 1.5fold yet. Consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 46,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows a two-lobed structure similar to comma reference, without the clear elongation of 1.5fold. YZ is rounded. Consistent with previous comma observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 47,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The image matches the 1.5fold reference almost exactly (it appears to be the same T47 example). XY shows elongation with denser anterior, YZ shows oval cross-section, XZ shows layered structure typical of early elongation beyond comma.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 48,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Elongated shape with more uniform distribution than comma, matches 1.5fold reference. No clear parallel bands yet for 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 49,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Image closely matches 1.5fold reference with elongated body, clear head/tail differentiation but no distinct parallel bands yet. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 50,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Elongated shape with visible cellular structure, XZ view shows early folding/layering consistent with 1.5fold reference. No clear parallel bright bands of 2fold yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 51,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Overall shape matches 1.5fold reference closely - elongated but not yet showing two distinct parallel bands of 2fold. YZ view still rounded, XZ shows single layer. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 52,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with visible cellular structure, matching the 1.5fold reference. No clear parallel bands indicating 2fold are visible. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 53,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows elongated shape similar to 1.5fold reference, without clearly separated parallel bands that would indicate 2fold. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 54,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Shape and cell distribution closely match 1.5fold references - elongated body with visible nuclei, no clearly separated parallel bands indicating 2fold yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 55,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The elongated shape with visible nuclei still distinguishable, no clear parallel bands of 2fold yet. Matches 1.5fold reference well, consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 56,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Elongated body shape with granular nuclei visible, matching 1.5fold references. No clear parallel bands indicating 2fold yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 57,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows elongation with a tapering tail-like end, matching 1.5fold references. No clear two parallel bands visible yet that would indicate 2fold. Consistent with recent observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 58,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Elongated shape with slight curvature visible, similar to 1.5fold references. No clear parallel bands indicating 2fold yet. Continuing from previous 1.5fold observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 59,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Elongated shape with uniform density, no clearly separated parallel bands yet. Matches 1.5fold references closely; consistent with prior observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 60,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated, slightly curved embryo with the characteristic shape of 1.5fold. No clear parallel bands indicating 2fold are visible. Consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 61,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The embryo shows elongation with a curved shape visible in XY, similar to the 1.5fold reference. No clear separated parallel bands indicating 2fold yet. Consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 62,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The image matches the 2fold reference very closely - elongated body with visible curvature/folding in XY view, and the XZ view shows the characteristic layered appearance of a folded embryo. This is actually the exact 2fold reference image.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 63,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill - dark space still present at top. Matches 2fold reference well, consistent with previous timepoint.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 64,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Moderate eggshell fill with two parallel body segments visible in XY view, consistent with 2fold hairpin morphology. Matches previous timepoint.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 65,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space still visible. YZ view shows two parallel body segments typical of a hairpin/U-shape. Morphology matches 2fold reference, consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 66,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend, consistent with 2fold hairpin morphology. Matches 2fold reference well.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 67,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with dark space still visible at the ends. Two parallel body segments are visible in the XY view, consistent with 2fold morphology. Matches 2fold reference.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 68,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The embryo shows an elongated curved body with moderate eggshell fill. Two parallel segments visible in the XZ view (bottom). Morphology is consistent with previous 2fold observations \u2014 no clear progression to dense pretzel-like filling yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 69,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "XY view shows two parallel body segments with moderate filling of eggshell and visible dark space. Matches 2fold reference closely.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 70,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible with hairpin bend; moderate eggshell fill with some dark space remaining. Matches 2fold reference.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 71,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible in XY view with a clear horizontal gap between them, consistent with a hairpin U-shape. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 72,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill; matches 2fold reference. No evidence of dense pretzel coiling yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 73,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments are visible in the top view with a bend connecting them. Matches 2fold reference well; no clear change from previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 74,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible in XY view with a bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 75,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell moderately filled with visible dark space. Body shows hairpin/U-shape with parallel segments, matching the 2fold reference. No clear pretzel-level density yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 76,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible in XY with moderate eggshell fill; matches 2fold reference. No evidence of dense tangled pretzel pattern yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 77,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible with moderate eggshell fill and dark space remaining. Matches 2fold reference; consistent with prior observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 78,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible in XY with a dark gap between them (hairpin shape). Eggshell is moderately filled with some dark space remaining. Matches 2fold reference.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 79,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible with a bend, matching 2fold reference. No clear advancement to dense pretzel-like filling.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 80,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a clear gap between them. Matches 2fold reference best; no clear progression to dense pretzel fill yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 81,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell moderately filled with dark space still visible, two parallel body segments visible in the XY view consistent with a hairpin shape. Matches 2fold reference best; no clear progression to dense pretzel fill.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 82,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is densely filled with fluorescent signal with very little dark space remaining. The XZ view shows multiple overlapping body layers creating a complex tangled pattern. This matches the pretzel reference closely.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 83,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell appears densely filled with overlapping signal, and the XZ view shows multiple parallel body segments consistent with pretzel. Matches previous observation.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 84,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body layers visible in the XZ view showing complex tangled pattern. Consistent with previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 85,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY shows two parallel body segments with complex overlapping signal, shell densely filled. Consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 86,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell appears densely filled with multiple overlapping bright body segments visible in the YZ view, consistent with pretzel stage. Matches previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 87,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with complex overlapping bright signal, multiple body layers visible in XZ view. Matches pretzel reference and continues from previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 88,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping body layers visible in the XZ view showing complex coiling. Matches pretzel reference well, consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 89,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with multiple overlapping bright coils/folds visible in XY view; matches pretzel reference. Consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 90,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Previous was pretzel. The image shows dense fluorescent signal filling most of the eggshell with multiple overlapping layers visible in side views, consistent with pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 91,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with overlapping coiled signal, multiple body layers visible in both XY and XZ views. Matches pretzel reference and continues previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 92,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with overlapping body segments and complex tangled pattern, consistent with continuing pretzel stage.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 93,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with complex overlapping bright signal, multiple body layers visible in XY view. Consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 94,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body layers visible creating complex tangled pattern consistent with pretzel stage. Matches previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 95,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping body layers visible in XZ view, consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 96,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with overlapping coils of signal; XZ view shows multiple parallel body layers. Matches pretzel reference and consistent with prior observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 97,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with multiple overlapping bright bands visible in XY and XZ views, consistent with pretzel stage. Continuation from previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 98,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping body coils visible in XY view; morphology consistent with previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 99,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping bright layers, consistent with pretzel stage. Morphology matches previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 100,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping coils visible in XY view, complex tangled pattern consistent with pretzel stage. Continues from previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 101,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body layers visible in projection. Matches pretzel reference and consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 102,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Multiple overlapping coils visible in XY view with complex tangled pattern; eggshell densely filled with signal. Consistent with previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 103,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with complex overlapping signal, multiple body layers visible with curved/coiled pattern in XY view. Consistent with previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 104,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping bright body segments visible, consistent with prior pretzel classification. No sign of hatching.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 105,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping coils visible in XY view. Complex tangled pattern with high overall brightness matches pretzel reference. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 106,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell appears densely filled with complex overlapping signal in the XZ view, consistent with pretzel stage. Previous observations were pretzel, and no clear regression is visible.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 107,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with overlapping fluorescent signal, showing multiple body layers. Matches pretzel reference and consistent with prior observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 108,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible in XY view (parallel bands of nuclei). Matches pretzel reference pattern with complex coiled structure.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 109,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with multiple overlapping bright coils; morphology matches pretzel reference and is consistent with prior observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 110,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with overlapping bright signal, multiple coiled body layers visible in both views. Consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 111,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping coils of bright signal, consistent with pretzel stage seen in previous frames.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 112,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with overlapping bright signal, multiple coils visible in the projection, consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 113,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible in both XY and XZ views. Complex tangled pattern matches pretzel reference. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 114,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Multiple overlapping body coils visible with dense fluorescent signal filling the eggshell. Matches pretzel reference and consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 115,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping coils of signal visible in XY view, consistent with pretzel stage. No sign of hatching.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 116,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with multiple overlapping body layers visible in XZ view, consistent with previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 117,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible, matching the pretzel reference. Continues from previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 118,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible, particularly in the XZ view showing 3+ parallel bands. Matches pretzel references and continues from previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 119,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with overlapping bright signal showing multiple body layers. Consistent with previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 120,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping body coils visible in XY view. Complex tangled pattern matches pretzel reference. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 121,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with multiple overlapping bright coils visible, consistent with previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 122,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with complex overlapping signal patterns, multiple body layers visible creating a tangled appearance. Consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        }
+      ],
+      "accuracy": 0.9230769230769231,
+      "adjacent_accuracy": 1.0
+    },
+    {
+      "embryo_id": "embryo_3",
+      "predictions": [
+        {
+          "timepoint": 39,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongated shape with a visible indentation/curve along the ventral side in XY view, characteristic of comma stage. No clear elongation or folding indicating 1.5fold yet. Consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 40,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows an elongated embryo with a subtle curve/indentation beginning to form, consistent with comma stage. No clear elongation or folding indicative of 1.5fold yet. Matches comma references well.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 41,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongated shape with visible cell structure throughout, similar to the comma reference. No clear parallel bands of a 1.5fold yet, and previous observations were comma.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 42,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongating shape with a subtle groove/fold visible in the XY view, consistent with comma stage. No clear elongation into a 1.5fold curved shape yet. Matches comma references well.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 43,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongating shape with a curvature visible in XY, consistent with comma stage. No clear parallel bands indicating 1.5fold yet. Matches comma references.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 44,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongated shape with slight asymmetry but no clear elongation or folding yet. The XY view resembles the comma reference with relatively uniform density, and the XZ view shows the characteristic two-lobed appearance of comma stage. No clear 1.5fold elongation visible yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 45,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows the characteristic comma-stage morphology with a slight constriction and bulge, matching comma references. No clear elongation indicating 1.5fold yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 46,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "XY view shows elongating shape with head/tail differentiation beginning, matching comma reference. No clear parallel folding bands yet that would indicate 1.5fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 47,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows elongation with a more uniform shape than the comma stage's bilobed appearance. The XY view shows an elongated body with a curving/bending pattern visible, matching 1.5fold references. The YZ cross-section is rounded-oval, and the XZ side view shows an elongated layered structure consistent with 1.5fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 48,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows elongated shape with a curved body visible in XY view, matching 1.5fold references. No clear parallel bands indicating 2fold yet. Consistent with previous observation.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 49,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongated shape with a slight indentation visible in the XY view, consistent with 1.5fold references. No clear parallel bands indicating 2fold yet. Following slow stage progression from prior 1.5fold observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 50,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The embryo shows an elongated shape with some curvature visible in XY, similar to the 1.5fold reference. No clear parallel bands indicating 2fold yet. Consistent with recent observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 51,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Embryo shows elongated curved shape with indentation on one side, consistent with 1.5fold references. No clear parallel bands yet indicating 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 52,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The embryo shows an elongated shape with a visible internal curve/fold in the XY view, matching 1.5fold references. No clear parallel bands indicating 2fold yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 53,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Shape matches 1.5fold references - elongated but not yet showing two distinct parallel bright bands that would indicate 2fold. Consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 54,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Shape matches 1.5fold reference - elongated bilobed structure in XY, rounded YZ cross-section, consistent with prior observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 55,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Elongated shape similar to 1.5fold reference, no clearly separated parallel bands indicating 2fold yet. Consistent with prior timepoints.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 56,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Elongated shape with hollow/loop appearance in XY, two-band stacking in YZ consistent with 1.5fold references. No clear separation into distinct parallel bands yet, so not 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 57,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The embryo shows elongated shape similar to 1.5fold reference, without the clear parallel bands of 2fold. Consistent with previous timepoints.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 58,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with visible nuclei but no clear separated parallel bands indicating 2fold. The shape and structure closely match the 1.5fold references, consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 59,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with two lobes but no clear separated parallel bands. Matches the 1.5fold reference well, consistent with recent observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 60,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated embryo with a visible curved body outline with a darker interior (developing lumen), matching 1.5fold references. No clear parallel bands yet indicating 2fold. Consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 61,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The embryo shows an elongated shape with a visible internal groove/lumen in the XY view, matching 1.5fold references. No clear parallel bands indicating 2fold yet. Consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 62,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The embryo shape matches 1.5fold references - elongated with asymmetric brightness, no clear parallel bands indicating 2fold yet. Consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 63,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows a clear elongated, curved body with two parallel bands visible (dark central gap between them), characteristic of 2fold. The embryo has elongated beyond the 1.5fold stage, matching the 2fold reference.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 64,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "XY view shows two clear parallel body segments separated by a dark gap (hairpin shape), characteristic of 2fold. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference well.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 65,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill. Morphology matches 2fold reference, consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 66,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell moderately filled with two parallel body segments visible in XY view (upper and lower bands). Matches 2fold reference morphology. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 67,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view matching the 2fold reference. No evidence of dense pretzel-like multiple coils yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 68,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with dark space still visible around the body. Two parallel body segments visible in XY view with a bend, matching the 2fold reference. No pretzel-level density yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 69,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell shows moderate filling with some dark space visible at the ends. Two parallel body segments appear visible in the XY view with a clear groove between them, consistent with a hairpin/U-shape. Matches the 2fold reference well, and consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 70,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible in XY view with a dark gap between them (hairpin shape). Eggshell is moderately filled with some dark space remaining. Matches 2fold reference well, consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 71,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill. Matches 2fold reference, consistent with prior timepoints.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 72,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible with dark gap between them in XY view, moderate eggshell fill. Consistent with previous 2fold observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 73,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view matching the 2fold reference. No clear increase in density/coiling that would indicate pretzel transition.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 74,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible in XY view with a bend, moderate eggshell fill with dark space remaining. Matches 2fold reference well, consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 75,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill; still some dark space. Matches 2fold reference better than pretzel (not densely filled with overlapping coils).",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 76,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view consistent with a hairpin fold. Morphology matches 2fold reference, consistent with prior timepoints.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 77,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space visible around edges. Two parallel body bands are visible in the XY view forming a hairpin shape. Signal density is not yet at pretzel level. Matches 2fold reference.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 78,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY view shows two parallel body segments with a visible gap/bend between them (hairpin shape). Eggshell is moderately filled with some dark space remaining. Matches 2fold reference better than pretzel (not densely filled with multiple overlapping coils).",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 79,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY view shows a clear hairpin with two parallel body segments and a dark interior gap between them - classic 2fold morphology. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference well, not yet the dense overlapping coils of pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 80,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space visible at the ends. Two parallel body segments visible in XY view with a clear bend, matching 2fold reference. Not yet dense enough for pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 81,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments visible in XY with a central dark gap, consistent with 2fold hairpin. Not yet dense enough for pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 82,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY view shows a clear hairpin/U-shape with two parallel body segments and a dark gap in the middle. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference well; no evidence of dense pretzel-like filling yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 83,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell moderately filled with some dark space at ends. Two parallel body segments visible in XY view, consistent with 2fold hairpin. Not dense/tangled enough for pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 84,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY view shows two parallel body segments forming a hairpin U-shape with visible dark space in the middle and end of the eggshell. Fill is moderate, not dense enough for pretzel. Consistent with 2fold.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 85,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible in XY view with a bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 86,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows two parallel body segments with a clear central dark gap (hairpin U-shape). The eggshell is moderately filled with some dark space remaining. This matches the 2fold reference better than pretzel, which would show denser filling with overlapping coils.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 87,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell moderately filled with some dark space still visible at ends. Two parallel body segments visible in the XY view with a clear bend. Matches 2fold reference better than pretzel (not densely packed with multiple coils yet).",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 88,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible in XY with a clear bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 89,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments are visible in the XZ view, matching 2fold morphology. Consistent with previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 90,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible with moderate eggshell fill, dark space still present at ends. Matches 2fold reference better than pretzel (no dense multi-coil tangle yet).",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 91,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible in XY view with moderate eggshell fill. Some dark space remains at top. Matches 2fold reference better than pretzel (not densely packed with multiple overlapping coils).",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 92,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible with moderate eggshell fill; matches 2fold reference. No clear pretzel-like dense multi-coil filling yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 93,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space visible. Two parallel body segments visible in top view with a bend, consistent with a hairpin/U-shape. Matches 2fold reference; no clear progression to dense pretzel coiling yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 94,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY view shows two parallel body segments with a clear bend, consistent with 2fold hairpin. Eggshell is moderately filled with some dark space remaining - not densely packed enough for pretzel. Matches 2fold reference.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 95,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with a visible dark gap in the middle of the XY view, indicating two parallel body segments forming a hairpin. Not yet densely packed like pretzel. Consistent with previous 2fold observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 96,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space visible (notably a dark gap in the middle of the XY view suggesting the U-bend). Two parallel body segments visible in the bottom view. Morphology matches 2fold reference, consistent with previous timepoints.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 97,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY view shows two parallel body segments with a dark central region, consistent with a U-shaped hairpin. Eggshell is moderately filled with clear dark space remaining between folds - not yet pretzel density. Matches 2fold reference well.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 98,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments are visible in the XY view with a bend. Morphology matches 2fold reference, consistent with prior observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 99,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with visible dark space around the body; two parallel segments visible in the XY view with a central dark gap. Matches 2fold reference better than densely-filled pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 100,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Two parallel body segments visible in XY view with a central dark gap between them (hairpin shape). Eggshell is moderately filled with some dark space remaining. Matches 2fold reference better than pretzel (not densely filled with multiple overlapping coils).",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 101,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY view shows two parallel body segments with a dark gap between them (hairpin/U-shape), consistent with 2fold. Eggshell is moderately filled with dark space still visible. No clear multiple coils indicating pretzel yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 102,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY view shows two parallel body segments with a dark gap between them (hairpin shape), consistent with 2fold. Eggshell is moderately filled with some dark space remaining. Not yet dense enough for pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 103,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with signal, showing two parallel body segments visible in the XY view with some dark space still present. Matches 2fold reference better than densely-filled pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 104,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining at the ends. Two parallel body segments visible in XY view with a bend. Matches 2fold reference, not yet densely filled like pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 105,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with two parallel body segments visible in XY view, consistent with 2fold. Not yet densely packed like pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 106,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space visible at the ends and middle. Two parallel body segments visible in the XY view, consistent with hairpin/U-shape of 2fold. Not densely packed enough for pretzel. Matches previous observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 107,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY view shows two parallel body segments (upper and lower band) with moderate eggshell fill and some dark space remaining. Matches 2fold reference better than pretzel which would have denser fill with multiple overlapping coils.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 108,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space visible, especially at the ends. The XY view shows what appears to be a folded body with visible curved segments but not densely packed multi-coil pattern of pretzel. Consistent with previous 2fold observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 109,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows clearly overlapping coils with multiple body segments tangled together, and the eggshell appears densely filled. This complex multi-fold pattern matches pretzel stage better than 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        }
+      ],
+      "accuracy": 0.14084507042253522,
+      "adjacent_accuracy": 1.0
+    },
+    {
+      "embryo_id": "embryo_1",
+      "predictions": [
+        {
+          "timepoint": 55,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows the characteristic two-lobed comma shape with a tapering tail region. The YZ cross-section is rounded and the XZ shows the bilobed structure typical of comma stage. No clear elongation into 1.5fold yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 56,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The XY view shows a two-lobed structure similar to comma references, without clear elongation/folding seen in 1.5fold. Consistent with previous comma observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 57,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows a slightly elongated shape with cellular texture similar to the comma/1.5fold references, but still retains a fairly compact, rounded form without clear elongation bands. Matches comma references closely.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 58,
+          "predicted_stage": "comma",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongated shape with slight narrowing, consistent with comma stage. The YZ view shows a rounded cross-section and no clear elongated/folded structure yet indicative of 1.5fold. Matches comma references best.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 59,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows elongation with a tapered end on the right, and the body appears more elongated and slender compared to the comma stage. The XY view shows a distinct narrowing that matches the 1.5fold references better than comma.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 60,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Elongated shape matching 1.5fold references, no clear parallel bands indicating 2fold yet. Consistent with prior observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 61,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Elongated shape with visible internal structure matching 1.5fold reference; no clear two parallel bands indicating 2fold yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 62,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows elongated shape similar to 1.5fold references, without the clearly separated parallel bands characteristic of 2fold. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 63,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongated shape similar to 1.5fold references, without clear separated parallel bands indicating 2fold. Consistent with recent observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 64,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shape in XY is elongated but not yet showing two clearly separated parallel bands characteristic of 2fold. The YZ view shows a compact cross-section. Matches 1.5fold references, consistent with prior observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 65,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongated shape with a curved body visible in XY, similar to the 1.5fold references. No clear parallel bands indicating 2fold are visible yet. Consistent with prior observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 66,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongated shape similar to the 1.5fold reference, with visible cellular detail but no clear parallel folded bands that would indicate 2fold. Matches previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 67,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "Elongated shape with tapered end visible in XY, similar to 1.5fold references. No clear parallel bands indicating 2fold yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 68,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "The embryo shows an elongated shape similar to the 1.5fold reference, with nuclei visible throughout but without clearly separated parallel bright bands that would indicate 2fold. Consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 69,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "1.5fold",
+          "reasoning": "XY view shows elongated body with distinct head/tail regions but no clear parallel bright bands indicating 2fold. Matches 1.5fold reference pattern, consistent with recent observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 70,
+          "predicted_stage": "1.5fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated shape with a slight curve similar to 1.5fold references. No clear separated parallel bands indicative of 2fold. Consistent with prior observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 71,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows an elongated, curved body with a visible dark indentation/curve on top, resembling the 2fold reference. The embryo appears more slender and elongated than 1.5fold. Given the progression from 1.5fold, this is a transition to 2fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 72,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell moderately filled with some dark space remaining. Two parallel body segments visible in XY view forming a hairpin/U-shape. Matches 2fold reference better than pretzel (not densely filled) and more advanced than 1.5fold.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 73,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell moderately filled with some dark space still visible. Two parallel body segments visible in the XY view with a bend, matching 2fold reference. No dense multi-coil pattern that would indicate pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 74,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell moderately filled with visible dark space at ends. Two parallel body segments visible in XY view, consistent with 2fold hairpin morphology. Matches 2fold reference well.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 75,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The eggshell is moderately filled with some dark space still visible. Two parallel body segments appear present forming a hairpin shape. Matches 2fold reference closely, consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 76,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view consistent with a hairpin/U-shape. Matches 2fold reference closely; no clear progression to dense pretzel fill.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 77,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a hairpin bend. Matches 2fold reference better than pretzel (which is more densely filled). Consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 78,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend. Matches 2fold reference closely; no clear progression to dense pretzel fill yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 79,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell moderately filled with some dark space remaining. Morphology matches 2fold reference with visible body folds but not yet densely packed like pretzel. Consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 80,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "XY view shows two parallel body segments with a bend, consistent with a hairpin/U-shape. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference better than pretzel (not densely filled with multiple overlapping coils).",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 81,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments visible in XY view with a bend, matching 2fold reference. No clear multiple overlapping coils indicating pretzel yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 82,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments appear visible in the XY view with a bend, consistent with 2fold. No clear multi-coil pretzel morphology yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 83,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible in XY view with a clear separation between them, forming a hairpin pattern. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference well.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 84,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Two parallel body segments visible in XY view with a bend, moderate eggshell fill with some dark space remaining. Matches 2fold reference closely and consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 85,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "XY view shows two parallel body segments with a bend, and the XZ view shows a clear hairpin/loop structure. Eggshell is moderately filled with some dark space remaining. Matches 2fold reference well.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 86,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in top view indicating hairpin folding. Matches 2fold reference closely; not yet densely packed like pretzel.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 87,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Eggshell is moderately filled with visible dark space around the body. Two parallel body segments visible in XY view with a bend, consistent with 2fold hairpin morphology. No clear transition to densely packed pretzel stage yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 88,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "Morphology matches 2fold reference: two parallel body segments visible with moderate eggshell fill and dark space remaining. No clear progression to dense pretzel-like packing yet.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 89,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "2fold",
+          "reasoning": "The XY view shows two parallel body segments with a bend connecting them (hairpin shape), and YZ view shows a ring-like cross section consistent with folded body. Eggshell is moderately filled with some dark space. Matches 2fold reference.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 90,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell moderately filled with some dark space visible at the poles. Two parallel body segments visible in the XZ view. Matches 2fold reference; no clear transition to pretzel's dense filling yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 91,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with visible dark space remaining at top and bottom edges. Two parallel body segments visible with a bend, matching 2fold reference. Not yet densely filled as pretzel requires.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 92,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XZ view with a clear fold. Morphology consistent with previous 2fold observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 93,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view. Matches 2fold reference closely, no clear progression to pretzel's dense filling.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 94,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The eggshell is moderately filled with some dark space still visible at ends. Two parallel body segments appear in the XY view with a bend, matching the 2fold reference. No dense pretzel-like coiling yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 95,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view. Matches 2fold reference better than pretzel (not densely filled).",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 96,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XZ view. Morphology consistent with previous 2fold observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 97,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Moderate fill with some dark space remaining at edges. Two parallel body segments visible in the top view with bend. Matches 2fold reference, consistent with previous timepoints.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 98,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view, consistent with 2fold hairpin. No dense tangled pretzel pattern yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 99,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in the XY view with a bend, consistent with 2fold. Not dense enough for pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 100,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with dark space still visible at the ends and along edges. XZ view shows two parallel body segments with a bend, characteristic of a hairpin/U-shape. No evidence of multiple overlapping coils that would indicate pretzel. Consistent with previous 2fold observations.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 101,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with visible dark space, two parallel body segments are visible in the XY view forming a hairpin shape. Matches 2fold reference well, not yet densely packed like pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 102,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space still visible at edges. Two parallel body segments visible in top view with a bend. Matches 2fold reference; no clear progression to dense pretzel fill yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 103,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view consistent with hairpin/U-shape. Matches 2fold reference better than pretzel (not densely packed).",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 104,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows two parallel body segments with a bend, consistent with a hairpin U-shape. The eggshell has moderate filling with some dark space still visible around the body. No clear multi-coil pretzel pattern yet. Matches 2fold reference.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 105,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space visible. The XZ view shows two parallel body segments consistent with a hairpin/U-shape. Not yet dense enough for pretzel. Matches 2fold reference.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 106,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space visible, particularly at the ends. Two parallel body segments are visible in the XY view forming a hairpin-like shape. Matches 2fold reference more than pretzel (which would show denser filling and multiple overlapping coils).",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 107,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XZ view shows clear parallel body segments with a visible bend/loop structure, consistent with 2fold. Eggshell is moderately filled with some dark space visible around the body, not yet densely packed like pretzel. Continues previous 2fold classification.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 108,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY view with a bend, consistent with 2fold hairpin morphology. Matches 2fold reference well.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 109,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "XY shows two parallel body segments with a clear dark gap between them (hairpin shape), and moderate eggshell fill with visible dark space. Matches 2fold reference well \u2014 not yet densely packed like pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 110,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space still visible. Two parallel body segments are visible in the XY view with a bend, consistent with the 2fold reference. No dense multi-coil pattern yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 111,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "The XY view shows two parallel body segments with moderate eggshell filling and some dark space remaining. Matches 2fold reference well; no clear transition to dense pretzel-like filling yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 112,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. Two parallel body segments visible in XY and XZ views with a bend. Matches 2fold reference; no clear advance to dense pretzel filling yet.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 113,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining. XZ view shows two parallel body segments consistent with hairpin shape. Matches 2fold reference well.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 114,
+          "predicted_stage": "2fold",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is moderately filled with some dark space remaining, particularly around the edges. Two parallel body segments are visible in XY view with a bend. Matches 2fold reference best; not yet densely packed like pretzel.",
+          "is_correct": false,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 115,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with signal, little dark space remaining. XZ view shows multiple overlapping body segments/coils. Matches pretzel reference more than 2fold which still has significant dark space.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 116,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with signal, complex overlapping pattern visible in XY with multiple body layers, consistent with pretzel stage matching previous observation.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 117,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body layers visible in the projection. Consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 118,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping body segments visible, complex tangled pattern matching pretzel reference. Continuing from previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 119,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with overlapping bright signal, multiple body segments visible in XY (parallel/coiled arrangement), complex tangled pattern. Matches pretzel references and consistent with prior observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 120,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with multiple overlapping body layers visible, matching pretzel reference. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 121,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with complex overlapping bright signal, multiple body layers visible in side view. Matches pretzel reference and consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 122,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with multiple overlapping coiled body segments visible in XY and XZ views, matching pretzel reference. No indication of hatching.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 123,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Dense, complex tangled signal filling most of the eggshell with multiple overlapping body segments visible. Consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 124,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with overlapping bright signal, multiple body layers visible, consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 125,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Multiple overlapping coils visible in XY view showing complex tangled pattern with several body segments curving within the eggshell. Eggshell is densely filled with signal. Consistent with previous pretzel classifications.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 126,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with multiple overlapping coils visible in all views, consistent with prior pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 127,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with overlapping coils of fluorescent signal, multiple body layers visible in both top and side views. Consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 128,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with multiple overlapping coils/body segments visible in XY view. Consistent with previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 129,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with fluorescent signal showing multiple overlapping coils/body segments. Matches pretzel reference and consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 130,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with multiple overlapping body layers visible, matching pretzel reference. Continues from previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 131,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with overlapping fluorescent signal, multiple body layers visible in XY and XZ projections. Consistent with previous pretzel observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 132,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with complex overlapping signal, multiple body layers visible in all projections. Matches pretzel reference and consistent with prior observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 133,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Dense filling of eggshell with multiple overlapping body segments visible; matches pretzel reference. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 134,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Multiple overlapping body layers visible within densely filled eggshell, consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 135,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with complex overlapping signal, multiple body layers visible in XY and XZ views. Matches pretzel reference and consistent with previous timepoints.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 136,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping coiled body segments visible in both XY and XZ views. Consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 137,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell is densely filled with multiple overlapping bright coils of signal visible in the XY view, with a complex tangled pattern matching pretzel references. Consistent with previous observations.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        },
+        {
+          "timepoint": 138,
+          "predicted_stage": "pretzel",
+          "ground_truth_stage": "pretzel",
+          "reasoning": "Eggshell densely filled with overlapping signal, multiple coils visible with complex tangled pattern. Consistent with previous pretzel classification.",
+          "is_correct": true,
+          "is_adjacent_correct": true
+        }
+      ],
+      "accuracy": 0.6428571428571429,
+      "adjacent_accuracy": 1.0
+    }
+  ],
+  "errors": [],
+  "total_predictions": 233,
+  "overall_accuracy": 0.5836909871244635,
+  "metrics": {
+    "accuracy": 0.5836909871244635,
+    "adjacent_accuracy": 1.0,
+    "per_stage": {
+      "1.5fold": {
+        "accuracy": 0.6585365853658537,
+        "n": 41
+      },
+      "2fold": {
+        "accuracy": 0.7288135593220338,
+        "n": 59
+      },
+      "pretzel": {
+        "accuracy": 0.49624060150375937,
+        "n": 133
+      }
+    }
+  }
+}

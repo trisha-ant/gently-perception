@@ -101,7 +101,8 @@ def write_report(results: dict[tuple[str, str, str | None], RunSet]) -> None:
         "| Variant | Model | Thinking | mean ± std | N | vs archived |",
         "|---|---|---|---|---|---|",
     ]
-    for (variant, model, thinking), rs in sorted(results.items()):
+    for (variant, model, thinking), rs in sorted(
+            results.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2] or "")):
         key = f"{variant}@{model}/{thinking or 'none'}"
         cmp_cell = "—"
         if key in ARCHIVED:
