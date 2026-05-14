@@ -91,11 +91,16 @@ async def main() -> None:
     references = _load_references()
     thinking = None if args.thinking == "none" else args.thinking
 
+    from .model_override import install_model_override
+
     async def one_seed(seed: int) -> dict:
         cfg = RunConfig.capture(variant=args.variant, model=args.model,
                                 thinking=thinking, seed=seed,
                                 stages=tuple(args.stages))
         out_path = cfg.result_path(RESULTS_DIR)
+        if out_path.exists():
+            logger.info(f"[seed {seed}] exists, loading: {out_path}")
+            return json.loads(out_path.read_text())
         out_path.parent.mkdir(parents=True, exist_ok=True)
         ev_log = EventLog(out_path.with_suffix(".events.jsonl"))
         logger.info(f"[seed {seed}] → {out_path}")
@@ -106,9 +111,10 @@ async def main() -> None:
         print(f"  seed {seed}: {report['overall_accuracy']:.1%}")
         return report
 
-    reports = await asyncio.gather(
-        *(one_seed(args.seed_base + i) for i in range(args.n_runs))
-    )
+    with install_model_override(args.model, thinking):
+        reports = list(await asyncio.gather(
+            *(one_seed(args.seed_base + i) for i in range(args.n_runs))
+        ))
     print(f"render cache: {testset.stats()}")
 
     rs = RunSet.from_reports(args.variant, reports)
